@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Residences from "@/components/sections/Residences";
+import PageContent from "@/components/layout/PageContent";
 
 export const metadata: Metadata = {
   title: "Premium 2 & 3 BHK Residences | Godrej Park World Pune",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white pt-24">
-      <Residences />
+      <PageContent />
     </main>
   );
 }

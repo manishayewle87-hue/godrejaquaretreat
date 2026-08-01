@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Location from "@/components/sections/Location";
+import PageContent from "@/components/layout/PageContent";
 
 export const metadata: Metadata = {
   title: "Location Map | Godrej Park World Hinjewadi Phase 1",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white pt-24">
-      <Location />
+      <PageContent />
     </main>
   );
 }
