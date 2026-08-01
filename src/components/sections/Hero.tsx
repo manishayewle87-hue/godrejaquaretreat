@@ -75,6 +75,7 @@ export default function Hero() {
               <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={openModal}
                 className="bg-white/90 backdrop-blur-md text-gray-900 px-8 py-4 rounded-full text-sm tracking-[0.15em] uppercase font-semibold shadow-xl shadow-black/5 hover:bg-white transition-all duration-300"
               >
                 Download Brochure

@@ -61,6 +61,7 @@ export const metadata: Metadata = {
 
 import { ModalProvider } from "@/context/ModalContext";
 import EnquiryModal from "@/components/ui/EnquiryModal";
+import SmartHUD from "@/components/layout/SmartHUD";
 
 export default function RootLayout({
   children,
@@ -137,6 +138,7 @@ export default function RootLayout({
           <SmoothScroller>
             <CustomCursor />
             <Navbar />
+            <SmartHUD />
             <main className="relative flex flex-col w-full min-h-screen">
               {children}
             </main>

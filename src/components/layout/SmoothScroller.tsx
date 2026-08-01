@@ -38,6 +38,39 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
   }, []);
 
   useEffect(() => {
+    // Global Link Interceptor to force Lenis to scroll smoothly instead of jumping
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      
+      if (anchor && anchor.hash && anchor.hash.startsWith('#')) {
+        const id = anchor.hash.substring(1);
+        const element = document.getElementById(id);
+        
+        if (element) {
+          e.preventDefault();
+          element.scrollIntoView({ behavior: 'smooth' });
+          
+          // Optionally, find the matching route and push state
+          const routeMapReversed: Record<string, string> = {
+            "project": "/godrej-park-world-pune-masterplan",
+            "lifestyle": "/godrej-park-world-pune-aqua-lifestyle",
+            "residences": "/godrej-park-world-pune-luxury-residences",
+            "amenities": "/godrej-park-world-pune-premium-amenities",
+            "location": "/godrej-park-world-pune-hinjewadi-location",
+            "gallery": "/godrej-park-world-pune-gallery",
+          };
+          
+          const href = routeMapReversed[id];
+          if (href) {
+            window.history.pushState(null, '', href);
+          }
+        }
+      }
+    };
+    
+    document.addEventListener('click', handleGlobalClick);
+
     // On mount or Next.js route change (not history pushState), check if we need to jump to a section
     const routeMap: Record<string, string> = {
       "/godrej-park-world-pune-masterplan": "project",
@@ -64,6 +97,8 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
         ScrollTrigger.refresh();
       }, 100);
     }
+    
+    return () => document.removeEventListener('click', handleGlobalClick);
   }, [pathname]);
 
   return <>{children}</>;

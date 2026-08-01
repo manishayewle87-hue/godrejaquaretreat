@@ -52,9 +52,9 @@ export default function Location() {
               </div>
             </div>
             
-            <button className="text-gray-900 border border-black/20 px-8 py-4 text-xs tracking-[0.2em] uppercase font-light hover:border-emerald-aqua hover:text-emerald-aqua transition-colors duration-500 w-full mt-12 bg-black/5">
+            <a href="https://maps.google.com/?q=Godrej+Park+World+Hinjewadi+Pune" target="_blank" rel="noopener noreferrer" className="inline-block text-center text-gray-900 border border-black/20 px-8 py-4 text-xs tracking-[0.2em] uppercase font-light hover:border-emerald-aqua hover:text-emerald-aqua transition-colors duration-500 w-full mt-12 bg-black/5">
               Get Directions
-            </button>
+            </a>
           </motion.div>
 
           <motion.div 
