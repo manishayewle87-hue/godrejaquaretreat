@@ -184,7 +184,7 @@ export default function Footer() {
               <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Investment & FAQs</h5>
               <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
                 <li><Link href="/blog/hinjewadi-phase-1-real-estate-investment-guide" className="hover:text-emerald-aqua transition-colors">Pune Property Investment</Link></li>
-                <li><Link href="/blog/hinjewadi-phase-1-real-estate-investment-guide" className="hover:text-emerald-aqua transition-colors">IT Corridor Investment Pune</Link></li>
+                <li><Link href="/blog/godrej-park-world-hinjewadi-township-guide" className="hover:text-emerald-aqua transition-colors">Godrej Park World Township Guide</Link></li>
                 <li><Link href="/blog/the-aqua-retreat-price-breakdown-floor-plans" className="hover:text-emerald-aqua transition-colors">Rental Yield Hinjewadi</Link></li>
                 <li><Link href="/blog/godrej-park-world-vs-competitors-review" className="hover:text-emerald-aqua transition-colors">Is Aqua Retreat worth buying?</Link></li>
                 <li><Link href="/blog/godrej-park-world-vs-competitors-review" className="hover:text-emerald-aqua transition-colors">Is Godrej Park World a good investment?</Link></li>
