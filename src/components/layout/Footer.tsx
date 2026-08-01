@@ -129,10 +129,76 @@ export default function Footer() {
           
         </motion.div>
 
-        {/* SEO Boilerplate */}
-        <div className="py-8 border-t border-white/10 mt-8 mb-4">
-          <p className="text-gray-500 font-light text-xs leading-relaxed max-w-4xl">
-            The Aqua Retreat at Godrej Park World is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living in Hinjewadi. Designed to integrate seamlessly with nature, this flagship Godrej Properties Pune development sets a new benchmark for premium real estate in Pune.
+        {/* Advanced SEO Matrix */}
+        <div className="py-12 border-t border-white/10 mt-8 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            {/* Godrej Ecosystem */}
+            <div>
+              <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Godrej Pune Ecosystem</h5>
+              <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Park World</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Aqua Retreat</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej The Gale</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Greenfront</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej River Royale</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Emerald Waters</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Skyline</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Forest Grove</a></li>
+              </ul>
+            </div>
+
+            {/* Popular Searches */}
+            <div>
+              <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Trending Searches</h5>
+              <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">best apartments in Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">luxury apartments in Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">premium township in Pune</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">flats near Infosys Pune</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">apartments near Wipro Pune</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">apartments near metro Pune</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">investment property in Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">under construction projects Pune</a></li>
+              </ul>
+            </div>
+
+            {/* Competitor Comparisons (Discreet) */}
+            <div>
+              <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Market Comparisons</h5>
+              <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej vs Lodha Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej vs Kolte Patil Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej vs VTP Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej vs Gera Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Shapoorji Pallonji Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Mahindra Citadel Alternatives</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Pride World City Comparisons</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Vilas Javdekar Pune</a></li>
+              </ul>
+            </div>
+
+            {/* Investment & Queries */}
+            <div>
+              <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Investment & FAQs</h5>
+              <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Pune Property Investment</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">IT Corridor Investment Pune</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Rental Yield Hinjewadi</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Is Aqua Retreat worth buying?</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Is Godrej Park World a good investment?</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Aqua Retreat possession date</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Aqua Retreat RERA</a></li>
+                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Download Cost Sheet</a></li>
+              </ul>
+            </div>
+
+          </div>
+          
+          <p className="text-gray-600 font-light text-[10px] leading-relaxed max-w-5xl mt-12">
+            The Aqua Retreat at Godrej Park World is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living in Hinjewadi Phase 1. 
+            Designed to integrate seamlessly with nature, this flagship Godrej Properties Pune development sets a new benchmark for premium real estate in Pune West. 
+            Keywords and references to third-party developers (Lodha, VTP, Kolte Patil, Gera, Shapoorji Pallonji, Mahindra, Kohinoor, Kasturi, Rohan Builders, Pride Purple, Nyati, Kumar, Vilas Javdekar) are for comparative market analysis only.
           </p>
         </div>
 

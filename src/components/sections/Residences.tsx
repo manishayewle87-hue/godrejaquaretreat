@@ -21,7 +21,7 @@ export default function Residences() {
         
         <div className="mb-20">
           <span className="text-emerald-aqua uppercase tracking-[0.4em] text-xs font-semibold mb-4 block">
-            The Residences
+            Premium Luxury Apartments in Pune
           </span>
           <KineticText 
             text="Unit Configurations."

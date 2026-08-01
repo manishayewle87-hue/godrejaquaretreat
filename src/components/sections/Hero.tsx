@@ -47,7 +47,7 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <span className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
-            Godrej Properties Pune Presents Godrej Park World, Hinjewadi Phase 1
+            Godrej Properties Pune • Luxury Premium Township in Hinjewadi Phase 1
           </span>
 
           <KineticText 
@@ -56,8 +56,8 @@ export default function Hero() {
             className="font-serif text-6xl md:text-8xl lg:text-[110px] text-luxury-light leading-[0.9] mb-8"
           />
 
-          <p className="text-gray-700 text-lg md:text-2xl font-light max-w-2xl mb-12 leading-relaxed">
-            Where water shapes life, every space flows with calm, grace & meaning. Experience resort-style living at its finest.
+          <p className="text-gray-700 text-lg md:text-2xl font-light max-w-3xl mb-12 leading-relaxed">
+            Where water shapes life, every space flows with calm, grace & meaning. Experience resort-style luxury living and buy a premium 2 & 3 BHK flat at The Aqua Retreat, the crown jewel of Godrej Park World.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 items-start">

@@ -69,10 +69,10 @@ export default function About() {
             </h2>
             <div className="reveal-text w-20 h-[1px] bg-emerald-aqua/30 mb-10"></div>
             <p className="reveal-text text-base md:text-xl text-gray-600 font-light leading-relaxed mb-8">
-              A unique integrated development meticulously crafted around a resilient landscape centerpiece, standing as a benchmark among Godrej Properties Pune projects: <strong>12+ Acres of Central Greens & Playgrounds.</strong>
+              A premium gated community meticulously crafted around a resilient landscape centerpiece, standing as a benchmark luxury township in Pune: <strong>Godrej Park World Phase 1 features 12+ Acres of Central Greens & Playgrounds.</strong>
             </p>
             <p className="reveal-text text-base md:text-xl text-gray-600 font-light leading-relaxed mb-12">
-              At the heart of our design framework lies the restoration of an existing stream, nurturing a diverse array of flora and fauna. From a vibrant water plaza to rolling hills and a serene retail street, discover a lifestyle shaped by the calm and clarity of nature.
+              At the heart of this integrated township near Hinjewadi IT Park lies the restoration of an existing stream, nurturing a diverse array of flora and fauna. From a vibrant water plaza to rolling hills and a serene retail street, discover Aqua living shaped by the calm and clarity of nature.
             </p>
             <div className="reveal-text flex mt-4">
                <Magnetic strength={0.3}>

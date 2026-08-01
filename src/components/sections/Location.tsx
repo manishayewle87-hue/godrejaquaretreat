@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const locationPoints = [
-  { name: "Rajiv Gandhi IT Park", time: "5 Mins" },
+  { name: "Near Infosys & TCS", time: "5 Mins" },
   { name: "Mumbai-Pune Expressway", time: "10 Mins" },
-  { name: "Upcoming Metro Station", time: "2 Mins" },
-  { name: "Phoenix Marketcity", time: "15 Mins" },
+  { name: "Near Hinjewadi Metro", time: "2 Mins" },
+  { name: "Near Phoenix Mall", time: "15 Mins" },
 ];
 
 export default function Location() {
@@ -25,7 +25,7 @@ export default function Location() {
           </div>
           <div className="flex-1">
             <p className="text-gray-600 font-light max-w-lg leading-relaxed text-sm">
-              Situated in the prime IT hub of Hinjewadi Phase 1, Godrej Park World Pune offers unparalleled connectivity to major tech parks, educational institutions, and lifestyle destinations, ensuring your retreat remains connected to the pulse of the city.
+              Situated in the prime IT Hub of Hinjewadi Phase 1, Godrej Park World Pune offers unparalleled connectivity to Rajiv Gandhi Infotech Park, Wakad, Baner, and Mahalunge. Ensure your premium lifestyle remains connected to the pulse of Pune West with an IT Corridor Investment that guarantees future growth.
             </p>
           </div>
         </div>
