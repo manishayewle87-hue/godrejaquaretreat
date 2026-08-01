@@ -51,13 +51,13 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <h1 className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
-            Godrej Park World Hinjewadi • The Aqua Retreat
+            Pune Real Estate Investment • Godrej Park World Hinjewadi
           </h1>
 
           <KineticText 
-            text="The Aqua Retreat By Godrej Properties Hinjewadi Pune."
+            text="The Aqua Retreat By Godrej Properties. Redefining Pune Real Estate."
             el="h2"
-            className="font-serif text-5xl md:text-7xl lg:text-[90px] text-luxury-light leading-[0.9] mb-8"
+            className="font-serif text-5xl md:text-7xl lg:text-[80px] text-luxury-light leading-[1.05] mb-8"
           />
 
           <p className="text-gray-700 text-lg md:text-2xl font-light max-w-3xl mb-12 leading-relaxed">
