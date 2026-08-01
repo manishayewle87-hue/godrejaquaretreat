@@ -6,6 +6,7 @@ import FloatingCTA from "@/components/ui/FloatingCTA";
 import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://godrejaquaretreat.godrejparkworld.com"),
   title: "Godrej Park World | The Aqua Retreat by Godrej Properties Pune",
   description: "Discover the finest of Godrej Properties Pune projects. Experience resort-style living at Godrej Park World, Hinjewadi Phase 1, featuring premium 2 & 3 BHK residences and expansive waterscapes.",
   keywords: [
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Godrej Park World | The Aqua Retreat by Godrej Properties Pune",
     description: "Discover the finest of Godrej Properties Pune projects. Experience resort-style living at Godrej Park World, Hinjewadi Phase 1.",
-    url: "https://godrejparkworld-aqua.com",
+    url: "https://godrejaquaretreat.godrejparkworld.com",
     siteName: "Godrej Park World Pune",
     images: [
       {
@@ -72,6 +73,64 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Godrej Park World | The Aqua Retreat",
+              "url": "https://godrejaquaretreat.godrejparkworld.com/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://godrejaquaretreat.godrejparkworld.com/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "RealEstateAgent",
+              "name": "Godrej Properties Pune",
+              "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+              "@id": "https://godrejaquaretreat.godrejparkworld.com/",
+              "url": "https://godrejaquaretreat.godrejparkworld.com/",
+              "telephone": "+917744009295",
+              "priceRange": "Premium",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "postalCode": "411057",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 18.5913,
+                "longitude": 73.7389
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              }
+            })
+          }}
+        />
       </head>
       <body className="antialiased bg-luxury-dark text-luxury-light selection:bg-emerald-aqua selection:text-gray-900 overflow-x-clip">
         <ModalProvider>
