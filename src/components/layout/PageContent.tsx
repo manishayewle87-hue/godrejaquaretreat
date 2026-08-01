@@ -12,6 +12,8 @@ import Amenities from "@/components/sections/Amenities";
 import Specifications from "@/components/sections/Specifications";
 import InvestmentCalculator from "@/components/sections/InvestmentCalculator";
 import Gallery from "@/components/sections/Gallery";
+import Heritage from "@/components/sections/Heritage";
+import VirtualTour from "@/components/sections/VirtualTour";
 import Location from "@/components/sections/Location";
 import Footer from "@/components/layout/Footer";
 
@@ -19,6 +21,7 @@ export default function PageContent() {
   return (
     <>
       <Hero />
+      <Heritage />
       <VideoTour />
       <About />
       <AquaLifestyle />
@@ -29,6 +32,7 @@ export default function PageContent() {
       <Specifications />
       <InvestmentCalculator />
       <Gallery />
+      <VirtualTour />
       <Location />
       <Footer />
     </>
