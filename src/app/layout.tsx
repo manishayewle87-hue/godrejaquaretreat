@@ -13,19 +13,44 @@ export const metadata: Metadata = {
   title: "The Aqua Retreat by Godrej Properties Hinjewadi | Godrej Properties Pune",
   description: "Experience The Aqua Retreat by Godrej Properties Hinjewadi. Discover the finest Godrej Properties Pune projects, featuring premium 2 & 3 BHK resort-style luxury residences in Hinjewadi Phase 1.",
   keywords: [
-    "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Properties Pune", "Godrej Properties", "Godrej Homes", "Godrej Residential Pune", "Godrej New Launch Pune", 
-    "Godrej Premium Homes", "Godrej Luxury Apartments", "Godrej Township Pune", "Godrej Projects Pune", "Godrej Upcoming Projects Pune", 
-    "Godrej Under Construction Pune", "Godrej Ready Possession Pune", "Godrej Smart Homes Pune", "Godrej Real Estate Pune",
+    // --- Core Target Keyword ---
+    "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Properties Pune", "Godrej Properties", "Godrej Homes",
+    
+    // --- Aqua Retreat Specifics ---
     "Godrej Park World", "Godrej Park World Pune", "Godrej Park World Hinjewadi", "Godrej Park World Phase 1", 
     "Godrej Park World Township", "Godrej Park World Price", "Godrej Park World Master Plan", "Godrej Park World Brochure",
     "Godrej Park World Location", "Godrej Park World Central Greens", "Godrej Park World Investment",
     "Godrej Aqua Retreat", "The Aqua Retreat", "Aqua Retreat Hinjewadi", "Aqua Retreat Pune", "Godrej Aqua Retreat Pune", 
     "Aqua Retreat Apartments", "Aqua Retreat 2 BHK", "Aqua Retreat 3 BHK", "Aqua Retreat Floor Plan", "Aqua Retreat Amenities", 
-    "Aqua Retreat Possession", "Aqua Retreat RERA", "Aqua Retreat Hinjewadi Phase 1",
-    "Godrej Aqua Retreat price", "Aqua Retreat booking", "Aqua Retreat EOI", "Godrej Hinjewadi project", 
-    "Godrej luxury apartments Pune", "New Godrej project Hinjewadi", "Godrej flats near Infosys", "Godrej apartments near Metro",
-    "Buy Flat Pune", "Buy Apartment Hinjewadi", "Buy Home Pune", "Buy Luxury Apartment", "Book Site Visit", "Best Property Pune",
-    "Invest in Pune", "Invest in Hinjewadi", "Pune Property Investment", "Rental Income Pune", "Metro Investment Pune"
+    "Aqua Retreat Possession", "Aqua Retreat RERA", "Aqua Retreat Hinjewadi Phase 1", "Godrej Aqua Retreat price", 
+    "Aqua Retreat booking", "Aqua Retreat EOI", "Godrej Hinjewadi project",
+    
+    // --- Godrej Pune Ecosystem ---
+    "Godrej Residential Pune", "Godrej New Launch Pune", "Godrej Premium Homes", "Godrej Luxury Apartments", 
+    "Godrej Township Pune", "Godrej Projects Pune", "Godrej Upcoming Projects Pune", "Godrej Under Construction Pune", 
+    "Godrej Ready Possession Pune", "Godrej Smart Homes Pune", "Godrej Real Estate Pune", "Godrej Properties Hinjewadi",
+    "Godrej Flats Pune", "Godrej Developers Pune", "Godrej Builders Pune", "Godrej IT Park Homes", "Godrej 2 BHK Pune", 
+    "Godrej 3 BHK Pune", "Godrej 4 BHK Pune", "Godrej Pre Launch Pune", "Godrej NFO Pune", "Godrej Phase 1",
+    "Godrej Elements", "Godrej 24", "Godrej Rejuve", "Godrej Woodsville", "Godrej Hillside", "Godrej Green Vistas", 
+    "Godrej Meadows", "Godrej Rivergreens", "Godrej Gale", "Godrej Greenfront", "Godrej Emerald Waters", 
+    "Godrej Urban Retreat", "Godrej Parkridge", "Godrej Forest Grove", "Godrej Boulevard", "Godrej Nurture", 
+    "Godrej Prana", "Godrej Infinity", "Godrej Central Park",
+    
+    // --- Pune Real Estate Micro Markets ---
+    "Luxury Real Estate Pune", "Buy Flat Pune", "Buy Apartment Hinjewadi", "Buy Home Pune", "Buy Luxury Apartment",
+    "Best Property Pune", "Invest in Pune", "Invest in Hinjewadi", "Pune Property Investment", "Rental Income Pune", 
+    "Metro Investment Pune", "IT Corridor Investment", "Flats near Infosys Pune", "Flats near TCS Pune", "Flats near Wipro Pune",
+    "Flats in Hinjewadi Phase 1", "Flats in Hinjewadi Phase 2", "Flats in Hinjewadi Phase 3", "Flats in Wakad", 
+    "Flats in Baner", "Flats in Balewadi", "Flats in Mahalunge", "Flats in Bavdhan", "Flats in Tathawade", 
+    "Flats in Punawale", "Flats in Ravet", "Flats in Kiwale", "Flats in Pimple Saudagar", "Flats in Aundh", 
+    "Flats in Kothrud", "Flats in Kharadi", "Flats in Viman Nagar", "Flats in Kalyani Nagar", "Flats in Koregaon Park",
+    "Flats in Magarpatta", "Flats in Hadapsar", "Flats in Wagholi", "Flats in NIBM", "Flats in Undri", 
+    "Premium Apartments Pune West", "Luxury Township Pune West", "Resort Style Living Pune", "Integrated Township Pune",
+    
+    // --- High ROI & Search Intent ---
+    "Top Builders in Pune", "Best Real Estate Developer Pune", "Pune Real Estate Market", "Property Rates in Pune", 
+    "Hinjewadi Property Rates", "New Residential Projects Pune", "Upcoming Townships Pune", "Buy 2 BHK Pune", 
+    "Buy 3 BHK Pune", "Spacious Homes Pune", "Smart City Pune Properties", "Pune West Real Estate"
   ],
   openGraph: {
     title: "The Aqua Retreat by Godrej Properties Hinjewadi",

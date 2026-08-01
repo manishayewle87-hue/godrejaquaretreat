@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { LOCATIONS } from './properties/[location]/page';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://godrejaquaretreat.godrejparkworld.com';
@@ -11,12 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/godrej-park-world-pune-premium-amenities',
     '/godrej-park-world-pune-hinjewadi-location',
     '/godrej-park-world-pune-gallery',
-  ];
-
-  const programmaticLocations = [
-    "hinjewadi", "wakad", "baner", "balewadi", "mahalunge", 
-    "kharadi", "viman-nagar", "kalyani-nagar", "koregaon-park",
-    "pimple-saudagar", "aundh", "bavdhan", "tathawade", "punawale"
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
@@ -32,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   // 2. Inject Programmatic Location Pages (Secondary Priority)
-  programmaticLocations.forEach((location) => {
+  LOCATIONS.forEach((location) => {
     sitemapEntries.push({
       url: `${baseUrl}/properties/${location}`,
       lastModified: new Date(),

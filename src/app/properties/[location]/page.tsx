@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
-// High-value search locations in Pune targeting IT professionals and investors
-const LOCATIONS = [
-  "hinjewadi", "wakad", "baner", "balewadi", "mahalunge", 
-  "kharadi", "viman-nagar", "kalyani-nagar", "koregaon-park",
-  "pimple-saudagar", "aundh", "bavdhan", "tathawade", "punawale"
+// Ultra-comprehensive list of Pune micro-markets and Godrej Projects
+export const LOCATIONS = [
+  // Core IT Corridors & Pune West
+  "hinjewadi", "hinjewadi-phase-1", "hinjewadi-phase-2", "hinjewadi-phase-3", 
+  "wakad", "baner", "balewadi", "mahalunge", "bavdhan", "tathawade", "punawale", 
+  "ravet", "kiwale", "mamurdi", "pimple-saudagar", "pimple-nilakh", "aundh", "sus", 
+  "pashan", "kothrud", "karve-nagar", "warje", "shivajinagar", "deccan",
+  
+  // Pune East & IT Parks
+  "kharadi", "viman-nagar", "kalyani-nagar", "koregaon-park", "magarpatta", 
+  "hadapsar", "wagholi", "keshav-nagar", "mundhwa", "kharadi-annexe",
+  
+  // Pune South
+  "nibm", "undri", "wanowrie", "kondhwa", "camp", "katraj", "dhankawadi", "bibwewadi",
+
+  // PCMC & Industrial
+  "pimpri", "chinchwad", "nigdi", "akurdi", "moshi", "bhosari", "chikhali",
+
+  // Godrej Projects Competitor & Portfolio Capture
+  "godrej-elements", "godrej-24", "godrej-rejuve", "godrej-woodsville", 
+  "godrej-hillside", "godrej-green-vistas", "godrej-meadows", "godrej-rivergreens", 
+  "godrej-gale", "godrej-greenfront", "godrej-emerald-waters", "godrej-urban-retreat",
+  "godrej-parkridge", "godrej-forest-grove", "godrej-boulevard", "godrej-nurture",
+  "godrej-prana", "godrej-infinity", "godrej-central-park", "godrej-properties-pune"
 ];
 
 // Helper to format slugs into Title Case (e.g., "viman-nagar" -> "Viman Nagar")
-const formatLocation = (slug: string) => {
+export const formatLocation = (slug: string) => {
   return slug
     .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
