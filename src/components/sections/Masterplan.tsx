@@ -35,30 +35,13 @@ export default function Masterplan() {
             <h3 className="text-2xl font-serif text-luxury-light mb-8 text-center">Township Masterplan</h3>
             <div className="w-full bg-white p-2 shadow-2xl relative overflow-hidden">
               <Image fill 
-                src="/images/brochure/page_7_img_1.png" 
-                alt="Township Masterplan" 
+                src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/1ef79448-5bba-45fd-8dc6-f03704d80188.webp" 
+                alt="Township Masterplan - Godrej Park World" 
                 className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
               />
             </div>
           </motion.div>
 
-          {/* Project Layout */}
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="w-full flex flex-col items-center group"
-          >
-            <h3 className="text-2xl font-serif text-luxury-light mb-8 text-center">Project Master Plan Layout</h3>
-            <div className="w-full bg-white p-2 shadow-2xl relative overflow-hidden">
-              <Image fill 
-                src="/images/brochure/page_21_img_1.png" 
-                alt="Project Master Plan" 
-                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
-              />
-            </div>
-          </motion.div>
         </div>
         
       </div>
