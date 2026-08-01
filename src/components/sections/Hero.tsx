@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -27,7 +28,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/40 via-transparent to-luxury-dark/90 z-10" />
-        <img 
+        <Image fill 
           src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp" 
           alt="Godrej The Aqua Retreat Elevation" 
           className="object-cover w-full h-full scale-105"

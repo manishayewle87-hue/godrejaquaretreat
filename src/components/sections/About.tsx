@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -85,7 +86,7 @@ export default function About() {
           {/* Right: Large Editorial Photography */}
           <div ref={imageRef} className="relative h-[500px] md:h-[700px] w-full overflow-hidden border-l border-black/5">
             <div className="about-image absolute inset-[-15%] w-[130%] h-[130%]">
-              <img 
+              <Image fill 
                 src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp" 
                 alt="The Aqua Retreat Overview" 
                 className="w-full h-full object-cover"

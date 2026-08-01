@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import KineticText from '@/components/ui/KineticText';
@@ -80,7 +81,7 @@ export default function Residences() {
                >
                  {/* Exact Floor Plan Viewer */}
                  <div className="w-full max-w-lg aspect-square bg-white flex flex-col items-center justify-center shadow-2xl relative overflow-hidden group">
-                   <img 
+                   <Image fill 
                      src={units[activeTab].img} 
                      alt={`${units[activeTab].type} Floor Plan`}
                      className="w-full h-full object-contain p-4 mix-blend-multiply transition-transform duration-700 group-hover:scale-105"

@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState, ReactNode } from "react";
-import { motion, useSpring, useTransform } from "framer-motion";
+import React, { useRef, ReactNode } from "react";
+import { motion, useSpring } from "framer-motion";
 
 interface MagneticProps {
   children: ReactNode;

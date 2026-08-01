@@ -10,7 +10,7 @@ export default function CustomCursor() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    const timer = setTimeout(() => setIsMounted(true), 0);
     // Only enable custom cursor on desktop
     if (typeof window !== "undefined" && window.matchMedia("(pointer: fine)").matches) {
       const updateMousePosition = (e: MouseEvent) => {
@@ -38,8 +38,10 @@ export default function CustomCursor() {
       return () => {
         window.removeEventListener("mousemove", updateMousePosition);
         window.removeEventListener("mouseover", handleMouseOver);
+        clearTimeout(timer);
       };
     }
+    return () => clearTimeout(timer);
   }, []);
 
   // Don't render during SSR or on mobile devices

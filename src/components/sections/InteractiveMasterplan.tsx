@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
@@ -32,7 +33,7 @@ export default function InteractiveMasterplan() {
         {/* Interactive Map Container */}
         <div className="relative w-full h-[500px] md:h-[800px] bg-black/5 overflow-hidden border border-black/10">
           
-          <img 
+          <Image fill 
             src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/a533d5d8-1d61-4244-b880-16fe7f7b7646.png" 
             alt="The Aqua Retreat Masterplan" 
             className="absolute inset-0 w-full h-full object-contain p-4 md:p-10 opacity-70 transition-transform duration-1000 mix-blend-screen invert"

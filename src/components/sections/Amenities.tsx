@@ -94,11 +94,17 @@ const amenityCategories = [
   }
 ];
 
-function Flame(props: any) {
+function Flame(props: React.ComponentPropsWithoutRef<'svg'>) {
   return <Droplets {...props} />; // Fallback icon
 }
 
-function AmenityCard({ item, index }: { item: any, index: number }) {
+interface FeaturedAmenity {
+  title: string;
+  img: string;
+  subtitle?: string;
+}
+
+function AmenityCard({ item, index }: { item: FeaturedAmenity, index: number }) {
   return (
     <motion.article 
       className="relative h-[60vh] md:h-[80vh] w-[90vw] md:w-[70vw] lg:w-[45vw] flex-shrink-0 group overflow-hidden"

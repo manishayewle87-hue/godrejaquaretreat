@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import KineticText from '@/components/ui/KineticText';
@@ -42,7 +43,7 @@ export default function Gallery() {
               key={index}
               className={`relative overflow-hidden group shrink-0 border border-black/10 bg-black ${index % 2 === 0 ? 'w-[70vw] md:w-[50vw] lg:w-[40vw]' : 'w-[50vw] md:w-[35vw] lg:w-[25vw]'}`}
             >
-              <img 
+              <Image fill 
                 src={img} 
                 alt={`Gallery image ${index + 1}`} 
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110 opacity-70 group-hover:opacity-100 grayscale group-hover:grayscale-0"

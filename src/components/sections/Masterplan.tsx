@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import KineticText from '@/components/ui/KineticText';
 
@@ -33,7 +34,7 @@ export default function Masterplan() {
           >
             <h3 className="text-2xl font-serif text-luxury-light mb-8 text-center">Township Masterplan</h3>
             <div className="w-full bg-white p-2 shadow-2xl relative overflow-hidden">
-              <img 
+              <Image fill 
                 src="/images/brochure/page_7_img_1.png" 
                 alt="Township Masterplan" 
                 className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
@@ -51,7 +52,7 @@ export default function Masterplan() {
           >
             <h3 className="text-2xl font-serif text-luxury-light mb-8 text-center">Project Master Plan Layout</h3>
             <div className="w-full bg-white p-2 shadow-2xl relative overflow-hidden">
-              <img 
+              <Image fill 
                 src="/images/brochure/page_21_img_1.png" 
                 alt="Project Master Plan" 
                 className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"

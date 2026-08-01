@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const locationPoints = [
@@ -63,7 +64,7 @@ export default function Location() {
             transition={{ duration: 1.5, ease: [0.83, 0, 0.17, 1] }}
             className="lg:col-span-8 relative min-h-[500px] w-full border border-black/10 overflow-hidden group"
           >
-            <img 
+            <Image fill 
               src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/1ce5fd50-c862-4897-b366-193da11253ca.webp"
               alt="Location Area"
               className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105"

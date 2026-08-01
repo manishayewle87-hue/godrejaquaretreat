@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Leaf, Droplets, Sun, Wind } from 'lucide-react';
 
@@ -74,7 +75,7 @@ export default function AquaLifestyle() {
             >
               {item.img && (
                 <>
-                  <img src={item.img} alt={item.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 opacity-60 group-hover:opacity-40" />
+                  <Image fill src={item.img} alt={item.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 opacity-60 group-hover:opacity-40" />
                   <div className="absolute inset-0 bg-gradient-to-t from-luxury-dark/90 via-luxury-dark/10 to-transparent"></div>
                 </>
               )}
