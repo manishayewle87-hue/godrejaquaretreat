@@ -7,6 +7,9 @@ import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://godrejaquaretreat.godrejparkworld.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Godrej Park World | The Aqua Retreat by Godrej Properties Pune",
   description: "Discover the finest of Godrej Properties Pune projects. Experience resort-style living at Godrej Park World, Hinjewadi Phase 1, featuring premium 2 & 3 BHK residences and expansive waterscapes.",
   keywords: [
@@ -138,6 +141,70 @@ export default function RootLayout({
                 "opens": "09:00",
                 "closes": "19:00"
               }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://godrejaquaretreat.godrejparkworld.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Masterplan",
+                  "item": "https://godrejaquaretreat.godrejparkworld.com/godrej-park-world-pune-masterplan"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Luxury Residences",
+                  "item": "https://godrejaquaretreat.godrejparkworld.com/godrej-park-world-pune-luxury-residences"
+                }
+              ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Where is Godrej Park World located?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Godrej Park World is located in Hinjewadi Phase 1, Pune, Maharashtra. It offers excellent connectivity to the Rajiv Gandhi Infotech Park and the upcoming Hinjewadi Metro Station."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is The Aqua Retreat?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Aqua Retreat is the flagship ultra-luxury residential cluster within the Godrej Park World township in Hinjewadi, offering premium 2 and 3 BHK resort-style apartments with a 50,000 sq.ft clubhouse."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is Godrej Park World a good investment?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, investing in Godrej Park World Hinjewadi is highly lucrative due to its proximity to the IT corridor, ensuring high rental yields and strong capital appreciation in Pune West."
+                  }
+                }
+              ]
             })
           }}
         />
