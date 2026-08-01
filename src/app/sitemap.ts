@@ -3,6 +3,7 @@ import { LOCATIONS } from './properties/[location]/page';
 import { CLUSTERS } from './clusters/[cluster]/page';
 import { CONFIGURATIONS } from './configurations/[config]/page';
 import { AMENITIES } from './amenities/[amenity]/page';
+import { INVESTMENTS } from './investments/[investment]/page';
 import { BLOG_POSTS } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -65,7 +66,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // 6. Inject Blog Posts (Content Marketing)
+  // 6. Inject Investment Silos (Financial Intent)
+  INVESTMENTS.forEach((investment) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/investments/${investment}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    });
+  });
+
+  // 7. Inject Blog Posts (Content Marketing)
   BLOG_POSTS.forEach((post) => {
     sitemapEntries.push({
       url: `${baseUrl}/blog/${post.slug}`,

@@ -11,6 +11,38 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "rental-yield-hinjewadi-phase-1",
+    title: "Why Hinjewadi Phase 1 Offers the Highest Rental Yields in Pune",
+    description: "An in-depth mathematical analysis of rental yields in Pune West and why Godrej Park World guarantees high occupancy rates.",
+    date: "2026-08-15",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+    keywords: ["Rental Yield Hinjewadi Phase 1", "Pune Real Estate ROI", "Godrej Park World Rent", "Investment Property Pune"],
+    content: `
+      <h2>The Mathematics of Hinjewadi</h2>
+      <p>With over 400,000 IT professionals migrating to the Rajiv Gandhi Infotech Park, the demand for premium rental properties has completely outstripped supply. <strong>Rental yields in Hinjewadi Phase 1</strong> consistently outperform the Pune average by 2-3% annually.</p>
+      
+      <h2>The Aqua Retreat Advantage</h2>
+      <p>Expatriates and senior IT executives prefer resort-style living. Because The Aqua Retreat offers unparalleled 5-star amenities, investors can command a massive premium on rent, ensuring consistent high-yield cash flow.</p>
+    `
+  },
+  {
+    slug: "capital-appreciation-godrej-properties-pune",
+    title: "Projected Capital Appreciation for Godrej The Aqua Retreat by 2030",
+    description: "Discover the exact growth drivers pushing the capital appreciation of Godrej Park World over the next 5 years.",
+    date: "2026-08-16",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: ["Capital Appreciation Pune Real Estate", "Godrej Properties Pune ROI", "Hinjewadi Property Appreciation", "Future of Pune Real Estate"],
+    content: `
+      <h2>Infrastructure as a Multiplier</h2>
+      <p>Capital appreciation in Pune West is driven by three pillars: Developer Brand, Micro-market, and Infrastructure. <strong>Godrej Park World</strong> holds the apex position in all three.</p>
+      
+      <h2>The 2030 Horizon</h2>
+      <p>With the completion of the Pune Metro Line 3 and the Ring Road by 2030, properties within the Godrej township are projected to see exponential capital appreciation, making it the most secure and lucrative real estate investment in Maharashtra today.</p>
+    `
+  },
+  {
     slug: "mental-wellness-resort-style-living-pune",
     title: "The Mental Wellness Benefits of Resort-Style Living in Pune",
     description: "Explore how the 50,000 sq ft clubhouse and vast green spaces at Godrej Park World Hinjewadi are designed specifically for mental wellness and tranquility.",
