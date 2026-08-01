@@ -1,0 +1,15 @@
+import type { Metadata } from "next";
+import AquaLifestyle from "@/components/sections/AquaLifestyle";
+
+export const metadata: Metadata = {
+  title: "Aqua Lifestyle | Godrej Properties Pune Projects",
+  description: "Immerse yourself in resort-style living at Godrej Park World. Discover an ultra-luxury lifestyle inspired by water in Hinjewadi.",
+};
+
+export default function Page() {
+  return (
+    <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white pt-24">
+      <AquaLifestyle />
+    </main>
+  );
+}

@@ -4,15 +4,16 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useModal } from '@/context/ModalContext';
+import Link from 'next/link';
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'Project', href: '#project' },
-  { name: 'Lifestyle', href: '#lifestyle' },
-  { name: 'Residences', href: '#residences' },
-  { name: 'Amenities', href: '#amenities' },
-  { name: 'Location', href: '#location' },
-  { name: 'Gallery', href: '#gallery' },
+  { name: 'Home', href: '/' },
+  { name: 'Project', href: '/godrej-park-world-pune-masterplan' },
+  { name: 'Lifestyle', href: '/godrej-park-world-pune-aqua-lifestyle' },
+  { name: 'Residences', href: '/godrej-park-world-pune-luxury-residences' },
+  { name: 'Amenities', href: '/godrej-park-world-pune-premium-amenities' },
+  { name: 'Location', href: '/godrej-park-world-pune-hinjewadi-location' },
+  { name: 'Gallery', href: '/godrej-park-world-pune-gallery' },
 ];
 
 export default function Navbar() {
@@ -58,16 +59,19 @@ export default function Navbar() {
           {/* Menu - Center */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link, i) => (
-              <motion.a
+              <motion.div
                 key={link.name}
-                href={link.href}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 + (i * 0.1), ease: "easeOut" }}
-                className="text-sm font-sans uppercase tracking-widest font-semibold text-gray-700 transition-colors duration-300 hover:text-emerald-aqua"
               >
-                {link.name}
-              </motion.a>
+                <Link
+                  href={link.href}
+                  className="text-sm font-sans uppercase tracking-widest font-semibold text-gray-700 transition-colors duration-300 hover:text-emerald-aqua block"
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
@@ -109,17 +113,20 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-luxury-dark/95 backdrop-blur-2xl pt-32 px-10 flex flex-col gap-8"
           >
             {navLinks.map((link, i) => (
-              <motion.a
+              <motion.div
                 key={link.name}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 + (i * 0.1), ease: [0.83, 0, 0.17, 1] }}
-                className="text-4xl font-serif font-light text-luxury-light hover:text-emerald-aqua transition-colors"
               >
-                {link.name}
-              </motion.a>
+                <Link
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-4xl font-serif font-light text-luxury-light hover:text-emerald-aqua transition-colors block"
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
             ))}
             <motion.button 
               onClick={() => {
