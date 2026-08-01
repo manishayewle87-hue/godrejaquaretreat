@@ -19,6 +19,7 @@ const Specifications = dynamic(() => import("@/components/sections/Specification
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
 const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
+const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
 
 export default function PageContent() {
@@ -35,6 +36,7 @@ export default function PageContent() {
       <Amenities />
       <Specifications />
       <InvestmentCalculator />
+      <Quiz />
       <Gallery />
       <VirtualTour />
       <Location />
