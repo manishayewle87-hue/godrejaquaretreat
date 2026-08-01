@@ -83,16 +83,16 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <nav aria-label="Footer Navigation" className="lg:col-span-2 lg:col-start-7">
-            <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-6">Explore</h4>
-            <ul className="flex flex-col gap-4 text-sm text-gray-400 font-light">
-              <li><Link href="/godrej-park-world-pune-aqua-lifestyle" scroll={false} className="hover:text-emerald-aqua transition-colors">The Philosophy</Link></li>
-              <li><Link href="/godrej-park-world-pune-masterplan" scroll={false} className="hover:text-emerald-aqua transition-colors">Masterplan</Link></li>
-              <li><Link href="/godrej-park-world-pune-luxury-residences" scroll={false} className="hover:text-emerald-aqua transition-colors">Residences</Link></li>
-              <li><Link href="/godrej-park-world-pune-premium-amenities" scroll={false} className="hover:text-emerald-aqua transition-colors">Amenities</Link></li>
-              <li><Link href="/godrej-park-world-pune-gallery" scroll={false} className="hover:text-emerald-aqua transition-colors">Gallery</Link></li>
-            </ul>
-          </nav>
+            <nav aria-label="Footer Navigation" className="lg:col-span-2 lg:col-start-7">
+              <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-6">Explore</h4>
+              <ul className="flex flex-col gap-4 text-sm text-gray-400 font-light">
+                <li><Link href="/#lifestyle" className="hover:text-emerald-aqua transition-colors">The Philosophy</Link></li>
+                <li><Link href="/#masterplan" className="hover:text-emerald-aqua transition-colors">Masterplan</Link></li>
+                <li><Link href="/#residences" className="hover:text-emerald-aqua transition-colors">Residences</Link></li>
+                <li><Link href="/#amenities" className="hover:text-emerald-aqua transition-colors">Amenities</Link></li>
+                <li><Link href="/#gallery" className="hover:text-emerald-aqua transition-colors">Gallery</Link></li>
+              </ul>
+            </nav>
 
           {/* Contact & Socials */}
           <div className="lg:col-span-3">

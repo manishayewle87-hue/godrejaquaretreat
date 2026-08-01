@@ -8,12 +8,12 @@ import Link from 'next/link';
 
 const navLinks = [
   { name: 'Home', href: '/', id: 'home' },
-  { name: 'Project', href: '/godrej-park-world-pune-masterplan', id: 'project' },
-  { name: 'Lifestyle', href: '/godrej-park-world-pune-aqua-lifestyle', id: 'lifestyle' },
-  { name: 'Residences', href: '/godrej-park-world-pune-luxury-residences', id: 'residences' },
-  { name: 'Amenities', href: '/godrej-park-world-pune-premium-amenities', id: 'amenities' },
-  { name: 'Location', href: '/godrej-park-world-pune-hinjewadi-location', id: 'location' },
-  { name: 'Gallery', href: '/godrej-park-world-pune-gallery', id: 'gallery' },
+  { name: 'Project', href: '/#project', id: 'project' },
+  { name: 'Lifestyle', href: '/#lifestyle', id: 'lifestyle' },
+  { name: 'Residences', href: '/#residences', id: 'residences' },
+  { name: 'Amenities', href: '/#amenities', id: 'amenities' },
+  { name: 'Location', href: '/#location', id: 'location' },
+  { name: 'Gallery', href: '/#gallery', id: 'gallery' },
   { name: 'Blog', href: '/blog', id: 'blog' },
 ];
 
@@ -70,7 +70,6 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  scroll={false}
                   className="text-sm font-sans uppercase tracking-widest font-semibold text-gray-700 transition-colors duration-300 hover:text-emerald-aqua block"
                 >
                   {link.name}
@@ -125,7 +124,6 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  scroll={false}
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-4xl font-serif font-light text-luxury-light hover:text-emerald-aqua transition-colors block"
                 >
