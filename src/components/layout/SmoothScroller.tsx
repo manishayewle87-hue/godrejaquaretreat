@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Lenis from '@studio-freight/lenis';
 
@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroller({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const lenisRef = useRef<Lenis | null>(null);
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -22,6 +23,8 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
       wheelMultiplier: 1,
       touchMultiplier: 2,
     });
+
+    lenisRef.current = lenis;
 
     lenis.on('scroll', ScrollTrigger.update);
 
@@ -38,40 +41,9 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
   }, []);
 
   useEffect(() => {
-    // Global Link Interceptor to force Lenis to scroll smoothly instead of jumping
-    const handleGlobalClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      const anchor = target.closest('a');
-      
-      if (anchor && anchor.hash && anchor.hash.startsWith('#')) {
-        const id = anchor.hash.substring(1);
-        const element = document.getElementById(id);
-        
-        if (element) {
-          e.preventDefault();
-          element.scrollIntoView({ behavior: 'smooth' });
-          
-          // Optionally, find the matching route and push state
-          const routeMapReversed: Record<string, string> = {
-            "project": "/godrej-park-world-pune-masterplan",
-            "lifestyle": "/godrej-park-world-pune-aqua-lifestyle",
-            "residences": "/godrej-park-world-pune-luxury-residences",
-            "amenities": "/godrej-park-world-pune-premium-amenities",
-            "location": "/godrej-park-world-pune-hinjewadi-location",
-            "gallery": "/godrej-park-world-pune-gallery",
-          };
-          
-          const href = routeMapReversed[id];
-          if (href) {
-            window.history.pushState(null, '', href);
-          }
-        }
-      }
-    };
-    
-    document.addEventListener('click', handleGlobalClick);
+    if (!lenisRef.current) return;
 
-    // On mount or Next.js route change (not history pushState), check if we need to jump to a section
+    // Map the Next.js pathname to the target section ID
     const routeMap: Record<string, string> = {
       "/godrej-park-world-pune-masterplan": "project",
       "/godrej-park-world-pune-aqua-lifestyle": "lifestyle",
@@ -82,23 +54,22 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
     };
 
     const targetId = routeMap[pathname];
-    if (targetId) {
-      setTimeout(() => {
+    
+    // Slight delay to ensure DOM is ready
+    setTimeout(() => {
+      if (targetId) {
         const element = document.getElementById(targetId);
         if (element) {
-          // Instant jump on initial load to avoid flashing
-          window.scrollTo(0, element.offsetTop);
+          // Use native Lenis scrollTo
+          lenisRef.current?.scrollTo(element, { offset: -50, duration: 1.5 });
           ScrollTrigger.refresh();
         }
-      }, 100);
-    } else {
-      window.scrollTo(0, 0);
-      setTimeout(() => {
+      } else if (pathname === "/") {
+        lenisRef.current?.scrollTo(0, { duration: 1.5 });
         ScrollTrigger.refresh();
-      }, 100);
-    }
+      }
+    }, 100);
     
-    return () => document.removeEventListener('click', handleGlobalClick);
   }, [pathname]);
 
   return <>{children}</>;

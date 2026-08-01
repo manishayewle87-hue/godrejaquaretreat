@@ -21,15 +21,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { openModal } = useModal();
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, targetId: string) => {
-    e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      window.history.pushState(null, '', href);
-      setMobileMenuOpen(false);
-    }
-  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +69,7 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href, link.id)}
+                  scroll={false}
                   className="text-sm font-sans uppercase tracking-widest font-semibold text-gray-700 transition-colors duration-300 hover:text-emerald-aqua block"
                 >
                   {link.name}
@@ -132,7 +124,8 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href, link.id)}
+                  scroll={false}
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-4xl font-serif font-light text-luxury-light hover:text-emerald-aqua transition-colors block"
                 >
                   {link.name}

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from 'next/link';
 
 export default function Footer() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
@@ -85,11 +86,11 @@ export default function Footer() {
           <nav aria-label="Footer Navigation" className="lg:col-span-2 lg:col-start-7">
             <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-6">Explore</h4>
             <ul className="flex flex-col gap-4 text-sm text-gray-400 font-light">
-              <li><a href="#about" className="hover:text-emerald-aqua transition-colors">The Philosophy</a></li>
-              <li><a href="#project" className="hover:text-emerald-aqua transition-colors">Masterplan</a></li>
-              <li><a href="#residences" className="hover:text-emerald-aqua transition-colors">Residences</a></li>
-              <li><a href="#amenities" className="hover:text-emerald-aqua transition-colors">Amenities</a></li>
-              <li><a href="#gallery" className="hover:text-emerald-aqua transition-colors">Gallery</a></li>
+              <li><Link href="/godrej-park-world-pune-aqua-lifestyle" scroll={false} className="hover:text-emerald-aqua transition-colors">The Philosophy</Link></li>
+              <li><Link href="/godrej-park-world-pune-masterplan" scroll={false} className="hover:text-emerald-aqua transition-colors">Masterplan</Link></li>
+              <li><Link href="/godrej-park-world-pune-luxury-residences" scroll={false} className="hover:text-emerald-aqua transition-colors">Residences</Link></li>
+              <li><Link href="/godrej-park-world-pune-premium-amenities" scroll={false} className="hover:text-emerald-aqua transition-colors">Amenities</Link></li>
+              <li><Link href="/godrej-park-world-pune-gallery" scroll={false} className="hover:text-emerald-aqua transition-colors">Gallery</Link></li>
             </ul>
           </nav>
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const sections = [
   { id: "home", name: "Home", href: "/" },
@@ -49,14 +50,6 @@ export default function SmartHUD() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [activeSection]);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <motion.div 
       initial={{ opacity: 0, x: -20 }}
@@ -65,10 +58,10 @@ export default function SmartHUD() {
       className="fixed left-6 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col gap-6"
     >
       {sections.map((section) => (
-        <a 
+        <Link 
           key={section.id} 
           href={section.href}
-          onClick={(e) => handleNavClick(e, section.id)}
+          scroll={false}
           className="group flex items-center gap-4 relative"
         >
           {/* Dot */}
@@ -91,7 +84,7 @@ export default function SmartHUD() {
           }`}>
             {section.name}
           </span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );

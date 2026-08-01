@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Magnetic from "@/components/ui/Magnetic";
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,9 +77,9 @@ export default function About() {
             </p>
             <div className="reveal-text flex mt-4">
                <Magnetic strength={0.3}>
-                 <a href="#project" className="bg-emerald-aqua/10 text-emerald-aqua px-6 py-3 rounded-full text-xs md:text-sm tracking-[0.1em] uppercase font-semibold hover:bg-emerald-aqua hover:text-white transition-all duration-500 shadow-sm inline-block">
+                 <Link href="/godrej-park-world-pune-masterplan" scroll={false} className="bg-emerald-aqua/10 text-emerald-aqua px-6 py-3 rounded-full text-xs md:text-sm tracking-[0.1em] uppercase font-semibold hover:bg-emerald-aqua hover:text-white transition-all duration-500 shadow-sm inline-block">
                    Explore the Masterplan
-                 </a>
+                 </Link>
                </Magnetic>
             </div>
           </div>
