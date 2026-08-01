@@ -15,6 +15,7 @@ import Gallery from "@/components/sections/Gallery";
 import Heritage from "@/components/sections/Heritage";
 import VirtualTour from "@/components/sections/VirtualTour";
 import Location from "@/components/sections/Location";
+import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/layout/Footer";
 
 export default function PageContent() {
@@ -34,6 +35,7 @@ export default function PageContent() {
       <Gallery />
       <VirtualTour />
       <Location />
+      <FAQ />
       <Footer />
     </>
   );
