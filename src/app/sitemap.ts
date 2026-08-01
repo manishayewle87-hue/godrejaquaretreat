@@ -1,21 +1,11 @@
 import { MetadataRoute } from 'next';
 import { LOCATIONS } from './properties/[location]/page';
 import { CLUSTERS } from './clusters/[cluster]/page';
+import { CONFIGURATIONS } from './configurations/[config]/page';
 import { BLOG_POSTS } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://godrejaquaretreat.godrejparkworld.com';
-
-  const coreRoutes = [
-    '',
-    '/godrej-park-world-pune-masterplan',
-    '/godrej-park-world-pune-aqua-lifestyle',
-    '/godrej-park-world-pune-luxury-residences',
-    '/godrej-park-world-pune-premium-amenities',
-    '/godrej-park-world-pune-hinjewadi-location',
-    '/godrej-park-world-pune-gallery',
-    '/blog',
-  ];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
@@ -54,7 +44,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // 4. Inject Blog Posts (Content Marketing)
+  // 4. Inject Configuration Silos (Property Types)
+  CONFIGURATIONS.forEach((config) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/configurations/${config}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    });
+  });
+
+  // 5. Inject Blog Posts (Content Marketing)
   BLOG_POSTS.forEach((post) => {
     sitemapEntries.push({
       url: `${baseUrl}/blog/${post.slug}`,

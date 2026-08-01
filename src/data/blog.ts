@@ -11,6 +11,51 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pune-metro-line-3-impact-on-hinjewadi-real-estate",
+    title: "How Pune Metro Line 3 Will Skyrocket Hinjewadi Real Estate Prices",
+    description: "Analyze the massive impact of the upcoming Hinjewadi-Shivajinagar Metro Line 3 on property rates and ROI in Pune West.",
+    date: "2026-08-10",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+    keywords: ["Pune Metro Line 3", "Hinjewadi Metro Impact", "Pune Infrastructure Updates", "Buy Property near Metro Pune"],
+    content: `
+      <h2>The Infrastructure Catalyst</h2>
+      <p>The single biggest driver of real estate appreciation in Pune right now is the <strong>Hinjewadi-Shivajinagar Metro Line 3</strong>. Historically, properties located within 1 km of a new metro station see a 30-40% price surge upon operational commencement.</p>
+      
+      <h2>Godrej Park World's Strategic Advantage</h2>
+      <p>Godrej Park World is positioned flawlessly to benefit from this mega-infrastructure project. Residents of The Aqua Retreat will enjoy seamless, traffic-free connectivity to central Pune, making it the most coveted address for IT professionals.</p>
+    `
+  },
+  {
+    slug: "pune-ring-road-connectivity-hinjewadi",
+    title: "Pune Ring Road: The Next Growth Corridor for Hinjewadi",
+    description: "Discover how the massive Pune Ring Road project will integrate Hinjewadi with the rest of Maharashtra, driving massive property appreciation.",
+    date: "2026-08-11",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: ["Pune Ring Road Update", "Hinjewadi Connectivity", "Godrej Properties Pune Infrastructure"],
+    content: `
+      <h2>Decentralizing Traffic</h2>
+      <p>The upcoming Pune Ring Road is set to completely decongest the Mumbai-Bengaluru Highway. For residents of <strong>Godrej Park World</strong>, this means unprecedented connectivity to the new Navi Mumbai International Airport and surrounding industrial hubs.</p>
+    `
+  },
+  {
+    slug: "nri-property-investment-pune-2026",
+    title: "The Ultimate Guide to NRI Property Investment in Pune 2026",
+    description: "Why Non-Resident Indians (NRIs) are aggressively investing in ultra-luxury townships like Godrej Park World in Pune.",
+    date: "2026-08-12",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/gallery-2-1200x800-cmrnnfjno000aj2pho8sngp58.webp",
+    keywords: ["NRI Property Investment Pune", "Best Property for NRI in India", "Foreign Investment Pune Real Estate", "FEMA Real Estate India"],
+    content: `
+      <h2>The NRI Gold Rush</h2>
+      <p>Pune has emerged as the top destination for <strong>NRI property investment</strong> in India. The depreciation of the Rupee combined with Pune's booming IT sector creates the perfect storm for massive rental yields and capital appreciation.</p>
+      
+      <h2>Why HNIs Choose Godrej</h2>
+      <p>High-Net-Worth Individuals (HNIs) and NRIs prioritize trust and hassle-free management. Godrej Properties offers absolute transparency, world-class construction quality, and a brand legacy that guarantees the safety of foreign capital. The Aqua Retreat is specifically designed to meet global luxury standards, making it the premier choice for expats and NRIs.</p>
+    `
+  },
+  {
     slug: "godrej-park-world-vs-lodha-hinjewadi",
     title: "Godrej Park World vs Lodha Hinjewadi: Which is the Better Investment?",
     description: "An objective comparison between Godrej Park World and Lodha Hinjewadi. Discover why Godrej offers superior resort-style amenities and long-term ROI.",
