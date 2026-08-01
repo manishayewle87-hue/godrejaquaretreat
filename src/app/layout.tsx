@@ -100,9 +100,12 @@ import { Outfit, Syne } from 'next/font/google';
 import { ModalProvider } from "@/context/ModalContext";
 import EnquiryModal from "@/components/ui/EnquiryModal";
 import SmartHUD from "@/components/layout/SmartHUD";
+import PWAInit from "@/components/ui/PWAInit";
 
 const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit' });
 const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne' });
+
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -238,6 +241,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased bg-luxury-dark text-luxury-light selection:bg-emerald-aqua selection:text-gray-900">
+        <PWAInit />
         <ModalProvider>
           <SmoothScroller>
             <CustomCursor />
@@ -250,6 +254,7 @@ export default function RootLayout({
             <EnquiryModal />
           </SmoothScroller>
         </ModalProvider>
+        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
       </body>
     </html>
   );

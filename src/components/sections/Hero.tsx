@@ -30,6 +30,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/40 via-transparent to-luxury-dark/90 z-10" />
         <Image fill 
           priority
+          fetchPriority="high"
           src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp" 
           alt="Godrej Park World Elevation - Godrej Properties Pune Projects" 
           className="object-cover w-full h-full scale-105"
