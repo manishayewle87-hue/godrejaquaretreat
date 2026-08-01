@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #FAFAFA; /* Soft Pearl White */
+  --color-foreground: #0B0C10; /* Deep Charcoal Text */
+  --color-ocean: #E8ECEF; /* Soft light blue-grey */
+  --color-emerald: #3BA0D1; /* Aqua Blue Accent */
+  --color-accent: #3BA0D1;
+  --color-luxury-dark: #F5F5F0; /* Re-mapped for inversion: Cream */
+  --color-luxury-light: #07080A; /* Re-mapped for inversion: Ultra Dark Charcoal */
+  --color-luxury-text: #F5F5F0; /* Re-mapped to light for dark backgrounds if needed */
+  
+  --color-emerald-aqua: #3BA0D1; /* Brochure Aqua Blue */
+
+  --font-serif: "Syne", sans-serif;
+  --font-sans: "Outfit", sans-serif;
+
+  --radius-luxury: 0px; /* Sharp architectural lines */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  /* Delicate italics for serif headers */
+  i {
+    font-style: italic;
+    font-weight: 500;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass {
+    background: rgba(11, 12, 16, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(245, 245, 240, 0.05);
+  }
+
+  .glass-dark {
+    background: rgba(7, 8, 10, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(245, 245, 240, 0.03);
+  }
+  
+  .glass-panel {
+    background: transparent;
+    border-top: 1px solid rgba(245, 245, 240, 0.1);
+    border-bottom: 1px solid rgba(245, 245, 240, 0.1);
+  }
+  
+  .text-shadow-luxury {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .animate-wave-1 {
+    animation: wave-float 4s ease-in-out infinite;
+  }
+  .animate-wave-2 {
+    animation: wave-float 4s ease-in-out infinite 1.3s;
+  }
+  .animate-wave-3 {
+    animation: wave-float 4s ease-in-out infinite 2.6s;
+  }
+}
+
+@keyframes wave-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
 }
