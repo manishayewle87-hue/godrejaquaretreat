@@ -138,14 +138,14 @@ export default function Footer() {
             <div>
               <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Godrej Pune Ecosystem</h5>
               <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Park World</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Aqua Retreat</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej The Gale</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Greenfront</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej River Royale</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Emerald Waters</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Skyline</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Godrej Forest Grove</a></li>
+                <li><Link href="/" className="hover:text-emerald-aqua transition-colors">Godrej Park World</Link></li>
+                <li><Link href="/clusters/the-aqua-retreat" className="hover:text-emerald-aqua transition-colors">Godrej Aqua Retreat</Link></li>
+                <li><Link href="/clusters/the-gale" className="hover:text-emerald-aqua transition-colors">Godrej The Gale</Link></li>
+                <li><Link href="/clusters/the-greenfront" className="hover:text-emerald-aqua transition-colors">Godrej Greenfront</Link></li>
+                <li><Link href="/clusters/godrej-woodsville" className="hover:text-emerald-aqua transition-colors">Godrej Woodsville</Link></li>
+                <li><Link href="/clusters/the-eden-estate-na-plots" className="hover:text-emerald-aqua transition-colors">Godrej Eden Estate</Link></li>
+                <li><Link href="/clusters/godrej-elements" className="hover:text-emerald-aqua transition-colors">Godrej Elements</Link></li>
+                <li><Link href="/clusters/godrej-24" className="hover:text-emerald-aqua transition-colors">Godrej 24</Link></li>
               </ul>
             </div>
 
@@ -183,14 +183,14 @@ export default function Footer() {
             <div>
               <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Investment & FAQs</h5>
               <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Pune Property Investment</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">IT Corridor Investment Pune</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Rental Yield Hinjewadi</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Is Aqua Retreat worth buying?</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Is Godrej Park World a good investment?</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Aqua Retreat possession date</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Aqua Retreat RERA</a></li>
-                <li><a href="#" className="hover:text-emerald-aqua transition-colors">Download Cost Sheet</a></li>
+                <li><Link href="/blog/hinjewadi-phase-1-real-estate-investment-guide" className="hover:text-emerald-aqua transition-colors">Pune Property Investment</Link></li>
+                <li><Link href="/blog/hinjewadi-phase-1-real-estate-investment-guide" className="hover:text-emerald-aqua transition-colors">IT Corridor Investment Pune</Link></li>
+                <li><Link href="/blog/the-aqua-retreat-price-breakdown-floor-plans" className="hover:text-emerald-aqua transition-colors">Rental Yield Hinjewadi</Link></li>
+                <li><Link href="/blog/godrej-park-world-vs-competitors-review" className="hover:text-emerald-aqua transition-colors">Is Aqua Retreat worth buying?</Link></li>
+                <li><Link href="/blog/godrej-park-world-vs-competitors-review" className="hover:text-emerald-aqua transition-colors">Is Godrej Park World a good investment?</Link></li>
+                <li><Link href="/blog/the-gale-vs-the-aqua-retreat-godrej-park-world" className="hover:text-emerald-aqua transition-colors">The Gale vs Aqua Retreat</Link></li>
+                <li><Link href="/blog/inside-godrej-aqua-retreat-5-star-resort-lifestyle" className="hover:text-emerald-aqua transition-colors">Aqua Retreat Lifestyle</Link></li>
+                <li><Link href="/blog/the-aqua-retreat-price-breakdown-floor-plans" className="hover:text-emerald-aqua transition-colors">Download Cost Sheet</Link></li>
               </ul>
             </div>
 

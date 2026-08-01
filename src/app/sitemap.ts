@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { LOCATIONS } from './properties/[location]/page';
+import { CLUSTERS } from './clusters/[cluster]/page';
 import { BLOG_POSTS } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -38,7 +39,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // 3. Inject Blog Posts (Content Marketing)
+  // 3. Inject Cluster Silos (Sister Projects / Competitor Capture)
+  CLUSTERS.forEach((cluster) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/clusters/${cluster}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    });
+  });
+
+  // 4. Inject Blog Posts (Content Marketing)
   BLOG_POSTS.forEach((post) => {
     sitemapEntries.push({
       url: `${baseUrl}/blog/${post.slug}`,
