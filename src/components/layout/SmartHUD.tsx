@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
 
 const sections = [
   { id: "home", name: "Home", href: "/" },
@@ -16,7 +15,6 @@ const sections = [
 
 export default function SmartHUD() {
   const [activeSection, setActiveSection] = useState("home");
-  const pathname = usePathname();
 
   useEffect(() => {
     // Scroll Spy Logic
@@ -66,7 +64,7 @@ export default function SmartHUD() {
       transition={{ duration: 1, delay: 1 }}
       className="fixed left-6 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col gap-6"
     >
-      {sections.map((section, index) => (
+      {sections.map((section) => (
         <a 
           key={section.id} 
           href={section.href}

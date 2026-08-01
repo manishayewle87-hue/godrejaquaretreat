@@ -12,8 +12,8 @@
   
   --color-emerald-aqua: #3BA0D1; /* Brochure Aqua Blue */
 
-  --font-serif: "Syne", sans-serif;
-  --font-sans: "Outfit", sans-serif;
+  --font-serif: var(--font-syne), "Syne", sans-serif;
+  --font-sans: var(--font-outfit), "Outfit", sans-serif;
 
   --radius-luxury: 0px; /* Sharp architectural lines */
 }

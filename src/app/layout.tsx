@@ -65,9 +65,13 @@ export const metadata: Metadata = {
   }
 };
 
+import { Outfit, Syne } from 'next/font/google';
 import { ModalProvider } from "@/context/ModalContext";
 import EnquiryModal from "@/components/ui/EnquiryModal";
 import SmartHUD from "@/components/layout/SmartHUD";
+
+const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit' });
+const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne' });
 
 export default function RootLayout({
   children,
@@ -75,13 +79,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${outfit.variable} ${syne.variable}`}>
       <head>
         <link rel="preconnect" href="https://gplwebsitecdnblob.blob.core.windows.net" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://gplwebsitecdnblob.blob.core.windows.net" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
