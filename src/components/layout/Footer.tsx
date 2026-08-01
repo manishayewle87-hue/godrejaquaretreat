@@ -197,7 +197,7 @@ export default function Footer() {
           </div>
           
           <p className="text-gray-600 font-light text-[10px] leading-relaxed max-w-5xl mt-12">
-            The Aqua Retreat at Godrej Park World is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living in Hinjewadi Phase 1. 
+            The Aqua Retreat by Godrej Properties Hinjewadi is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living in Hinjewadi Phase 1. 
             Designed to integrate seamlessly with nature, this flagship Godrej Properties Pune development sets a new benchmark for premium real estate in Pune West. 
             Keywords and references to third-party developers (Lodha, VTP, Kolte Patil, Gera, Shapoorji Pallonji, Mahindra, Kohinoor, Kasturi, Rohan Builders, Pride Purple, Nyati, Kumar, Vilas Javdekar) are for comparative market analysis only.
           </p>

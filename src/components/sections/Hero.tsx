@@ -49,7 +49,7 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <span className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
-            Godrej Properties Pune • Luxury Premium Township in Hinjewadi Phase 1
+            The Aqua Retreat by Godrej Properties Hinjewadi • Pune West
           </span>
 
           <KineticText 

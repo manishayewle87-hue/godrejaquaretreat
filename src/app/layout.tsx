@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "Godrej Park World | The Aqua Retreat by Godrej Properties Pune",
-  description: "Discover the finest of Godrej Properties Pune projects. Experience resort-style living at Godrej Park World, Hinjewadi Phase 1, featuring premium 2 & 3 BHK residences and expansive waterscapes.",
+  title: "The Aqua Retreat by Godrej Properties Hinjewadi | Godrej Properties Pune",
+  description: "Experience The Aqua Retreat by Godrej Properties Hinjewadi. Discover the finest Godrej Properties Pune projects, featuring premium 2 & 3 BHK resort-style luxury residences in Hinjewadi Phase 1.",
   keywords: [
-    "Godrej Properties Pune", "Godrej Properties", "Godrej Homes", "Godrej Residential Pune", "Godrej New Launch Pune", 
+    "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Properties Pune", "Godrej Properties", "Godrej Homes", "Godrej Residential Pune", "Godrej New Launch Pune", 
     "Godrej Premium Homes", "Godrej Luxury Apartments", "Godrej Township Pune", "Godrej Projects Pune", "Godrej Upcoming Projects Pune", 
     "Godrej Under Construction Pune", "Godrej Ready Possession Pune", "Godrej Smart Homes Pune", "Godrej Real Estate Pune",
     "Godrej Park World", "Godrej Park World Pune", "Godrej Park World Hinjewadi", "Godrej Park World Phase 1", 
@@ -28,16 +28,16 @@ export const metadata: Metadata = {
     "Invest in Pune", "Invest in Hinjewadi", "Pune Property Investment", "Rental Income Pune", "Metro Investment Pune"
   ],
   openGraph: {
-    title: "Godrej Park World | The Aqua Retreat by Godrej Properties Pune",
-    description: "Discover the finest of Godrej Properties Pune projects. Experience resort-style living at Godrej Park World, Hinjewadi Phase 1.",
+    title: "The Aqua Retreat by Godrej Properties Hinjewadi",
+    description: "Experience The Aqua Retreat by Godrej Properties Hinjewadi. Discover the finest Godrej Properties Pune projects, featuring premium 2 & 3 BHK resort-style luxury residences in Hinjewadi Phase 1.",
     url: "https://godrejaquaretreat.godrejparkworld.com",
-    siteName: "Godrej Park World Pune",
+    siteName: "Godrej Properties Pune",
     images: [
       {
         url: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
         width: 1920,
         height: 900,
-        alt: "Godrej Park World by Godrej Properties Pune",
+        alt: "The Aqua Retreat by Godrej Properties Hinjewadi",
       },
     ],
     locale: "en_IN",
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Godrej Park World | The Aqua Retreat by Godrej Properties Pune",
-    description: "Discover the finest of Godrej Properties Pune projects at Godrej Park World, Hinjewadi Phase 1.",
+    title: "The Aqua Retreat by Godrej Properties Hinjewadi",
+    description: "Experience The Aqua Retreat by Godrej Properties Hinjewadi. Discover the finest Godrej Properties Pune projects in Hinjewadi Phase 1.",
     images: ["https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"],
   },
   robots: {
@@ -92,7 +92,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Godrej Park World | The Aqua Retreat",
+              "name": "The Aqua Retreat by Godrej Properties Hinjewadi",
               "url": "https://godrejaquaretreat.godrejparkworld.com/",
               "potentialAction": {
                 "@type": "SearchAction",
