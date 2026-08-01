@@ -38,11 +38,32 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
   }, []);
 
   useEffect(() => {
-    // Reset scroll position and refresh GSAP triggers on route change
-    window.scrollTo(0, 0);
-    setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 100);
+    // On mount or Next.js route change (not history pushState), check if we need to jump to a section
+    const routeMap: Record<string, string> = {
+      "/godrej-park-world-pune-masterplan": "project",
+      "/godrej-park-world-pune-aqua-lifestyle": "lifestyle",
+      "/godrej-park-world-pune-luxury-residences": "residences",
+      "/godrej-park-world-pune-premium-amenities": "amenities",
+      "/godrej-park-world-pune-hinjewadi-location": "location",
+      "/godrej-park-world-pune-gallery": "gallery",
+    };
+
+    const targetId = routeMap[pathname];
+    if (targetId) {
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          // Instant jump on initial load to avoid flashing
+          window.scrollTo(0, element.offsetTop);
+          ScrollTrigger.refresh();
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
+    }
   }, [pathname]);
 
   return <>{children}</>;

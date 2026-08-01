@@ -7,19 +7,29 @@ import { useModal } from '@/context/ModalContext';
 import Link from 'next/link';
 
 const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'Project', href: '/godrej-park-world-pune-masterplan' },
-  { name: 'Lifestyle', href: '/godrej-park-world-pune-aqua-lifestyle' },
-  { name: 'Residences', href: '/godrej-park-world-pune-luxury-residences' },
-  { name: 'Amenities', href: '/godrej-park-world-pune-premium-amenities' },
-  { name: 'Location', href: '/godrej-park-world-pune-hinjewadi-location' },
-  { name: 'Gallery', href: '/godrej-park-world-pune-gallery' },
+  { name: 'Home', href: '/', id: 'home' },
+  { name: 'Project', href: '/godrej-park-world-pune-masterplan', id: 'project' },
+  { name: 'Lifestyle', href: '/godrej-park-world-pune-aqua-lifestyle', id: 'lifestyle' },
+  { name: 'Residences', href: '/godrej-park-world-pune-luxury-residences', id: 'residences' },
+  { name: 'Amenities', href: '/godrej-park-world-pune-premium-amenities', id: 'amenities' },
+  { name: 'Location', href: '/godrej-park-world-pune-hinjewadi-location', id: 'location' },
+  { name: 'Gallery', href: '/godrej-park-world-pune-gallery', id: 'gallery' },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { openModal } = useModal();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, '', href);
+      setMobileMenuOpen(false);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,6 +77,7 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href, link.id)}
                   className="text-sm font-sans uppercase tracking-widest font-semibold text-gray-700 transition-colors duration-300 hover:text-emerald-aqua block"
                 >
                   {link.name}
@@ -121,7 +132,7 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href, link.id)}
                   className="text-4xl font-serif font-light text-luxury-light hover:text-emerald-aqua transition-colors block"
                 >
                   {link.name}
