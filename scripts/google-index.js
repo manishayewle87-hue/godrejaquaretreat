@@ -41,22 +41,22 @@ async function requestIndexing(urls) {
   try {
     const keys = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
 
-    const jwtClient = new google.auth.JWT(
-      keys.client_email,
-      null,
-      keys.private_key,
-      ['https://www.googleapis.com/auth/indexing'],
-      null
-    );
+    const auth = new google.auth.GoogleAuth({
+      credentials: {
+        client_email: keys.client_email,
+        private_key: keys.private_key,
+      },
+      scopes: ['https://www.googleapis.com/auth/indexing'],
+    });
 
-    await jwtClient.authorize();
+    const authClient = await auth.getClient();
     
     // We only push a few URLs to avoid quota limits for this run, 
     // ideally the newest ones, or loop through all.
     const urlLimit = Math.min(urls.length, 50); // Batch limit
     console.log(`Pushing ${urlLimit} URLs to Google Indexing API...`);
 
-    const indexing = google.indexing({ version: 'v3', auth: jwtClient });
+    const indexing = google.indexing({ version: 'v3', auth: authClient });
 
     for (let i = 0; i < urlLimit; i++) {
       const url = urls[i];
