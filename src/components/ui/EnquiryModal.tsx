@@ -9,18 +9,33 @@ export default function EnquiryModal() {
   const { isOpen, closeModal } = useModal();
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    // Simulate API call
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) throw new Error("Failed to submit");
+      
       setStatus('success');
       // Reset after 3 seconds and close modal
       setTimeout(() => {
         closeModal();
         setStatus('idle');
+        setFormData({ name: '', email: '', phone: '' });
       }, 3000);
-    }, 1500);
+    } catch (error) {
+      console.error(error);
+      setStatus('idle');
+      alert("Failed to submit enquiry. Please try again or contact us via WhatsApp.");
+    }
   };
 
   return (
@@ -86,6 +101,8 @@ export default function EnquiryModal() {
                           type="text" 
                           id="name" 
                           required
+                          value={formData.name}
+                          onChange={(e) => setFormData({...formData, name: e.target.value})}
                           className="w-full border-b border-gray-300 py-2 bg-transparent text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-emerald-aqua transition-colors"
                           placeholder="John Doe"
                         />
@@ -97,6 +114,8 @@ export default function EnquiryModal() {
                           type="email" 
                           id="email" 
                           required
+                          value={formData.email}
+                          onChange={(e) => setFormData({...formData, email: e.target.value})}
                           className="w-full border-b border-gray-300 py-2 bg-transparent text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-emerald-aqua transition-colors"
                           placeholder="john@example.com"
                         />
@@ -108,6 +127,8 @@ export default function EnquiryModal() {
                           type="tel" 
                           id="phone" 
                           required
+                          value={formData.phone}
+                          onChange={(e) => setFormData({...formData, phone: e.target.value})}
                           className="w-full border-b border-gray-300 py-2 bg-transparent text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-emerald-aqua transition-colors"
                           placeholder="+91 00000 00000"
                         />

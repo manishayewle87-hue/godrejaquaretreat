@@ -25,23 +25,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: post.title,
       description: post.description,
-      type: "article",
-      publishedTime: post.date,
-      authors: [post.author],
+      url: `https://godrejaquaretreat.godrejparkworld.com/blog/${post.slug}`,
       images: [
         {
-          url: post.image,
+          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent('Godrej Park World Blog')}`,
           width: 1200,
           height: 630,
           alt: post.title,
-        },
+        }
       ],
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [post.image],
+      images: [`https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent('Godrej Park World Blog')}`],
     },
   };
 }

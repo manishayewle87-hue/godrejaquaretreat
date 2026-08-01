@@ -35,9 +35,17 @@ export async function generateMetadata({ params }: { params: Promise<{ cluster: 
     description: `Discover ${clusterName}, a premium residential cluster inside the Godrej Park World Township in Hinjewadi Phase 1. Compare floor plans, prices, and exclusive amenities alongside The Aqua Retreat.`,
     keywords: [`${clusterName} Godrej`, `${clusterName} Hinjewadi`, `${clusterName} Price`, `${clusterName} Floor Plan`, `Godrej Park World ${clusterName}`, `The Aqua Retreat`],
     openGraph: {
-      title: `${clusterName} at Godrej Park World Hinjewadi`,
-      description: `Discover ${clusterName} in Hinjewadi Phase 1 by Godrej Properties.`,
+      title: `${clusterName} | Godrej Park World Hinjewadi`,
+      description: `Explore ${clusterName} at Godrej Park World, Hinjewadi Phase 1. Premium luxury residences by Godrej Properties Pune.`,
       url: `https://godrejaquaretreat.godrejparkworld.com/clusters/${resolvedParams.cluster}`,
+      images: [
+        {
+          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(clusterName)}&subtitle=${encodeURIComponent('Godrej Park World Township')}`,
+          width: 1200,
+          height: 630,
+          alt: clusterName,
+        }
+      ],
     },
     alternates: {
       canonical: `https://godrejaquaretreat.godrejparkworld.com/clusters/${resolvedParams.cluster}`,

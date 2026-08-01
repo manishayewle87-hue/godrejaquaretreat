@@ -60,10 +60,18 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
       canonical: `https://godrejaquaretreat.godrejparkworld.com/properties/${resolvedParams.location}`,
     },
     openGraph: {
-      title: `Godrej Properties in ${locName} | Godrej Park World Pune`,
-      description: `Discover premium Godrej Properties apartments accessible from ${locName}.`,
+      title: `${locName} - Godrej Properties Hinjewadi`,
+      description: `Explore premium Godrej Properties in ${locName}, Pune. Buy luxury 2 & 3 BHK flats at The Aqua Retreat by Godrej Properties Hinjewadi Phase 1.`,
       url: `https://godrejaquaretreat.godrejparkworld.com/properties/${resolvedParams.location}`,
-    }
+      images: [
+        {
+          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(locName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
+          width: 1200,
+          height: 630,
+          alt: `${locName} Real Estate`,
+        }
+      ],
+    },
   };
 }
 
