@@ -65,6 +65,9 @@ export const metadata: Metadata = {
     "geo.placename": "Pune",
     "geo.position": "18.5913;73.7389",
     "ICBM": "18.5913, 73.7389"
+  },
+  verification: {
+    google: "0wrEaGVPHBj6OBUSf4IwT6iOuQejVAt1WvxZgKIS7co",
   }
 };
 
