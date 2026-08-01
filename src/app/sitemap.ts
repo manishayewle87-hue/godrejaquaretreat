@@ -19,15 +19,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
-  // 1. Inject Core SEO Pages (Highest Priority)
-  coreRoutes.forEach((route) => {
-    sitemapEntries.push({
-      url: `${baseUrl}${route}`,
-      lastModified: new Date(),
-      changeFrequency: route === '' ? 'daily' : 'weekly',
-      priority: route === '' ? 1.0 : 0.9,
-    });
-  });
+  // 1. Static Pages
+  const staticPages = [
+    "",
+    "/admin",
+    "/eoi",
+    "/godrej-properties-hinjewadi-pune"
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: route === "" ? 1 : 0.9,
+  }));
+  
+  staticPages.forEach((entry) => sitemapEntries.push(entry));
 
   // 2. Inject Programmatic Location Pages (Secondary Priority)
   LOCATIONS.forEach((location) => {

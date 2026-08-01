@@ -3,8 +3,12 @@ import PageContent from "@/components/layout/PageContent";
 
 // Ultra-comprehensive list of Pune micro-markets and Godrej Projects
 export const LOCATIONS = [
-  // Core IT Corridors & Pune West
+  // Hyper-Local Hinjewadi Hubs (Absolute Focus)
   "hinjewadi", "hinjewadi-phase-1", "hinjewadi-phase-2", "hinjewadi-phase-3", 
+  "hinjewadi-rajiv-gandhi-infotech-park", "hinjewadi-wipro-circle", "hinjewadi-infosys-circle", 
+  "marunji-hinjewadi", "maan-hinjewadi", "hinjewadi-phase-1-it-park", "bhumkar-chowk-hinjewadi",
+
+  // Core IT Corridors & Pune West
   "wakad", "baner", "balewadi", "mahalunge", "bavdhan", "tathawade", "punawale", 
   "ravet", "kiwale", "mamurdi", "pimple-saudagar", "pimple-nilakh", "aundh", "sus", 
   "pashan", "kothrud", "karve-nagar", "warje", "shivajinagar", "deccan",

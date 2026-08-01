@@ -136,11 +136,11 @@ export default function Footer() {
             
             {/* Godrej Ecosystem */}
             <div>
-              <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Godrej Pune Ecosystem</h5>
+              <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Godrej Properties Hinjewadi Pune</h5>
               <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
-                <li><Link href="/" className="hover:text-emerald-aqua transition-colors">Godrej Park World</Link></li>
-                <li><Link href="/clusters/the-aqua-retreat" className="hover:text-emerald-aqua transition-colors">Godrej Aqua Retreat</Link></li>
-                <li><Link href="/clusters/the-gale" className="hover:text-emerald-aqua transition-colors">Godrej The Gale</Link></li>
+                <li><Link href="/" className="hover:text-emerald-aqua transition-colors">Godrej Park World Hinjewadi</Link></li>
+                <li><Link href="/clusters/the-aqua-retreat" className="hover:text-emerald-aqua transition-colors">The Aqua Retreat Hinjewadi</Link></li>
+                <li><Link href="/clusters/the-gale" className="hover:text-emerald-aqua transition-colors">The Gale at Godrej Park World</Link></li>
                 <li><Link href="/clusters/the-greenfront" className="hover:text-emerald-aqua transition-colors">Godrej Greenfront</Link></li>
                 <li><Link href="/clusters/godrej-woodsville" className="hover:text-emerald-aqua transition-colors">Godrej Woodsville</Link></li>
                 <li><Link href="/clusters/the-eden-estate-na-plots" className="hover:text-emerald-aqua transition-colors">Godrej Eden Estate</Link></li>
