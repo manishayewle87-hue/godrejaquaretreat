@@ -14,6 +14,7 @@ const navLinks = [
   { name: 'Amenities', href: '/godrej-park-world-pune-premium-amenities', id: 'amenities' },
   { name: 'Location', href: '/godrej-park-world-pune-hinjewadi-location', id: 'location' },
   { name: 'Gallery', href: '/godrej-park-world-pune-gallery', id: 'gallery' },
+  { name: 'Blog', href: '/blog', id: 'blog' },
 ];
 
 export default function Navbar() {

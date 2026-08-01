@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const sections = [
   { id: "home", name: "Home", href: "/" },
@@ -20,7 +21,7 @@ export default function SmartHUD() {
   useEffect(() => {
     // Scroll Spy Logic
     const handleScroll = () => {
-      let currentSection = sections[0].id;
+      let currentSection: string | null = null;
       let minDistance = Infinity;
       const scrollPosition = window.scrollY + window.innerHeight / 3; // Trigger earlier
 
@@ -35,12 +36,12 @@ export default function SmartHUD() {
         }
       });
 
-      if (currentSection !== activeSection) {
+      if (currentSection && currentSection !== activeSection) {
         setActiveSection(currentSection);
         
         // Silently update URL if it doesn't match
         const targetHref = sections.find(s => s.id === currentSection)?.href;
-        if (targetHref && window.location.pathname !== targetHref) {
+        if (targetHref && window.location.pathname !== targetHref && !window.location.pathname.startsWith('/blog') && !window.location.pathname.startsWith('/properties')) {
           window.history.replaceState(null, '', targetHref);
         }
       }
@@ -49,6 +50,11 @@ export default function SmartHUD() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [activeSection]);
+
+  const pathname = usePathname();
+  if (pathname.startsWith('/blog') || pathname.startsWith('/properties')) {
+    return null;
+  }
 
   return (
     <motion.div 
