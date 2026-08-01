@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, Loader2 } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
+import { trackConversion } from '@/lib/analytics';
 
 export default function EnquiryModal() {
   const { isOpen, closeModal } = useModal();
@@ -24,6 +25,11 @@ export default function EnquiryModal() {
 
       if (!response.ok) throw new Error("Failed to submit");
       
+      trackConversion('generate_lead', {
+        event_category: 'Lead Capture',
+        event_label: 'Enquiry Modal'
+      });
+
       setStatus('success');
       // Reset after 3 seconds and close modal
       setTimeout(() => {

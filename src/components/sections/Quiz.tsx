@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Check, ArrowRight, Loader2, Sparkles } from "lucide-react";
 import KineticText from "@/components/ui/KineticText";
 
+import { trackConversion } from "@/lib/analytics";
+
 type QuizState = 'q1' | 'q2' | 'q3' | 'calculating' | 'capture' | 'success';
 
 export default function Quiz() {
@@ -38,6 +40,14 @@ export default function Quiz() {
           email: '',
           configuration: `Quiz Lead: ${answers.config} | Budget: ${answers.budget} | Intent: ${answers.intent}`
         })
+      });
+      
+      trackConversion('quiz_completed', {
+        event_category: 'Lead Capture',
+        event_label: 'Qualification Quiz',
+        intent: answers.intent,
+        budget: answers.budget,
+        configuration: answers.config
       });
       
       setStep('success');
