@@ -3,6 +3,11 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { BLOG_POSTS, getBlogPost } from "@/data/blog";
+import Footer from "@/components/layout/Footer";
+import StickyCTA from "@/components/ui/StickyCTA";
+import dynamic from "next/dynamic";
+
+const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({
@@ -103,11 +108,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </header>
 
           <div 
-            className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-foreground prose-p:text-foreground/80 prose-strong:text-emerald-aqua max-w-none"
+            className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-foreground prose-p:text-foreground/80 prose-strong:text-emerald-aqua max-w-none mb-24"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          <hr className="border-white/10 mb-24" />
+
         </div>
       </article>
+
+      {/* Dynamic Lead Capture Injection */}
+      <section className="pb-24">
+        <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">Ready to Explore Godrej Park World?</h2>
+          <p className="text-gray-400 font-light">
+            Take our 30-second assessment to filter our premium inventory and get a personalized cost sheet.
+          </p>
+        </div>
+        <Quiz />
+      </section>
+
+      <StickyCTA />
+      <Footer />
     </>
   );
 }
