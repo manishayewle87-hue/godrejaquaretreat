@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import PageContent from "@/components/layout/PageContent";
 
+import EcosystemMap from "@/components/sections/EcosystemMap";
+
 export const metadata: Metadata = {
   title: "Godrej Properties Hinjewadi Pune | Godrej Park World & The Aqua Retreat",
   description: "The ultimate guide to Godrej Properties Hinjewadi Pune. Explore Godrej Park World, The Aqua Retreat, The Gale, and more premium luxury townships in Hinjewadi Phase 1.",
@@ -67,6 +69,7 @@ export default function PillarPage() {
         Discover the complete Godrej Properties Hinjewadi Pune Ecosystem
       </div>
 
+      <EcosystemMap />
       <PageContent />
     </main>
   );
