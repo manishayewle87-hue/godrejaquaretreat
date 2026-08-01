@@ -49,14 +49,14 @@ export default function Hero() {
           transition={{ duration: 1.8, delay: 0.2, ease: [0.83, 0, 0.17, 1] }}
           className="max-w-4xl"
         >
-          <span className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
-            The Aqua Retreat by Godrej Properties Hinjewadi • Pune West
-          </span>
+          <h1 className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
+            Godrej Park World Hinjewadi • The Aqua Retreat
+          </h1>
 
           <KineticText 
-            text="A Life Inspired By The Way Of Water."
-            el="h1"
-            className="font-serif text-6xl md:text-8xl lg:text-[110px] text-luxury-light leading-[0.9] mb-8"
+            text="The Aqua Retreat By Godrej Properties Hinjewadi Pune."
+            el="h2"
+            className="font-serif text-5xl md:text-7xl lg:text-[90px] text-luxury-light leading-[0.9] mb-8"
           />
 
           <p className="text-gray-700 text-lg md:text-2xl font-light max-w-3xl mb-12 leading-relaxed">

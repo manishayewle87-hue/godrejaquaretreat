@@ -54,8 +54,8 @@ export default function Navbar() {
                 <path className="animate-wave-2" d="M140 53 C 165 42, 195 42, 220 53 C 240 62, 260 62, 280 53 L 280 63 C 260 72, 240 72, 220 63 C 195 52, 165 52, 140 63 Z" />
                 <path className="animate-wave-3" d="M140 75 C 170 65, 200 65, 220 75 C 240 85, 260 85, 280 75 L 280 85 C 260 95, 240 95, 220 85 C 200 75, 170 75, 140 85 Z" />
               </g>
-              <text x="200" y="115" fontFamily="var(--font-serif)" fontSize="28" fontWeight="500" letterSpacing="4" textAnchor="middle" fill="currentColor">THE AQUA RETREAT</text>
-              <text x="200" y="140" fontFamily="var(--font-sans)" fontSize="10" fontWeight="400" letterSpacing="6" textAnchor="middle" fill="currentColor">PREFERRED PARTNERS</text>
+              <text x="200" y="115" fontFamily="var(--font-serif)" fontSize="24" fontWeight="500" letterSpacing="3" textAnchor="middle" fill="currentColor">GODREJ PARK WORLD</text>
+              <text x="200" y="140" fontFamily="var(--font-sans)" fontSize="10" fontWeight="400" letterSpacing="6" textAnchor="middle" fill="currentColor">THE AQUA RETREAT HINJEWADI</text>
             </svg>
           </div>
 

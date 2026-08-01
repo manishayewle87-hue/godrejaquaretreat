@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "The Aqua Retreat at Godrej Park World Hinjewadi | Godrej Properties Pune",
-  description: "Explore Godrej Park World in Hinjewadi Phase 1. Discover our flagship cluster, The Aqua Retreat, featuring premium 2 & 3 BHK resort-style luxury residences in Pune's massive Godrej Township.",
+  title: "Godrej Park World Hinjewadi | The Aqua Retreat Hinjewadi by Godrej Properties Pune",
+  description: "Experience Godrej Park World Hinjewadi. Discover The Aqua Retreat Hinjewadi, featuring premium 2 & 3 BHK resort-style luxury residences by Godrej Properties Pune.",
   keywords: [
     // --- Core Target Keyword ---
     "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Properties Pune", "Godrej Properties", "Godrej Homes",
