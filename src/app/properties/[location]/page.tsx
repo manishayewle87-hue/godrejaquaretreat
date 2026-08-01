@@ -3,6 +3,11 @@ import PageContent from "@/components/layout/PageContent";
 
 // Ultra-comprehensive list of Pune micro-markets and Godrej Projects
 export const LOCATIONS = [
+  // Phase 5: The IT-Park Capture Matrix (Hyper-Local Expansion)
+  "near-infosys-hinjewadi-phase-1", "near-wipro-hinjewadi-phase-1", "near-tcs-hinjewadi-phase-3",
+  "embassy-techzone-hinjewadi", "blueridge-it-park-hinjewadi", "quadron-business-park-hinjewadi",
+  "near-cognizant-hinjewadi", "near-capgemini-hinjewadi", "international-tech-park-pune",
+
   // Hyper-Local Hinjewadi Hubs (Absolute Focus)
   "hinjewadi", "hinjewadi-phase-1", "hinjewadi-phase-2", "hinjewadi-phase-3", 
   "hinjewadi-rajiv-gandhi-infotech-park", "hinjewadi-wipro-circle", "hinjewadi-infosys-circle", 
