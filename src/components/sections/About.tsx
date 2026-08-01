@@ -61,7 +61,7 @@ export default function About() {
           {/* Left: Typography & Story */}
           <div ref={textRef} className="flex flex-col justify-center py-10 md:py-20 pr-8">
             <span className="reveal-text text-emerald-aqua uppercase tracking-[0.4em] text-xs font-semibold mb-8 block">
-              The Philosophy
+              The Philosophy of Godrej Properties Pune
             </span>
             <h2 className="reveal-text font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-10 text-luxury-light">
               Soak in the essence of <br className="hidden md:block" />
@@ -69,7 +69,7 @@ export default function About() {
             </h2>
             <div className="reveal-text w-20 h-[1px] bg-emerald-aqua/30 mb-10"></div>
             <p className="reveal-text text-base md:text-xl text-gray-600 font-light leading-relaxed mb-8">
-              A unique integrated development meticulously crafted around a resilient landscape centerpiece: <strong>12+ Acres of Central Greens & Playgrounds.</strong>
+              A unique integrated development meticulously crafted around a resilient landscape centerpiece, standing as a benchmark among Godrej Properties Pune projects: <strong>12+ Acres of Central Greens & Playgrounds.</strong>
             </p>
             <p className="reveal-text text-base md:text-xl text-gray-600 font-light leading-relaxed mb-12">
               At the heart of our design framework lies the restoration of an existing stream, nurturing a diverse array of flora and fauna. From a vibrant water plaza to rolling hills and a serene retail street, discover a lifestyle shaped by the calm and clarity of nature.
@@ -88,7 +88,7 @@ export default function About() {
             <div className="about-image absolute inset-[-15%] w-[130%] h-[130%]">
               <Image fill 
                 src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp" 
-                alt="The Aqua Retreat Overview" 
+                alt="The Aqua Retreat at Godrej Park World - A Godrej Properties Pune Project" 
                 className="w-full h-full object-cover"
               />
             </div>

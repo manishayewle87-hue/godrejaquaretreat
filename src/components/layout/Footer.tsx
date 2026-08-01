@@ -129,6 +129,13 @@ export default function Footer() {
           
         </motion.div>
 
+        {/* SEO Boilerplate */}
+        <div className="py-8 border-t border-white/10 mt-8 mb-4">
+          <p className="text-gray-500 font-light text-xs leading-relaxed max-w-4xl">
+            The Aqua Retreat at Godrej Park World is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living in Hinjewadi. Designed to integrate seamlessly with nature, this flagship Godrej Properties Pune development sets a new benchmark for premium real estate in Pune.
+          </p>
+        </div>
+
         {/* Legal */}
         <motion.div 
           initial={{ opacity: 0 }}

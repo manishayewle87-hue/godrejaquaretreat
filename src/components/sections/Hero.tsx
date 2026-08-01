@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/40 via-transparent to-luxury-dark/90 z-10" />
         <Image fill 
           src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp" 
-          alt="Godrej The Aqua Retreat Elevation" 
+          alt="Godrej Park World Elevation - Godrej Properties Pune Projects" 
           className="object-cover w-full h-full scale-105"
         />
         {/* Soft floating particles / Water ripple placeholder effect */}
@@ -47,7 +47,7 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <span className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
-            Godrej Park World, Hinjewadi Phase 1
+            Godrej Properties Pune Presents Godrej Park World, Hinjewadi Phase 1
           </span>
 
           <KineticText 

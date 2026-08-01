@@ -25,7 +25,7 @@ export default function Location() {
           </div>
           <div className="flex-1">
             <p className="text-gray-600 font-light max-w-lg leading-relaxed text-sm">
-              Situated in the prime IT hub of Hinjewadi Phase 1, Godrej Park World offers unparalleled connectivity to major tech parks, educational institutions, and lifestyle destinations, ensuring your retreat remains connected to the pulse of the city.
+              Situated in the prime IT hub of Hinjewadi Phase 1, Godrej Park World Pune offers unparalleled connectivity to major tech parks, educational institutions, and lifestyle destinations, ensuring your retreat remains connected to the pulse of the city.
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Location() {
           >
             <Image fill 
               src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/1ce5fd50-c862-4897-b366-193da11253ca.webp"
-              alt="Location Area"
+              alt="Godrej Park World Pune Location Map - Godrej Properties Pune Projects"
               className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-luxury-dark/40 mix-blend-overlay pointer-events-none"></div>
