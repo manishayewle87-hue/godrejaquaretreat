@@ -29,9 +29,11 @@ export default function Hero() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-dark/40 via-transparent to-luxury-dark/90 z-10" />
         <Image fill 
+          priority
           src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp" 
           alt="Godrej Park World Elevation - Godrej Properties Pune Projects" 
           className="object-cover w-full h-full scale-105"
+          sizes="100vw"
         />
         {/* Soft floating particles / Water ripple placeholder effect */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')] z-20 opacity-30 mix-blend-overlay"></div>

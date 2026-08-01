@@ -57,6 +57,12 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  other: {
+    "geo.region": "IN-MH",
+    "geo.placename": "Pune",
+    "geo.position": "18.5913;73.7389",
+    "ICBM": "18.5913, 73.7389"
+  }
 };
 
 import { ModalProvider } from "@/context/ModalContext";
@@ -71,6 +77,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://gplwebsitecdnblob.blob.core.windows.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://gplwebsitecdnblob.blob.core.windows.net" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
