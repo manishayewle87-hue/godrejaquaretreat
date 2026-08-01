@@ -1,6 +1,8 @@
 import Hero from "@/components/sections/Hero";
 import VideoTour from "@/components/sections/VideoTour";
 import About from "@/components/sections/About";
+import AquaLifestyle from "@/components/sections/AquaLifestyle";
+import InteractiveMasterplan from "@/components/sections/InteractiveMasterplan";
 import Masterplan from "@/components/sections/Masterplan";
 import Residences from "@/components/sections/Residences";
 import Amenities from "@/components/sections/Amenities";
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <VideoTour />
       <About />
+      <AquaLifestyle />
+      <InteractiveMasterplan />
       <Masterplan />
       <Residences />
       <Amenities />
