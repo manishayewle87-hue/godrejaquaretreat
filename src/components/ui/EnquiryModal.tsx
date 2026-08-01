@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, CheckCircle2 } from 'lucide-react';
+import { X, CheckCircle2, Loader2 } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
 
 export default function EnquiryModal() {
@@ -16,7 +16,7 @@ export default function EnquiryModal() {
     setStatus('submitting');
     
     try {
-      const response = await fetch('/api/enquiry', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -137,9 +137,16 @@ export default function EnquiryModal() {
                       <button 
                         type="submit"
                         disabled={status === 'submitting'}
-                        className="mt-6 w-full bg-emerald-aqua text-white py-4 rounded-full text-sm font-semibold tracking-widest uppercase hover:bg-emerald-aqua/90 transition-colors disabled:opacity-70 flex justify-center items-center"
+                        className="mt-6 w-full bg-emerald-aqua text-gray-900 py-4 rounded-full text-sm font-semibold tracking-widest uppercase hover:bg-emerald-aqua/90 transition-colors disabled:opacity-70 flex justify-center items-center gap-2"
                       >
-                        {status === 'submitting' ? 'Submitting...' : 'Submit Enquiry'}
+                        {status === 'submitting' ? (
+                          <>
+                            <Loader2 className="w-5 h-5 animate-spin" />
+                            Processing...
+                          </>
+                        ) : (
+                          'Submit Enquiry'
+                        )}
                       </button>
                     </form>
                   </motion.div>
