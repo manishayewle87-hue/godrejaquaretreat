@@ -32,7 +32,8 @@ export default function Hero() {
           priority
           fetchPriority="high"
           src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp" 
-          alt="Godrej Park World Elevation - Godrej Properties Pune Projects" 
+          alt="Godrej Park World Hinjewadi The Aqua Retreat - 50000 sq ft clubhouse & luxury resort apartments Pune" 
+          title="Godrej Park World Hinjewadi - The Aqua Retreat Luxury Township"
           className="object-cover w-full h-full scale-105"
           sizes="100vw"
         />

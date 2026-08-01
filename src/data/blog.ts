@@ -11,6 +11,38 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "mental-wellness-resort-style-living-pune",
+    title: "The Mental Wellness Benefits of Resort-Style Living in Pune",
+    description: "Explore how the 50,000 sq ft clubhouse and vast green spaces at Godrej Park World Hinjewadi are designed specifically for mental wellness and tranquility.",
+    date: "2026-08-13",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+    keywords: ["Wellness Homes Pune", "Resort Style Living Hinjewadi", "Mental Wellness Real Estate", "Godrej Park World Greenery"],
+    content: `
+      <h2>Architecture Designed for Wellness</h2>
+      <p>Modern IT professionals in Pune face unprecedented levels of burnout. <strong>Godrej Park World Hinjewadi</strong> was architected to combat this. The Aqua Retreat cluster isn't just about luxury; it's about providing a psychological sanctuary immediately upon returning from the Rajiv Gandhi Infotech Park.</p>
+      
+      <h2>The 50,000 Sq.Ft Sanctuary</h2>
+      <p>Having access to Olympic-sized swimming pools, private cabanas, and sprawling central greens reduces cortisol levels and promotes active relaxation. It is a 5-star resort lifestyle integrated directly into your daily routine.</p>
+    `
+  },
+  {
+    slug: "smart-home-automation-pune-real-estate",
+    title: "How Smart Home Automation is Redefining Pune Real Estate",
+    description: "Discover the cutting-edge smart home technologies integrated into Godrej Properties in Hinjewadi Phase 1.",
+    date: "2026-08-14",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: ["Smart Homes Pune", "Home Automation Godrej Properties", "Tech Enabled Apartments Hinjewadi", "Luxury Tech Homes Pune"],
+    content: `
+      <h2>The Future of Living</h2>
+      <p>The definition of luxury has evolved. At <strong>Godrej Park World</strong>, luxury means absolute control over your environment. From automated climate control to advanced biometric security systems, these residences are built for the digital age.</p>
+      
+      <h2>Energy Efficiency</h2>
+      <p>Smart home integration in The Gale and The Aqua Retreat doesn't just offer convenience; it optimizes energy consumption, aligning with Godrej's commitment to sustainable, green building practices in Pune West.</p>
+    `
+  },
+  {
     slug: "pune-metro-line-3-impact-on-hinjewadi-real-estate",
     title: "How Pune Metro Line 3 Will Skyrocket Hinjewadi Real Estate Prices",
     description: "Analyze the massive impact of the upcoming Hinjewadi-Shivajinagar Metro Line 3 on property rates and ROI in Pune West.",
