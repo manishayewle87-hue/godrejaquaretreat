@@ -98,18 +98,23 @@ export const metadata: Metadata = {
 
 import { Outfit, Syne } from 'next/font/google';
 import { ModalProvider } from "@/context/ModalContext";
-import EnquiryModal from "@/components/ui/EnquiryModal";
 import SmartHUD from "@/components/layout/SmartHUD";
 import PWAInit from "@/components/ui/PWAInit";
-import WhatsAppWidget from "@/components/ui/WhatsAppWidget";
-import AIChatbot from "@/components/ui/AIChatbot";
-import ExitIntentModal from "@/components/ui/ExitIntentModal";
-import StickyCTA from "@/components/ui/StickyCTA";
+import dynamic from 'next/dynamic';
+
+const EnquiryModal = dynamic(() => import('@/components/ui/EnquiryModal'), { ssr: false });
+const AIChatbot = dynamic(() => import('@/components/ui/AIChatbot'), { ssr: false });
+const ExitIntentModal = dynamic(() => import('@/components/ui/ExitIntentModal'), { ssr: false });
+const SocialProof = dynamic(() => import('@/components/ui/SocialProof'), { ssr: false });
+const CountdownBar = dynamic(() => import('@/components/ui/CountdownBar'), { ssr: false });
+const FloatingCTA = dynamic(() => import('@/components/ui/FloatingCTA'), { ssr: false });
 
 const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit' });
 const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne' });
 
 import { GoogleAnalytics } from '@next/third-parties/google';
+import WhatsAppWidget from "@/components/ui/WhatsAppWidget";
+import StickyCTA from "@/components/ui/StickyCTA";
 
 export default function RootLayout({
   children,

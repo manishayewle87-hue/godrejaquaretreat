@@ -1,22 +1,25 @@
 "use client";
 
 
+import dynamic from 'next/dynamic';
 import Hero from "@/components/sections/Hero";
-import VideoTour from "@/components/sections/VideoTour";
 import About from "@/components/sections/About";
-import AquaLifestyle from "@/components/sections/AquaLifestyle";
-import InteractiveMasterplan from "@/components/sections/InteractiveMasterplan";
-import Masterplan from "@/components/sections/Masterplan";
-import Residences from "@/components/sections/Residences";
-import Amenities from "@/components/sections/Amenities";
-import Specifications from "@/components/sections/Specifications";
-import InvestmentCalculator from "@/components/sections/InvestmentCalculator";
-import Gallery from "@/components/sections/Gallery";
-import Heritage from "@/components/sections/Heritage";
-import VirtualTour from "@/components/sections/VirtualTour";
 import Location from "@/components/sections/Location";
-import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/layout/Footer";
+
+// Lazy load heavy components
+const Heritage = dynamic(() => import("@/components/sections/Heritage"));
+const VideoTour = dynamic(() => import("@/components/sections/VideoTour"));
+const AquaLifestyle = dynamic(() => import("@/components/sections/AquaLifestyle"));
+const InteractiveMasterplan = dynamic(() => import("@/components/sections/InteractiveMasterplan"));
+const Masterplan = dynamic(() => import("@/components/sections/Masterplan"));
+const Residences = dynamic(() => import("@/components/sections/Residences"));
+const Amenities = dynamic(() => import("@/components/sections/Amenities"));
+const Specifications = dynamic(() => import("@/components/sections/Specifications"));
+const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
+const Gallery = dynamic(() => import("@/components/sections/Gallery"));
+const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
 
 export default function PageContent() {
   return (

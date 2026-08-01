@@ -62,14 +62,14 @@ export default function AIChatbot() {
       
       // If user typed a phone number, send it to our API
       if (userMsg.text.match(/[0-9]{10}/)) {
-        fetch('/api/enquiry', {
+        fetch('/api/contact', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             name: "AI Chat Lead",
             phone: userMsg.text,
-            source: "AI Assistant",
-            config: "Chatbot Capture"
+            email: "",
+            configuration: "Chatbot Capture"
           })
         }).catch(console.error);
       }
