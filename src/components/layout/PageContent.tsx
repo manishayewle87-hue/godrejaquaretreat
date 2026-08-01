@@ -10,6 +10,7 @@ import Masterplan from "@/components/sections/Masterplan";
 import Residences from "@/components/sections/Residences";
 import Amenities from "@/components/sections/Amenities";
 import Specifications from "@/components/sections/Specifications";
+import InvestmentCalculator from "@/components/sections/InvestmentCalculator";
 import Gallery from "@/components/sections/Gallery";
 import Location from "@/components/sections/Location";
 import Footer from "@/components/layout/Footer";
@@ -26,6 +27,7 @@ export default function PageContent() {
       <Residences />
       <Amenities />
       <Specifications />
+      <InvestmentCalculator />
       <Gallery />
       <Location />
       <Footer />

@@ -103,6 +103,8 @@ import SmartHUD from "@/components/layout/SmartHUD";
 import PWAInit from "@/components/ui/PWAInit";
 import WhatsAppWidget from "@/components/ui/WhatsAppWidget";
 import AIChatbot from "@/components/ui/AIChatbot";
+import ExitIntentModal from "@/components/ui/ExitIntentModal";
+import StickyCTA from "@/components/ui/StickyCTA";
 
 const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit' });
 const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne' });
@@ -253,8 +255,8 @@ export default function RootLayout({
               {children}
             </main>
             <FloatingCTA />
-            <WhatsAppWidget />
             <AIChatbot />
+            <ExitIntentModal />
             <EnquiryModal />
           </SmoothScroller>
         </ModalProvider>
