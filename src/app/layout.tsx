@@ -110,7 +110,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${outfit.variable} ${syne.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${syne.variable}`}>
       <head>
         <link rel="preconnect" href="https://gplwebsitecdnblob.blob.core.windows.net" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://gplwebsitecdnblob.blob.core.windows.net" />
@@ -237,13 +237,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased bg-luxury-dark text-luxury-light selection:bg-emerald-aqua selection:text-gray-900 overflow-x-clip">
+      <body className="antialiased bg-luxury-dark text-luxury-light selection:bg-emerald-aqua selection:text-gray-900">
         <ModalProvider>
           <SmoothScroller>
             <CustomCursor />
             <Navbar />
             <SmartHUD />
-            <main className="relative flex flex-col w-full min-h-screen">
+            <main className="relative flex flex-col w-full min-h-screen overflow-x-clip">
               {children}
             </main>
             <FloatingCTA />

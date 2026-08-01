@@ -53,22 +53,38 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
       "/godrej-park-world-pune-gallery": "gallery",
     };
 
+    // 1. React to Pathname Changes (Back/Forward buttons & Initial Load)
     const targetId = routeMap[pathname];
-    
-    // Slight delay to ensure DOM is ready
     setTimeout(() => {
       if (targetId) {
         const element = document.getElementById(targetId);
-        if (element) {
-          // Use native Lenis scrollTo
-          lenisRef.current?.scrollTo(element, { offset: -50, duration: 1.5 });
-          ScrollTrigger.refresh();
-        }
+        if (element) lenisRef.current?.scrollTo(element, { offset: -50, duration: 1.5 });
       } else if (pathname === "/") {
         lenisRef.current?.scrollTo(0, { duration: 1.5 });
-        ScrollTrigger.refresh();
       }
     }, 100);
+
+    // 2. Global Click Interceptor (Fixes clicking the same link twice)
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a');
+      if (!target) return;
+      
+      const href = target.getAttribute('href');
+      if (href) {
+        const mappedId = routeMap[href];
+        if (mappedId) {
+          const element = document.getElementById(mappedId);
+          if (element) {
+            lenisRef.current?.scrollTo(element, { offset: -50, duration: 1.5 });
+          }
+        } else if (href === "/") {
+          lenisRef.current?.scrollTo(0, { duration: 1.5 });
+        }
+      }
+    };
+
+    document.addEventListener('click', handleGlobalClick);
+    return () => document.removeEventListener('click', handleGlobalClick);
     
   }, [pathname]);
 
