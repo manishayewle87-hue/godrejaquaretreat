@@ -28,7 +28,6 @@ const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
 const MetroConnectivityScorecard = dynamic(() => import("@/components/sections/MetroConnectivityScorecard"));
 const NeighborhoodSocialMatrix = dynamic(() => import("@/components/sections/NeighborhoodSocialMatrix"));
-const Location = dynamic(() => import("@/components/sections/Location"));
 const ConstructionProgress = dynamic(() => import("@/components/sections/ConstructionProgress"));
 const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));

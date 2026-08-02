@@ -100,14 +100,9 @@ import { Outfit, Syne } from 'next/font/google';
 import { ModalProvider } from "@/context/ModalContext";
 import SmartHUD from "@/components/layout/SmartHUD";
 import PWAInit from "@/components/ui/PWAInit";
-import dynamic from 'next/dynamic';
-
-const EnquiryModal = dynamic(() => import('@/components/ui/EnquiryModal'), { ssr: false });
-const AIChatbot = dynamic(() => import('@/components/ui/AIChatbot'), { ssr: false });
-const ExitIntentModal = dynamic(() => import('@/components/ui/ExitIntentModal'), { ssr: false });
-const SocialProof = dynamic(() => import('@/components/ui/SocialProof'), { ssr: false });
-const CountdownBar = dynamic(() => import('@/components/ui/CountdownBar'), { ssr: false });
-const FloatingCTA = dynamic(() => import('@/components/ui/FloatingCTA'), { ssr: false });
+import EnquiryModal from "@/components/ui/EnquiryModal";
+import AIChatbot from "@/components/ui/AIChatbot";
+import ExitIntentModal from "@/components/ui/ExitIntentModal";
 
 const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit' });
 const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne' });
