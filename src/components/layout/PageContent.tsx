@@ -11,6 +11,7 @@ import Footer from "@/components/layout/Footer";
 const Heritage = dynamic(() => import("@/components/sections/Heritage"));
 const VideoTour = dynamic(() => import("@/components/sections/VideoTour"));
 const AquaLifestyle = dynamic(() => import("@/components/sections/AquaLifestyle"));
+const ClubhouseAmenityExplorer = dynamic(() => import("@/components/sections/ClubhouseAmenityExplorer"));
 const InteractiveMasterplan = dynamic(() => import("@/components/sections/InteractiveMasterplan"));
 const Masterplan = dynamic(() => import("@/components/sections/Masterplan"));
 const Residences = dynamic(() => import("@/components/sections/Residences"));
@@ -42,6 +43,7 @@ export default function PageContent() {
       <VideoTour />
       <About />
       <AquaLifestyle />
+      <ClubhouseAmenityExplorer />
       <InteractiveMasterplan />
       <Masterplan />
       <Residences />
