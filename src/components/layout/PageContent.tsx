@@ -18,6 +18,7 @@ const FloorRiseViewSelector = dynamic(() => import("@/components/sections/FloorR
 const BalconyVisualizer = dynamic(() => import("@/components/sections/BalconyVisualizer"));
 const Amenities = dynamic(() => import("@/components/sections/Amenities"));
 const Specifications = dynamic(() => import("@/components/sections/Specifications"));
+const InteriorStyleCustomizer = dynamic(() => import("@/components/sections/InteriorStyleCustomizer"));
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
 const PaymentPlanSchedule = dynamic(() => import("@/components/sections/PaymentPlanSchedule"));
 const CompetitorBenchmarkMatrix = dynamic(() => import("@/components/sections/CompetitorBenchmarkMatrix"));
@@ -48,6 +49,7 @@ export default function PageContent() {
       <BalconyVisualizer />
       <Amenities />
       <Specifications />
+      <InteriorStyleCustomizer />
       <InvestmentCalculator />
       <PaymentPlanSchedule />
       <CompetitorBenchmarkMatrix />
