@@ -115,6 +115,7 @@ const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '80
 import { GoogleAnalytics } from '@next/third-parties/google';
 import WhatsAppWidget from "@/components/ui/WhatsAppWidget";
 import StickyCTA from "@/components/ui/StickyCTA";
+import MobileTabBar from "@/components/ui/MobileTabBar";
 
 export default function RootLayout({
   children,
@@ -263,6 +264,7 @@ export default function RootLayout({
             <AIChatbot />
             <ExitIntentModal />
             <EnquiryModal />
+            <MobileTabBar />
           </SmoothScroller>
         </ModalProvider>
         <GoogleAnalytics gaId="G-XXXXXXXXXX" />
