@@ -19,6 +19,7 @@ const Amenities = dynamic(() => import("@/components/sections/Amenities"));
 const Specifications = dynamic(() => import("@/components/sections/Specifications"));
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
 const PaymentPlanSchedule = dynamic(() => import("@/components/sections/PaymentPlanSchedule"));
+const CompetitorBenchmarkMatrix = dynamic(() => import("@/components/sections/CompetitorBenchmarkMatrix"));
 const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
 const MetroConnectivityScorecard = dynamic(() => import("@/components/sections/MetroConnectivityScorecard"));
@@ -44,6 +45,7 @@ export default function PageContent() {
       <Specifications />
       <InvestmentCalculator />
       <PaymentPlanSchedule />
+      <CompetitorBenchmarkMatrix />
       <Quiz />
       <Gallery />
       <VirtualTour />
