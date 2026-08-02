@@ -20,6 +20,8 @@ const Specifications = dynamic(() => import("@/components/sections/Specification
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
 const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
+const Location = dynamic(() => import("@/components/sections/Location"));
+const ConstructionProgress = dynamic(() => import("@/components/sections/ConstructionProgress"));
 const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
 const MicroMarketSEOBar = dynamic(() => import("@/components/layout/MicroMarketSEOBar"));
@@ -43,6 +45,7 @@ export default function PageContent() {
       <Gallery />
       <VirtualTour />
       <Location />
+      <ConstructionProgress />
       <FAQ />
       <MicroMarketSEOBar />
       <Footer />
