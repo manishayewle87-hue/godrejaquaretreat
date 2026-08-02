@@ -42,13 +42,13 @@ export default function Navbar() {
       >
         <div className={`relative w-full transition-all duration-700 flex items-center justify-between mx-auto bg-white/95 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-black/5 rounded-full ${
           scrolled 
-            ? 'max-w-6xl px-8 py-3' 
-            : 'max-w-7xl px-8 py-4 mt-4'
+            ? 'max-w-6xl px-6 py-2' 
+            : 'max-w-7xl px-8 py-3 mt-4'
         }`}>
           
           {/* Logo - Left */}
           <div className={`flex-shrink-0 flex items-center gap-4 cursor-pointer transition-colors duration-500 text-gray-900`}>
-            <svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" className="h-16 md:h-20 w-auto">
+            <svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" className="h-10 md:h-14 w-auto">
               <g fill="#3BA0D1">
                 <path className="animate-wave-1" d="M140 38 C 160 30, 180 30, 200 38 C 220 46, 240 46, 260 38 L 260 45 C 240 53, 220 53, 200 45 C 180 37, 160 37, 140 45 Z" />
                 <path className="animate-wave-2" d="M140 53 C 165 42, 195 42, 220 53 C 240 62, 260 62, 280 53 L 280 63 C 260 72, 240 72, 220 63 C 195 52, 165 52, 140 63 Z" />

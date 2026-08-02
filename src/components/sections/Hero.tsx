@@ -42,7 +42,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-30 h-full flex flex-col justify-end items-start pb-32 px-6 lg:px-16 max-w-7xl mx-auto">
+      <div className="relative z-30 h-full flex flex-col justify-center items-start pt-20 px-6 lg:px-16 max-w-7xl mx-auto">
         
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -50,14 +50,14 @@ export default function Hero() {
           transition={{ duration: 1.8, delay: 0.2, ease: [0.83, 0, 0.17, 1] }}
           className="max-w-4xl"
         >
-          <h1 className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-8 block ml-1">
+          <h1 className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-6 block ml-1">
             Pune Real Estate Investment • Godrej Park World Hinjewadi
           </h1>
 
           <KineticText 
             text="The Aqua Retreat By Godrej Properties. Redefining Pune Real Estate."
             el="h2"
-            className="font-serif text-5xl md:text-7xl lg:text-[80px] text-luxury-light leading-[1.05] mb-8"
+            className="font-serif text-5xl md:text-6xl lg:text-[72px] text-luxury-light leading-[1.05] mb-6"
           />
 
           <p className="text-gray-700 text-lg md:text-2xl font-light max-w-3xl mb-12 leading-relaxed">
