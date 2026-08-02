@@ -95,6 +95,7 @@ export default function Footer() {
                 <li><Link href="/#amenities" className="hover:text-emerald-aqua transition-colors">Amenities</Link></li>
                 <li><Link href="/#aqua-clubhouse" className="hover:text-emerald-aqua transition-colors">Aqua Clubhouse</Link></li>
                 <li><Link href="/#interior-styles" className="hover:text-emerald-aqua transition-colors">Interior Styles</Link></li>
+                <li><Link href="/#price-calculator" className="hover:text-emerald-aqua transition-colors">Price Calculator</Link></li>
                 <li><Link href="/#payment-plans" className="hover:text-emerald-aqua transition-colors">Payment Plans</Link></li>
                 <li><Link href="/#competitor-scorecard" className="hover:text-emerald-aqua transition-colors">Competitor Benchmark</Link></li>
                 <li><Link href="/#rental-yields" className="hover:text-emerald-aqua transition-colors">Rental Yields</Link></li>

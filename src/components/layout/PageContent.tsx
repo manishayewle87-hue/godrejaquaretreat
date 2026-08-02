@@ -21,6 +21,7 @@ const Amenities = dynamic(() => import("@/components/sections/Amenities"));
 const Specifications = dynamic(() => import("@/components/sections/Specifications"));
 const InteriorStyleCustomizer = dynamic(() => import("@/components/sections/InteriorStyleCustomizer"));
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
+const UnitPriceEstimator = dynamic(() => import("@/components/sections/UnitPriceEstimator"));
 const PaymentPlanSchedule = dynamic(() => import("@/components/sections/PaymentPlanSchedule"));
 const CompetitorBenchmarkMatrix = dynamic(() => import("@/components/sections/CompetitorBenchmarkMatrix"));
 const RentalYieldMatrix = dynamic(() => import("@/components/sections/RentalYieldMatrix"));
@@ -52,6 +53,7 @@ export default function PageContent() {
       <Specifications />
       <InteriorStyleCustomizer />
       <InvestmentCalculator />
+      <UnitPriceEstimator />
       <PaymentPlanSchedule />
       <CompetitorBenchmarkMatrix />
       <RentalYieldMatrix />
