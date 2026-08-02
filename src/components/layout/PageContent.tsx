@@ -30,6 +30,7 @@ const Location = dynamic(() => import("@/components/sections/Location"));
 const ConstructionProgress = dynamic(() => import("@/components/sections/ConstructionProgress"));
 const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const ResidentStoriesMatrix = dynamic(() => import("@/components/sections/ResidentStoriesMatrix"));
 const MicroMarketSEOBar = dynamic(() => import("@/components/layout/MicroMarketSEOBar"));
 
 export default function PageContent() {
@@ -59,6 +60,7 @@ export default function PageContent() {
       <Location />
       <ConstructionProgress />
       <FAQ />
+      <ResidentStoriesMatrix />
       <MicroMarketSEOBar />
       <Footer />
     </>
