@@ -1,3 +1,5 @@
+import { PILLAR_BLOG_POSTS } from "./blogArticlesPillar";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -9,7 +11,7 @@ export interface BlogPost {
   keywords: string[];
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+const LEGACY_BLOG_POSTS: BlogPost[] = [
   {
     slug: "rental-yield-hinjewadi-phase-1",
     title: "Why Hinjewadi Phase 1 Offers the Highest Rental Yields in Pune",
@@ -435,6 +437,11 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>For investors looking to maximize rental yields and secure long-term capital appreciation, the math is clear. Investing in Hinjewadi Phase 1 properties like Godrej Aqua Retreat offers a significantly higher ROI compared to saturated markets in central Pune.</p>
     `
   }
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  ...PILLAR_BLOG_POSTS,
+  ...LEGACY_BLOG_POSTS
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined => {
