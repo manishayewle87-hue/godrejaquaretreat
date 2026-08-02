@@ -20,6 +20,7 @@ const Specifications = dynamic(() => import("@/components/sections/Specification
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
 const PaymentPlanSchedule = dynamic(() => import("@/components/sections/PaymentPlanSchedule"));
 const CompetitorBenchmarkMatrix = dynamic(() => import("@/components/sections/CompetitorBenchmarkMatrix"));
+const RentalYieldMatrix = dynamic(() => import("@/components/sections/RentalYieldMatrix"));
 const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
 const MetroConnectivityScorecard = dynamic(() => import("@/components/sections/MetroConnectivityScorecard"));
@@ -46,6 +47,7 @@ export default function PageContent() {
       <InvestmentCalculator />
       <PaymentPlanSchedule />
       <CompetitorBenchmarkMatrix />
+      <RentalYieldMatrix />
       <Quiz />
       <Gallery />
       <VirtualTour />
