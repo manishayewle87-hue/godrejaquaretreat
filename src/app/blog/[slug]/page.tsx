@@ -62,16 +62,29 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://godrejaquaretreat.godrejparkworld.com/blog/${post.slug}`
+    },
     "headline": post.title,
+    "description": post.description,
     "image": [post.image],
-    "datePublished": `${post.date}T08:00:00+08:00`,
-    "dateModified": `${post.date}T08:00:00+08:00`,
-    "author": [{
-        "@type": "Organization",
-        "name": post.author,
-        "url": "https://godrejaquaretreat.godrejparkworld.com"
-      }]
+    "datePublished": `${post.date}T08:00:00+05:30`,
+    "dateModified": `${post.date}T08:00:00+05:30`,
+    "author": {
+      "@type": "Organization",
+      "name": post.author,
+      "url": "https://godrejaquaretreat.godrejparkworld.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Godrej Properties Pune",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
+      }
+    }
   };
 
   return (

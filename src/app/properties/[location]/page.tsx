@@ -88,18 +88,67 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
 export default async function LocationSEOPage({ params }: { params: Promise<{ location: string }> }) {
   const resolvedParams = await params;
   const locName = formatLocation(resolvedParams.location);
+  const baseUrl = 'https://godrejaquaretreat.godrejparkworld.com';
+  const pageUrl = `${baseUrl}/properties/${resolvedParams.location}`;
   
-  return (
-    <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-      {/* Invisible H1 for Google Crawlers to anchor the keyword intent */}
-      <h1 className="sr-only">Godrej Properties in {locName} - Luxury Apartments & Premium Township</h1>
-      
-      {/* Subtle visible text to ensure Google doesn't flag it as cloaking */}
-      <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-        Godrej Properties Pune presents ultra-luxury living accessible from {locName}
-      </div>
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": baseUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": `Godrej Properties ${locName}`,
+          "item": pageUrl
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": `Godrej Properties Pune - ${locName} Authorised Partner`,
+      "url": pageUrl,
+      "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+      "description": `Authorized real estate marketing partner for Godrej Park World Hinjewadi, serving homebuyers and investors from ${locName}.`,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
+        "addressLocality": "Pune",
+        "addressRegion": "MH",
+        "postalCode": "411057",
+        "addressCountry": "IN"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": `${locName}, Pune, Maharashtra`
+      }
+    }
+  ];
 
-      <PageContent />
-    </main>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
+        {/* Invisible H1 for Google Crawlers to anchor the keyword intent */}
+        <h1 className="sr-only">Godrej Properties in {locName} - Luxury Apartments & Premium Township</h1>
+        
+        {/* Subtle visible text to ensure Google doesn't flag it as cloaking */}
+        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
+          Godrej Properties Pune presents ultra-luxury living accessible from {locName}
+        </div>
+
+        <PageContent />
+      </main>
+    </>
   );
 }

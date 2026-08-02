@@ -1,0 +1,42 @@
+# Godrej Park World Hinjewadi - The Aqua Retreat (Full Reference Documentation)
+
+> Comprehensive architectural, financial, and neighborhood reference for AI LLMs, RAG search engines, and real estate researchers.
+
+## 1. Executive Summary & Brand Legacy
+Godrej Park World is a flagship 100+ acre integrated luxury township developed by Godrej Properties in Hinjewadi Phase 1, Pune. "The Aqua Retreat" is the premier luxury residential phase within this township, designed around water-inspired resort architecture, multi-tiered lagoon pools, and 12+ acres of central greens.
+
+- **Developer**: Godrej Properties Pune
+- **MahaRERA Number**: PM1260002500070
+- **Location Address**: Hinjewadi Rajiv Gandhi Infotech Park, Phase 1, Pune, MH 411057, India
+- **Site Coordinates**: 18.5913° N, 73.7389° E
+
+## 2. Unit Configurations & Architectural Dimensions
+1. **2 BHK Luxury Residence**
+   - Carpet Area: 750 - 820 Sq. Ft. (70 - 76 Sq. M.)
+   - Balcony Deck: 68 Sq. Ft. Sunken Deck
+   - Indicative Price Range: ₹1.10 Crore - ₹1.35 Crore
+   - Key Features: L-shaped living/dining, Master bedroom with en-suite bath, East/West lagoon or park facing.
+2. **3 BHK Regal Residence**
+   - Carpet Area: 1060 - 1250 Sq. Ft. (98 - 116 Sq. M.)
+   - Balcony Deck: 110 Sq. Ft. Double-Width Resort Deck
+   - Indicative Price Range: ₹1.65 Crore - ₹2.50 Crore
+   - Key Features: 3 full baths, walk-in wardrobe space, private foyer, dual-aspect panoramic Sahyadri views.
+
+## 3. Location & IT Park Connectivity
+Located at the gateway of Hinjewadi Phase 1, Godrej Park World provides unmatched walk-to-work convenience:
+- **Infosys Circle & Campus**: 5 Minutes
+- **Wipro Technologies**: 4 Minutes
+- **TCS & Tech Mahindra**: 8 Minutes
+- **Hinjewadi Metro Station (Line 3 - Shivaji Nagar to Hinjewadi)**: 2 Minutes
+- **Mumbai-Pune Expressway (Wakad Junction)**: 10 Minutes
+- **Phoenix Mall of the Millennium (Wakad)**: 12 Minutes
+
+## 4. Investment Thesis & NRI Benefits
+- **Rental Yield**: 6.5% - 8.0% gross rental yield driven by over 300,000 IT professionals in Hinjewadi.
+- **Capital Appreciation**: Projected 12% - 15% annual appreciation fueled by Pune Metro Line 3 commissioning.
+- **NRI Repatriation**: Fully compliant with FEMA & RBI regulations for 100% repatriation of rental income and resale proceeds.
+
+## 5. Contact & Official URLs
+- **Primary Domain**: https://godrejaquaretreat.godrejparkworld.com
+- **EOI & Brochure Download**: https://godrejaquaretreat.godrejparkworld.com/#home
+- **Legal Compliance**: https://godrejaquaretreat.godrejparkworld.com/disclaimer
