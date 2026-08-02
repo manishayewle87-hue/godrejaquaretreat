@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from 'next/link';
+import MahaRERABadge from "@/components/ui/MahaRERABadge";
 
 export default function Footer() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
@@ -140,6 +141,11 @@ export default function Footer() {
           </div>
           
         </motion.div>
+
+        {/* Official MahaRERA Registration & Scannable QR Code Badge */}
+        <div className="my-10">
+          <MahaRERABadge />
+        </div>
 
         {/* Advanced SEO Matrix */}
         <div className="py-12 border-t border-white/10 mt-8 mb-4">

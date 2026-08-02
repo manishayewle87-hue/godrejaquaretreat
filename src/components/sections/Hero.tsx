@@ -50,9 +50,14 @@ export default function Hero() {
           transition={{ duration: 1.8, delay: 0.2, ease: [0.83, 0, 0.17, 1] }}
           className="max-w-4xl"
         >
-          <h1 className="text-emerald-aqua tracking-[0.4em] uppercase text-xs md:text-sm font-semibold mb-6 block ml-1">
-            Pune Real Estate Investment • Godrej Park World Hinjewadi
-          </h1>
+          <div className="flex flex-wrap items-center gap-3 mb-6 ml-1">
+            <span className="text-emerald-aqua tracking-[0.2em] uppercase text-[11px] font-bold bg-emerald-aqua/15 text-emerald-aqua px-3.5 py-1.5 rounded-full border border-emerald-aqua/30 font-mono shadow-sm">
+              MahaRERA: PM1260002500070
+            </span>
+            <h1 className="text-gray-800 tracking-[0.3em] uppercase text-xs font-semibold">
+              Pune Real Estate • Godrej Park World Hinjewadi
+            </h1>
+          </div>
 
           <KineticText 
             text="The Aqua Retreat By Godrej Properties. Redefining Pune Real Estate."
