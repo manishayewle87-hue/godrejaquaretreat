@@ -16,6 +16,14 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
       {
+        userAgent: 'Googlebot-Image',
+        allow: '/',
+      },
+      {
+        userAgent: 'AdsBot-Google',
+        allow: '/',
+      },
+      {
         userAgent: 'Bingbot',
         allow: '/',
         crawlDelay: 2,
