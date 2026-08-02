@@ -14,6 +14,7 @@ const AquaLifestyle = dynamic(() => import("@/components/sections/AquaLifestyle"
 const InteractiveMasterplan = dynamic(() => import("@/components/sections/InteractiveMasterplan"));
 const Masterplan = dynamic(() => import("@/components/sections/Masterplan"));
 const Residences = dynamic(() => import("@/components/sections/Residences"));
+const BalconyVisualizer = dynamic(() => import("@/components/sections/BalconyVisualizer"));
 const Amenities = dynamic(() => import("@/components/sections/Amenities"));
 const Specifications = dynamic(() => import("@/components/sections/Specifications"));
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
@@ -33,6 +34,7 @@ export default function PageContent() {
       <InteractiveMasterplan />
       <Masterplan />
       <Residences />
+      <BalconyVisualizer />
       <Amenities />
       <Specifications />
       <InvestmentCalculator />

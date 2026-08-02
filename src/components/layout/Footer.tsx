@@ -89,6 +89,7 @@ export default function Footer() {
                 <li><Link href="/#lifestyle" className="hover:text-emerald-aqua transition-colors">The Philosophy</Link></li>
                 <li><Link href="/#masterplan" className="hover:text-emerald-aqua transition-colors">Masterplan</Link></li>
                 <li><Link href="/#residences" className="hover:text-emerald-aqua transition-colors">Residences</Link></li>
+                <li><Link href="/#balcony-views" className="hover:text-emerald-aqua transition-colors">Balcony Views</Link></li>
                 <li><Link href="/#amenities" className="hover:text-emerald-aqua transition-colors">Amenities</Link></li>
                 <li><Link href="/#gallery" className="hover:text-emerald-aqua transition-colors">Gallery</Link></li>
               </ul>
