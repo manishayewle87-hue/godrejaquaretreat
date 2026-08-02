@@ -71,6 +71,26 @@ const MICRO_MARKET_GROUPS: MicroMarketGroup[] = [
       { label: 'Godrej Rejuve Mundhwa', slug: 'godrej-rejuve' },
       { label: 'Godrej Properties Pune Price List', slug: 'godrej-properties-pune' },
     ]
+  },
+  {
+    id: 'rank1',
+    title: 'Google SERP Rank #1 Keywords',
+    icon: '🚀',
+    description: 'High-intent search queries engineered to rank #1 on Google Search for Godrej Park World & The Aqua Retreat.',
+    keywords: [
+      { label: 'The Aqua Retreat by Godrej Properties Hinjewadi', slug: 'the-aqua-retreat-hinjewadi', highlight: true },
+      { label: 'Godrej Park World Hinjewadi Phase 1', slug: 'godrej-park-world-hinjewadi', highlight: true },
+      { label: 'Godrej Aqua Retreat Price Breakdown & Cost Sheet', slug: 'the-aqua-retreat-hinjewadi' },
+      { label: 'Godrej Park World Sample Flat Photos & Video Walkthrough', slug: 'godrej-park-world-hinjewadi' },
+      { label: '50,000 Sq. Ft. Aqua Clubhouse & Infinity Pool Hinjewadi', slug: 'the-aqua-retreat-hinjewadi' },
+      { label: 'Best 2 & 3 BHK Luxury Resort Apartments Pune West', slug: 'hinjewadi-phase-1' },
+      { label: 'Godrej Properties Pune Ongoing Projects 2026', slug: 'godrej-properties-pune-projects' },
+      { label: 'Godrej Hinjewadi Rajiv Gandhi Infotech Park', slug: 'hinjewadi-rajiv-gandhi-infotech-park' },
+      { label: 'MahaRERA PM1260002500070 Verified Registration', slug: 'the-aqua-retreat-hinjewadi' },
+      { label: 'Godrej Park World vs Lodha Panache Comparison', slug: 'godrej-park-world-hinjewadi' },
+      { label: 'Godrej Park World vs VTP Bellissimo Comparison', slug: 'godrej-park-world-hinjewadi' },
+      { label: 'Pune West Real Estate Investment Yield Matrix', slug: 'godrej-park-world-hinjewadi' },
+    ]
   }
 ];
 
