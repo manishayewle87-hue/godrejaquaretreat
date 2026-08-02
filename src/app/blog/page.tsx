@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { BLOG_POSTS } from "@/data/blog";
 import BlogFilterMatrix from "@/components/blog/BlogFilterMatrix";
+import MicroMarketSEOBar from "@/components/layout/MicroMarketSEOBar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function BlogIndexPage() {
 
         </div>
       </main>
+      <MicroMarketSEOBar />
       <Footer />
     </>
   );

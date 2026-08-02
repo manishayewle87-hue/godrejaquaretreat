@@ -33,7 +33,14 @@ export const LOCATIONS = [
   "godrej-hillside", "godrej-green-vistas", "godrej-meadows", "godrej-rivergreens", 
   "godrej-gale", "godrej-greenfront", "godrej-emerald-waters", "godrej-urban-retreat",
   "godrej-parkridge", "godrej-forest-grove", "godrej-boulevard", "godrej-nurture",
-  "godrej-prana", "godrej-infinity", "godrej-central-park", "godrej-properties-pune"
+  "godrej-prana", "godrej-infinity", "godrej-central-park", "godrej-properties-pune",
+  
+  // Phase 31: High-Intent Compound Micro-Market Slugs (Hinjewadi, Mahalunge, Pune Wide)
+  "godrej-mahalunge-pune", "godrej-rivergreens-mahalunge", "godrej-hillside-mahalunge",
+  "godrej-green-vistas-mahalunge", "godrej-meadows-mahalunge", "godrej-boulevard-mahalunge",
+  "godrej-eden-estate-mahalunge", "godrej-properties-mahalunge", "godrej-park-world-hinjewadi",
+  "the-aqua-retreat-hinjewadi", "godrej-aqua-retreat-hinjewadi", "godrej-properties-hinjewadi",
+  "godrej-properties-pune-projects"
 ];
 
 // Helper to format slugs into Title Case (e.g., "viman-nagar" -> "Viman Nagar")

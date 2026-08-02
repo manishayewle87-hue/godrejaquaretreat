@@ -22,6 +22,7 @@ const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
 const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const MicroMarketSEOBar = dynamic(() => import("@/components/layout/MicroMarketSEOBar"));
 
 export default function PageContent() {
   return (
@@ -43,6 +44,7 @@ export default function PageContent() {
       <VirtualTour />
       <Location />
       <FAQ />
+      <MicroMarketSEOBar />
       <Footer />
     </>
   );
