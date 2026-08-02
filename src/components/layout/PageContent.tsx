@@ -21,6 +21,7 @@ const InvestmentCalculator = dynamic(() => import("@/components/sections/Investm
 const PaymentPlanSchedule = dynamic(() => import("@/components/sections/PaymentPlanSchedule"));
 const Gallery = dynamic(() => import("@/components/sections/Gallery"));
 const VirtualTour = dynamic(() => import("@/components/sections/VirtualTour"));
+const MetroConnectivityScorecard = dynamic(() => import("@/components/sections/MetroConnectivityScorecard"));
 const Location = dynamic(() => import("@/components/sections/Location"));
 const ConstructionProgress = dynamic(() => import("@/components/sections/ConstructionProgress"));
 const Quiz = dynamic(() => import("@/components/sections/Quiz"));
@@ -46,6 +47,7 @@ export default function PageContent() {
       <Quiz />
       <Gallery />
       <VirtualTour />
+      <MetroConnectivityScorecard />
       <Location />
       <ConstructionProgress />
       <FAQ />
