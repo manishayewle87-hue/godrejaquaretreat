@@ -2,10 +2,13 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import KineticText from '@/components/ui/KineticText';
+import { useModal } from '@/context/ModalContext';
 
 export default function VideoTour() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { openModal } = useModal();
   
   const [isMounted, setIsMounted] = useState(false);
 
@@ -45,18 +48,23 @@ export default function VideoTour() {
           style={{ scale, opacity }}
           className="relative w-full aspect-video md:aspect-[21/9] bg-black border border-white/10 rounded-[32px] overflow-hidden shadow-2xl shadow-black/50"
         >
-          {isMounted && (
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/i9Uk1bydq5s?autoplay=1&mute=1&loop=1&playlist=i9Uk1bydq5s&controls=0&rel=0&modestbranding=1"
-              title="Godrej Park World Aqua Retreat Video Tour"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          )}
-          
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 pointer-events-none"></div>
+          <div className="absolute inset-0 w-full h-full cursor-pointer group" onClick={openModal}>
+            <Image 
+              src="https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
+              alt="Godrej Park World Video Tour"
+              fill
+              className="object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 group-hover:scale-105"
+            />
+            
+            {/* Play Button Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 md:w-24 md:h-24 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center group-hover:bg-emerald-aqua transition-colors duration-500 shadow-[0_0_40px_rgba(0,0,0,0.3)]">
+                <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2 group-hover:border-l-black transition-colors duration-500"></div>
+              </div>
+            </div>
+            
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+          </div>
 
           <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 pointer-events-none">
             <p className="text-xs tracking-[0.3em] uppercase text-gray-300 font-light mb-2">Masterplan Preview</p>
