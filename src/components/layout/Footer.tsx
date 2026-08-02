@@ -213,9 +213,9 @@ export default function Footer() {
         >
           <p>&copy; {new Date().getFullYear()} Godrej Properties. All rights reserved.</p>
           <div className="flex gap-6 uppercase tracking-widest text-[10px]">
-            <a href="#" className="hover:text-emerald-aqua transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-emerald-aqua transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-emerald-aqua transition-colors">RERA Disclaimers</a>
+            <Link href="/privacy-policy" className="hover:text-emerald-aqua transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-emerald-aqua transition-colors">Terms of Service</Link>
+            <Link href="/disclaimer" className="hover:text-emerald-aqua transition-colors">RERA Disclaimers</Link>
           </div>
         </motion.div>
       </div>
