@@ -14,14 +14,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1. Static Pages
   const staticPages = [
     "",
-    "/admin",
     "/eoi",
-    "/godrej-properties-hinjewadi-pune"
+    "/godrej-properties-hinjewadi-pune",
+    "/godrej-park-world-pune-aqua-lifestyle",
+    "/godrej-park-world-pune-gallery",
+    "/godrej-park-world-pune-hinjewadi-location",
+    "/godrej-park-world-pune-luxury-residences",
+    "/godrej-park-world-pune-masterplan",
+    "/godrej-park-world-pune-premium-amenities",
+    "/blog",
+    "/privacy-policy",
+    "/terms-of-service",
+    "/disclaimer"
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "daily" as const,
-    priority: route === "" ? 1 : 0.9,
+    priority: route === "" ? 1 : 0.95,
   }));
   
   staticPages.forEach((entry) => sitemapEntries.push(entry));

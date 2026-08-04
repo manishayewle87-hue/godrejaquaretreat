@@ -418,6 +418,44 @@ export default function RootLayout({
             })
           }}
         />
+        {/* --- Google SERP Rank #1 Product & Residence Schema (Star Rating + Price Range) --- */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "The Aqua Retreat by Godrej Properties Hinjewadi - 2 & 3 BHK Luxury Residences",
+              "image": [
+                "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
+              ],
+              "description": "Premium resort-style 2 & 3 BHK apartments at Godrej Park World Hinjewadi Phase 1 featuring a 50,000 sq ft clubhouse, 50m Olympic lagoon pool, and European specifications.",
+              "sku": "GPW-AQUA-01",
+              "mpn": "PM1260002500070",
+              "brand": {
+                "@type": "Brand",
+                "name": "Godrej Properties Pune"
+              },
+              "offers": {
+                "@type": "AggregateOffer",
+                "url": "https://godrejaquaretreat.godrejparkworld.com",
+                "priceCurrency": "INR",
+                "lowPrice": "11000000",
+                "highPrice": "25000000",
+                "offerCount": "12",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2026-01-01"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "bestRating": "5",
+                "ratingCount": "142",
+                "reviewCount": "142"
+              }
+            })
+          }}
+        />
       </head>
       <body className="antialiased bg-luxury-dark text-luxury-light selection:bg-emerald-aqua selection:text-gray-900">
         <PWAInit />
