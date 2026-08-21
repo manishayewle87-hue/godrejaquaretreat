@@ -34,10 +34,10 @@ export default function Footer() {
           {/* Brand & Newsletter */}
           <div className="lg:col-span-5">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 tracking-wide text-white">
-              The <i className="text-emerald-aqua font-light">Aqua</i> Retreat
+              Godrej <i className="text-emerald-aqua font-light">The Retreat</i> Hinjewadi
             </h3>
             <p className="text-gray-400 font-light max-w-sm mb-10 leading-relaxed text-sm">
-              Experience the pinnacle of resort-style living at Godrej Park World, Hinjewadi. Designed for clarity, calm, and continuous flow.
+              Experience the pinnacle of resort-style living at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1. Designed for clarity, calm, and continuous flow.
             </p>
             
             <div className="mb-8 relative">
@@ -157,14 +157,15 @@ export default function Footer() {
             <div>
               <h5 className="text-gray-400 font-semibold text-xs tracking-[0.2em] uppercase mb-4">Godrej Properties Hinjewadi Pune</h5>
               <ul className="flex flex-col gap-2 text-[10px] text-gray-500 font-light leading-relaxed">
+                <li><Link href="/godrej-the-retreat-hinjewadi" className="text-emerald-aqua font-medium hover:text-white transition-colors">Godrej The Retreat Hinjewadi</Link></li>
+                <li><Link href="/properties/godrej-the-retreat-price" className="hover:text-emerald-aqua transition-colors">Godrej The Retreat Price & Cost Sheet</Link></li>
+                <li><Link href="/properties/godrej-the-retreat-floor-plan" className="hover:text-emerald-aqua transition-colors">Godrej The Retreat Floor Plans</Link></li>
                 <li><Link href="/" className="hover:text-emerald-aqua transition-colors">Godrej Park World Hinjewadi</Link></li>
                 <li><Link href="/clusters/the-aqua-retreat" className="hover:text-emerald-aqua transition-colors">The Aqua Retreat Hinjewadi</Link></li>
                 <li><Link href="/clusters/the-gale" className="hover:text-emerald-aqua transition-colors">The Gale at Godrej Park World</Link></li>
                 <li><Link href="/clusters/the-greenfront" className="hover:text-emerald-aqua transition-colors">Godrej Greenfront</Link></li>
                 <li><Link href="/clusters/godrej-woodsville" className="hover:text-emerald-aqua transition-colors">Godrej Woodsville</Link></li>
                 <li><Link href="/clusters/the-eden-estate-na-plots" className="hover:text-emerald-aqua transition-colors">Godrej Eden Estate</Link></li>
-                <li><Link href="/clusters/godrej-elements" className="hover:text-emerald-aqua transition-colors">Godrej Elements</Link></li>
-                <li><Link href="/clusters/godrej-24" className="hover:text-emerald-aqua transition-colors">Godrej 24</Link></li>
               </ul>
             </div>
 
@@ -216,7 +217,7 @@ export default function Footer() {
           </div>
           
           <p className="text-gray-600 font-light text-[10px] leading-relaxed max-w-5xl mt-12">
-            The Aqua Retreat by Godrej Properties Hinjewadi is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living in Hinjewadi Phase 1. 
+            Godrej The Retreat (The Aqua Retreat) at Godrej Park World Hinjewadi Phase 1 is one of the premier Godrej Properties Pune projects offering ultra-luxury resort-style living. 
             Designed to integrate seamlessly with nature, this flagship Godrej Properties Pune development sets a new benchmark for premium real estate in Pune West. 
             Keywords and references to third-party developers (Lodha, VTP, Kolte Patil, Gera, Shapoorji Pallonji, Mahindra, Kohinoor, Kasturi, Rohan Builders, Pride Purple, Nyati, Kumar, Vilas Javdekar) are for comparative market analysis only.
           </p>

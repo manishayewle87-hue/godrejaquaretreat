@@ -2,9 +2,8 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, CheckCircle2, ChevronLeft, MapPin, Building2, Home } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ChevronLeft, Building2, Home } from 'lucide-react';
 import Link from 'next/link';
-import Navbar from '@/components/layout/Navbar';
 
 type EOIForm = {
   config: string;
@@ -12,6 +11,7 @@ type EOIForm = {
   name: string;
   email: string;
   phone: string;
+  _hp?: string;
 };
 
 export default function EOIPage() {
@@ -23,6 +23,7 @@ export default function EOIPage() {
     name: '',
     email: '',
     phone: '',
+    _hp: '',
   });
 
   const nextStep = () => setStep(s => Math.min(s + 1, 3));
@@ -176,6 +177,16 @@ export default function EOIPage() {
                 <p className="text-gray-500 font-light text-sm mb-8">You are locking in an EOI for a {formData.config} on a {formData.floorBand} floor.</p>
                 
                 <form id="eoiForm" onSubmit={handleSubmit} className="flex flex-col gap-5">
+                  <input 
+                    type="text" 
+                    name="_hp" 
+                    value={formData._hp} 
+                    onChange={(e) => setFormData({...formData, _hp: e.target.value})} 
+                    className="hidden" 
+                    tabIndex={-1} 
+                    autoComplete="off" 
+                    aria-hidden="true" 
+                  />
                   <input 
                     type="text" 
                     required 

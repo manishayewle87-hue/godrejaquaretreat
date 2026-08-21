@@ -12,7 +12,7 @@ type QuizState = 'q1' | 'q2' | 'q3' | 'calculating' | 'capture' | 'success';
 export default function Quiz() {
   const [step, setStep] = useState<QuizState>('q1');
   const [answers, setAnswers] = useState({ intent: '', config: '', budget: '' });
-  const [formData, setFormData] = useState({ name: '', phone: '' });
+  const [formData, setFormData] = useState({ name: '', phone: '', _hp: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleAnswer = (question: 'intent' | 'config' | 'budget', value: string) => {
@@ -37,6 +37,7 @@ export default function Quiz() {
         body: JSON.stringify({
           name: formData.name,
           phone: formData.phone,
+          _hp: formData._hp,
           email: '',
           configuration: `Quiz Lead: ${answers.config} | Budget: ${answers.budget} | Intent: ${answers.intent}`
         })
@@ -198,6 +199,16 @@ export default function Quiz() {
                 </div>
                 
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                  <input 
+                    type="text" 
+                    name="_hp" 
+                    value={formData._hp} 
+                    onChange={(e) => setFormData({...formData, _hp: e.target.value})} 
+                    className="hidden" 
+                    tabIndex={-1} 
+                    autoComplete="off" 
+                    aria-hidden="true" 
+                  />
                   <input 
                     type="text" 
                     required

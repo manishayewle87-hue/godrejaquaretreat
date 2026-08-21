@@ -11,7 +11,18 @@ export default function SEOFooterMesh() {
               <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 text-xs text-gray-400 font-light">
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-6 text-xs text-gray-400 font-light">
+            {/* Godrej The Retreat Silo */}
+            <div className="flex flex-col gap-2">
+              <h5 className="text-emerald-aqua font-medium mb-2 uppercase">Godrej The Retreat</h5>
+              <Link href="/godrej-the-retreat-hinjewadi" className="text-white hover:text-emerald-aqua transition-colors font-medium">Godrej The Retreat Hinjewadi</Link>
+              <Link href="/properties/godrej-the-retreat-price" className="hover:text-white transition-colors">The Retreat Price & Cost Sheet</Link>
+              <Link href="/properties/godrej-the-retreat-floor-plan" className="hover:text-white transition-colors">The Retreat 2 & 3 BHK Layouts</Link>
+              <Link href="/properties/godrej-the-retreat-brochure" className="hover:text-white transition-colors">The Retreat PDF Brochure</Link>
+              <Link href="/properties/godrej-the-retreat-sample-flat" className="hover:text-white transition-colors">The Retreat Sample Flat Tour</Link>
+              <Link href="/properties/godrej-the-retreat-rera" className="hover:text-white transition-colors">MahaRERA PM1260002500070</Link>
+            </div>
+
             {/* Top Micro Markets */}
             <div className="flex flex-col gap-2">
               <h5 className="text-emerald-aqua font-medium mb-2 uppercase">Popular Markets</h5>
@@ -45,11 +56,11 @@ export default function SEOFooterMesh() {
             {/* Top IT Parks */}
             <div className="flex flex-col gap-2">
               <h5 className="text-emerald-aqua font-medium mb-2 uppercase">IT Parks</h5>
-              <Link href="/properties/near-infosys-hinjewadi-phase-1" className="hover:text-white transition-colors">Near Infosys</Link>
-              <Link href="/properties/near-wipro-hinjewadi-phase-1" className="hover:text-white transition-colors">Near Wipro</Link>
-              <Link href="/properties/near-tcs-hinjewadi-phase-3" className="hover:text-white transition-colors">Near TCS</Link>
+              <Link href="/properties/near-infosys-hinjewadi-phase-1" className="hover:text-white transition-colors">Near Infosys Phase 1</Link>
+              <Link href="/properties/near-wipro-hinjewadi-phase-1" className="hover:text-white transition-colors">Near Wipro Circle</Link>
+              <Link href="/properties/near-tcs-hinjewadi-phase-3" className="hover:text-white transition-colors">Near TCS Phase 3</Link>
               <Link href="/properties/embassy-techzone-hinjewadi" className="hover:text-white transition-colors">Near Embassy Techzone</Link>
-              <Link href="/properties/quadron-business-park-hinjewadi" className="hover:text-white transition-colors">Near Quadron</Link>
+              <Link href="/properties/quadron-business-park-hinjewadi" className="hover:text-white transition-colors">Near Quadron Park</Link>
             </div>
           </div>
         </details>

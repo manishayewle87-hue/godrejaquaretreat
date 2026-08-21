@@ -10,7 +10,7 @@ export default function EnquiryModal() {
   const { isOpen, closeModal } = useModal();
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', _hp: '' });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,7 +35,7 @@ export default function EnquiryModal() {
       setTimeout(() => {
         closeModal();
         setStatus('idle');
-        setFormData({ name: '', email: '', phone: '' });
+        setFormData({ name: '', email: '', phone: '', _hp: '' });
       }, 3000);
     } catch (error) {
       console.error(error);
@@ -58,40 +58,67 @@ export default function EnquiryModal() {
           />
           
           {/* Modal Container */}
-          <div className="fixed inset-0 z-[101] pointer-events-none flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="bg-white rounded-3xl shadow-2xl w-full max-w-lg pointer-events-auto overflow-hidden flex flex-col relative"
+              initial={{ scale: 0.95, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0, y: 20 }}
+              className="relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row my-auto"
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={closeModal}
-                className="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors z-10"
+                className="absolute top-4 right-4 z-20 w-10 h-10 bg-black/10 hover:bg-black/20 text-gray-800 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Close modal"
               >
-                <X size={24} />
+                <X className="w-5 h-5" />
               </button>
 
-              <div className="p-10 md:p-12">
+              {/* Left Side: Brand Imagery */}
+              <div className="w-full md:w-5/12 bg-[#0D211C] p-8 md:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                {/* Visual accents */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-aqua/10 rounded-full blur-3xl pointer-events-none" />
+                
+                <div>
+                  <span className="text-emerald-aqua text-xs font-semibold uppercase tracking-[0.2em] mb-2 block">
+                    Godrej Properties
+                  </span>
+                  <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
+                    The Aqua Retreat
+                  </h2>
+                  <p className="text-gray-400 text-sm font-light leading-relaxed mb-6">
+                    Hinjewadi Phase 1, Pune. Resort-style luxury living surrounded by 3.5+ acres of central greens.
+                  </p>
+                </div>
+
+                <div className="border-t border-white/10 pt-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-emerald-aqua animate-pulse" />
+                    <span className="text-xs text-gray-300 tracking-wider">
+                      Pre-Launch Privilege Passes Available
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Side: Form */}
+              <div className="w-full md:w-7/12 p-8 md:p-12 bg-white flex flex-col justify-center">
                 {status === 'success' ? (
                   <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="flex flex-col items-center justify-center text-center py-10"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="text-center py-12 flex flex-col items-center justify-center"
                   >
-                    <CheckCircle2 size={64} className="text-emerald-aqua mb-6" />
-                    <h3 className="font-serif text-3xl text-gray-900 mb-2">Thank You</h3>
-                    <p className="text-gray-600 font-light">
-                      Your enquiry has been successfully submitted. Our preferred partners will contact you shortly.
+                    <CheckCircle2 className="w-16 h-16 text-emerald-aqua mb-4" />
+                    <h3 className="font-serif text-2xl text-gray-900 mb-2">Thank You!</h3>
+                    <p className="text-gray-600 text-sm max-w-xs">
+                      Your interest has been registered. Our relationship manager will reach out shortly with exclusive details.
                     </p>
                   </motion.div>
                 ) : (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
                   >
                     <div className="mb-10">
                       <h3 className="font-serif text-3xl text-gray-900 mb-2">Book a Site Visit</h3>
@@ -101,6 +128,17 @@ export default function EnquiryModal() {
                     </div>
 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                      {/* Honeypot field for bot detection */}
+                      <input 
+                        type="text" 
+                        name="_hp" 
+                        value={formData._hp} 
+                        onChange={(e) => setFormData({...formData, _hp: e.target.value})} 
+                        className="hidden" 
+                        tabIndex={-1} 
+                        autoComplete="off" 
+                        aria-hidden="true" 
+                      />
                       <div className="flex flex-col gap-1.5">
                         <label htmlFor="name" className="text-xs font-semibold tracking-widest text-gray-900 uppercase">Full Name</label>
                         <input 

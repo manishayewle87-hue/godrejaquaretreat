@@ -23,7 +23,7 @@ export default function TermsOfService() {
 
           <h2 className="text-2xl font-serif text-luxury-dark mt-12 mb-4">2. Intellectual Property</h2>
           <p>
-            The project name "Godrej Park World", "The Aqua Retreat", logos, images, and brand identifiers are the property of Godrej Properties. Their use on this website is strictly for promotional purposes as an authorized channel partner.
+            The project name &quot;Godrej Park World&quot;, &quot;The Aqua Retreat&quot;, logos, images, and brand identifiers are the property of Godrej Properties. Their use on this website is strictly for promotional purposes as an authorized channel partner.
           </p>
 
           <h2 className="text-2xl font-serif text-luxury-dark mt-12 mb-4">3. Data Submission and Communication</h2>

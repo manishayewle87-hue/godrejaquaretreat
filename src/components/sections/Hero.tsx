@@ -55,18 +55,18 @@ export default function Hero() {
               MahaRERA: PM1260002500070
             </span>
             <h1 className="text-gray-800 tracking-[0.3em] uppercase text-xs font-semibold">
-              Pune Real Estate • Godrej Park World Hinjewadi
+              Godrej The Retreat Hinjewadi Phase 1 • Godrej Park World Pune
             </h1>
           </div>
 
           <KineticText 
-            text="The Aqua Retreat By Godrej Properties. Redefining Pune Real Estate."
+            text="Godrej The Retreat Hinjewadi. Ultra-Luxury Resort Residences By Godrej Properties."
             el="h2"
             className="font-serif text-5xl md:text-6xl lg:text-[72px] text-luxury-light leading-[1.05] mb-6"
           />
 
           <p className="text-gray-700 text-lg md:text-2xl font-light max-w-3xl mb-12 leading-relaxed">
-            Where water shapes life, every space flows with calm, grace & meaning. Experience resort-style luxury living and buy a premium 2 & 3 BHK flat at The Aqua Retreat, the crown jewel of Godrej Park World.
+            Where water shapes life, every space flows with calm, grace & meaning. Experience resort-style luxury living and buy a premium 2 & 3 BHK flat at Godrej The Retreat (The Aqua Retreat), the crown jewel of Godrej Park World Hinjewadi.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 items-start">

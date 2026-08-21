@@ -62,16 +62,51 @@ export async function generateMetadata({ params }: { params: Promise<{ amenity: 
 export default async function AmenitySEOPage({ params }: { params: Promise<{ amenity: string }> }) {
   const resolvedParams = await params;
   const amenityName = formatAmenityName(resolvedParams.amenity);
-  
-  return (
-    <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-      <h1 className="sr-only">Experience {amenityName} at Godrej Park World Hinjewadi</h1>
-      
-      <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-        Godrej Properties Pune offers exclusive {amenityName}
-      </div>
+  const baseUrl = siteConfig.url;
+  const pageUrl = `${baseUrl}/amenities/${resolvedParams.amenity}`;
 
-      <PageContent />
-    </main>
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+        { "@type": "ListItem", "position": 2, "name": "Amenities", "item": `${baseUrl}/amenities/50000-sq-ft-clubhouse-apartments-pune` },
+        { "@type": "ListItem", "position": 3, "name": amenityName, "item": pageUrl }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": `${amenityName} - Godrej Park World`,
+      "description": `World-class lifestyle feature (${amenityName}) at Godrej Park World Hinjewadi by Godrej Properties Pune.`,
+      "url": pageUrl,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411057",
+        "addressCountry": "IN"
+      }
+    }
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
+        <h1 className="sr-only">Experience {amenityName} at Godrej Park World Hinjewadi</h1>
+        
+        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
+          Godrej Properties Pune offers exclusive {amenityName}
+        </div>
+
+        <PageContent />
+      </main>
+    </>
   );
 }

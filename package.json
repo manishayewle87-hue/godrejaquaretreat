@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "index:all": "node scripts/advanced-indexer.js --engine=all",
+    "index:google": "node scripts/advanced-indexer.js --engine=google",
+    "index:indexnow": "node scripts/advanced-indexer.js --engine=indexnow",
+    "index:diff": "node scripts/advanced-indexer.js --mode=diff",
+    "index:tier1": "node scripts/advanced-indexer.js --mode=tier1",
+    "index:status": "node scripts/advanced-indexer.js --status"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.12",

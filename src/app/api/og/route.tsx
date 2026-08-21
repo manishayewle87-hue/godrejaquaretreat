@@ -113,9 +113,12 @@ export async function GET(request: Request) {
       {
         width: 1200,
         height: 630,
+        headers: {
+          'Cache-Control': 'public, max-age=31536000, immutable',
+        },
       }
     );
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.error(e);
     return new Response('Failed to generate image', { status: 500 });
   }

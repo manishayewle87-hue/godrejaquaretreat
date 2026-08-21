@@ -71,16 +71,56 @@ export async function generateMetadata({ params }: { params: Promise<{ config: s
 export default async function ConfigurationSEOPage({ params }: { params: Promise<{ config: string }> }) {
   const resolvedParams = await params;
   const configName = formatConfigName(resolvedParams.config);
-  
-  return (
-    <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-      <h1 className="sr-only">Buy {configName} - Godrej Park World Hinjewadi Phase 1</h1>
-      
-      <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-        Godrej Properties Pune presents premium {configName}
-      </div>
+  const baseUrl = siteConfig.url;
+  const pageUrl = `${baseUrl}/configurations/${resolvedParams.config}`;
 
-      <PageContent />
-    </main>
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+        { "@type": "ListItem", "position": 2, "name": "Configurations", "item": `${baseUrl}/configurations/2-bhk-flats-in-hinjewadi` },
+        { "@type": "ListItem", "position": 3, "name": configName, "item": pageUrl }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": `${configName} - The Aqua Retreat at Godrej Park World`,
+      "description": `Premium ${configName} layout at Godrej Park World Hinjewadi Phase 1 by Godrej Properties Pune.`,
+      "url": pageUrl,
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "11000000",
+        "highPrice": "25000000",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "RealEstateAgent",
+          "name": "Godrej Properties Pune",
+          "telephone": "+917744009295"
+        }
+      }
+    }
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
+        <h1 className="sr-only">Buy {configName} - Godrej Park World Hinjewadi Phase 1</h1>
+        
+        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
+          Godrej Properties Pune presents premium {configName}
+        </div>
+
+        <PageContent />
+      </main>
+    </>
   );
 }

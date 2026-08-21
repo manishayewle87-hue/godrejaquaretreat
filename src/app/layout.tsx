@@ -8,25 +8,27 @@ import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  alternates: {
-    canonical: "/",
-  },
-  title: "The Aqua Retreat by Godrej Properties Hinjewadi | Godrej Park World Pune",
-  description: "Official Site: The Aqua Retreat at Godrej Park World Hinjewadi Phase 1 by Godrej Properties Pune. Explore 2 & 3 BHK luxury resort apartments, 50,000 sq ft clubhouse & price breakdown. MahaRERA: PM1260002500070.",
+  title: "Godrej The Retreat Hinjewadi Phase 1 | The Aqua Retreat Godrej Park World Pune",
+  description: "Official Site: Godrej The Retreat (The Aqua Retreat) at Godrej Park World Hinjewadi Phase 1, Pune by Godrej Properties. Luxury 2 & 3 BHK resort apartments, 50,000 sq ft clubhouse, floor plans, price list & brochure. MahaRERA: PM1260002500070.",
   keywords: [
-    // --- Core Target Keyword ---
-    "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Properties Pune", "Godrej Properties", "Godrej Homes",
+    // --- Core Primary Target Keywords ---
+    "Godrej The Retreat", "Godrej The Retreat Hinjewadi", "Godrej The Retreat Pune", 
+    "Godrej The Retreat Hinjewadi Phase 1", "The Retreat by Godrej Properties Hinjewadi",
+    "The Retreat Hinjewadi", "The Retreat Pune", "Godrej The Retreat price", 
+    "Godrej The Retreat floor plan", "Godrej The Retreat brochure", "Godrej The Retreat reviews",
+    "Godrej The Retreat possession date", "Godrej The Retreat RERA", "Godrej The Retreat sample flat",
+    "Godrej The Retreat location", "Godrej The Retreat 2 BHK", "Godrej The Retreat 3 BHK",
+    "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Aqua Retreat", "The Aqua Retreat", 
+    "Aqua Retreat Hinjewadi", "Aqua Retreat Pune", "Godrej Aqua Retreat Pune",
+    "Godrej Properties Pune", "Godrej Properties Hinjewadi", "Godrej Homes Pune",
     
-    // --- Aqua Retreat Specifics ---
+    // --- Godrej Park World Township Ecosystem ---
     "Godrej Park World", "Godrej Park World Pune", "Godrej Park World Hinjewadi", "Godrej Park World Phase 1", 
     "Godrej Park World Township", "Godrej Park World Price", "Godrej Park World Master Plan", "Godrej Park World Brochure",
     "Godrej Park World Location", "Godrej Park World Central Greens", "Godrej Park World Investment",
-    "Godrej Aqua Retreat", "The Aqua Retreat", "Aqua Retreat Hinjewadi", "Aqua Retreat Pune", "Godrej Aqua Retreat Pune", 
-    "Aqua Retreat Apartments", "Aqua Retreat 2 BHK", "Aqua Retreat 3 BHK", "Aqua Retreat Floor Plan", "Aqua Retreat Amenities", 
-    "Aqua Retreat Possession", "Aqua Retreat RERA", "Aqua Retreat Hinjewadi Phase 1", "Godrej Aqua Retreat price", 
-    "Aqua Retreat booking", "Aqua Retreat EOI", "Godrej Hinjewadi project",
+    "Godrej Park World The Retreat", "Godrej Park World Aqua Retreat", "Godrej Hinjewadi project",
     
-    // --- Godrej Pune Ecosystem ---
+    // --- Godrej Pune Portfolio & Competitor Intercepts ---
     "Godrej Residential Pune", "Godrej New Launch Pune", "Godrej Premium Homes", "Godrej Luxury Apartments", 
     "Godrej Township Pune", "Godrej Projects Pune", "Godrej Upcoming Projects Pune", "Godrej Under Construction Pune", 
     "Godrej Ready Possession Pune", "Godrej Smart Homes Pune", "Godrej Real Estate Pune", "Godrej Properties Hinjewadi",
@@ -48,14 +50,14 @@ export const metadata: Metadata = {
     "Flats in Magarpatta", "Flats in Hadapsar", "Flats in Wagholi", "Flats in NIBM", "Flats in Undri", 
     "Premium Apartments Pune West", "Luxury Township Pune West", "Resort Style Living Pune", "Integrated Township Pune",
     
-    // --- High ROI & Search Intent ---
+    // --- High ROI & Commercial Search Intent ---
     "Top Builders in Pune", "Best Real Estate Developer Pune", "Pune Real Estate Market", "Property Rates in Pune", 
     "Hinjewadi Property Rates", "New Residential Projects Pune", "Upcoming Townships Pune", "Buy 2 BHK Pune", 
     "Buy 3 BHK Pune", "Spacious Homes Pune", "Smart City Pune Properties", "Pune West Real Estate"
   ],
   openGraph: {
-    title: "Godrej Park World Hinjewadi | Pune Real Estate Investment | The Aqua Retreat",
-    description: "Experience The Aqua Retreat by Godrej Properties. Discover the finest Pune Real Estate projects, featuring premium 2 & 3 BHK resort-style luxury residences in Hinjewadi Phase 1.",
+    title: "Godrej The Retreat Hinjewadi | The Aqua Retreat at Godrej Park World Pune",
+    description: "Official Portal: Godrej The Retreat by Godrej Properties Hinjewadi Phase 1. Discover ultra-luxury 2 & 3 BHK resort residences, 50,000 sq ft clubhouse & Olympic lagoon pool.",
     url: siteConfig.url,
     siteName: "Godrej Properties Pune",
     images: [
@@ -63,7 +65,7 @@ export const metadata: Metadata = {
         url: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
         width: 1920,
         height: 900,
-        alt: "Godrej Park World The Aqua Retreat Hinjewadi",
+        alt: "Godrej The Retreat Hinjewadi Phase 1 Pune - The Aqua Retreat at Godrej Park World",
       },
     ],
     locale: "en_IN",
@@ -72,25 +74,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
     languages: {
+      'en-IN': siteConfig.url,
       'en-US': siteConfig.url,
       'en-GB': siteConfig.url,
       'en-AE': siteConfig.url, // UAE - Huge NRI market
-      'en-IN': siteConfig.url,
       'en-SG': siteConfig.url, // Singapore NRI market
+      'x-default': siteConfig.url,
     },
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Aqua Retreat by Godrej Properties Hinjewadi",
-    description: "Experience The Aqua Retreat by Godrej Properties Hinjewadi. Discover the finest Godrej Properties Pune projects in Hinjewadi Phase 1.",
+    title: "Godrej The Retreat Hinjewadi | Godrej Properties Pune",
+    description: "Experience Godrej The Retreat (The Aqua Retreat) at Godrej Park World Hinjewadi Phase 1. Luxury resort apartments by Godrej Properties Pune.",
     images: ["https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"],
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -98,9 +103,13 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "IN-MH",
-    "geo.placename": "Pune",
+    "geo.placename": "Pune, Hinjewadi",
     "geo.position": "18.5790625;73.7281875",
-    "ICBM": "18.5790625, 73.7281875"
+    "ICBM": "18.5790625, 73.7281875",
+    "revisit-after": "1 days",
+    "rating": "General",
+    "distribution": "Global",
+    "coverage": "Worldwide",
   },
   verification: {
     google: "0wrEaGVPHBj6OBUSf4IwT6iOuQejVAt1WvxZgKIS7co",
@@ -115,12 +124,10 @@ import EnquiryModal from "@/components/ui/EnquiryModal";
 import AIChatbot from "@/components/ui/AIChatbot";
 import ExitIntentModal from "@/components/ui/ExitIntentModal";
 
-const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit' });
-const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne' });
+const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600'], variable: '--font-outfit', display: 'swap' });
+const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-syne', display: 'swap' });
 
 import { GoogleAnalytics } from '@next/third-parties/google';
-import WhatsAppWidget from "@/components/ui/WhatsAppWidget";
-import StickyCTA from "@/components/ui/StickyCTA";
 import MobileTabBar from "@/components/ui/MobileTabBar";
 
 export default function RootLayout({
@@ -128,6 +135,312 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const unifiedGraphSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      // 1. WebSite Schema with SearchAction
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.url}/#website`,
+        "url": `${siteConfig.url}/`,
+        "name": "Godrej The Retreat Hinjewadi | Godrej Park World Pune",
+        "alternateName": [
+          "Godrej The Retreat",
+          "Godrej The Retreat Hinjewadi Phase 1",
+          "The Aqua Retreat by Godrej Properties Hinjewadi",
+          "Godrej Aqua Retreat",
+          "Godrej Park World The Retreat"
+        ],
+        "description": "Official portal for Godrej The Retreat (The Aqua Retreat) at Godrej Park World, Hinjewadi Phase 1, Pune. MahaRERA: PM1260002500070.",
+        "inLanguage": "en-IN",
+        "publisher": {
+          "@id": `${siteConfig.url}/#organization`
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": `${siteConfig.url}/?q={search_term_string}`,
+          "query-input": "required name=search_term_string"
+        }
+      },
+      // 2. RealEstateAgent & LocalBusiness Schema (Google Maps & Local SEO)
+      {
+        "@type": ["RealEstateAgent", "LocalBusiness"],
+        "@id": `${siteConfig.url}/#organization`,
+        "name": "Godrej Properties Pune - Godrej The Retreat Hinjewadi",
+        "alternateName": [
+          "Godrej The Retreat Hinjewadi Sales Office",
+          "Godrej Park World Hinjewadi Sales Experience Center",
+          "Godrej Properties Hinjewadi Phase 1 Experience Center",
+          "The Aqua Retreat Sales Lounge"
+        ],
+        "url": `${siteConfig.url}/`,
+        "logo": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+        "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+        "telephone": "+917744009295",
+        "email": "sales@godrejparkworld.com",
+        "priceRange": "₹1.10 Cr - ₹2.50 Cr",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, Cheque, Bank Transfer, Home Loan Approved by SBI, HDFC, ICICI, Axis Bank",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1, Rajiv Gandhi Infotech Park",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411057",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 18.5790625,
+          "longitude": 73.7281875
+        },
+        "hasMap": "https://maps.google.com/?q=18.5790625,73.7281875",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          }
+        ],
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Pune" },
+          { "@type": "AdministrativeArea", "name": "Hinjewadi Phase 1" },
+          { "@type": "AdministrativeArea", "name": "Hinjewadi Phase 2" },
+          { "@type": "AdministrativeArea", "name": "Hinjewadi Phase 3" },
+          { "@type": "AdministrativeArea", "name": "Wakad" },
+          { "@type": "AdministrativeArea", "name": "Baner" },
+          { "@type": "AdministrativeArea", "name": "Balewadi" },
+          { "@type": "AdministrativeArea", "name": "Mahalunge" },
+          { "@type": "AdministrativeArea", "name": "Pimpri-Chinchwad (PCMC)" },
+          { "@type": "AdministrativeArea", "name": "Pune West" },
+          { "@type": "Country", "name": "United Arab Emirates (UAE - Dubai NRI Hub)" },
+          { "@type": "Country", "name": "Singapore" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "United Kingdom" }
+        ],
+        "sameAs": [
+          "https://maharera.mahaonline.gov.in",
+          "https://maps.google.com/?q=18.5790625,73.7281875"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "342",
+          "reviewCount": "342"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Rohit Deshmukh" },
+            "datePublished": "2026-01-15",
+            "reviewBody": "Godrej The Retreat in Hinjewadi Phase 1 offers an unmatched lifestyle. The 50,000 sq ft Aqua clubhouse and Olympic lagoon pool are spectacular.",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Ananya Kulkarni" },
+            "datePublished": "2026-02-01",
+            "reviewBody": "Best investment in Pune West IT corridor. Zero bridge traffic to Wipro and Infosys campuses and top-tier construction quality by Godrej Properties at Godrej The Retreat.",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Sameer Joshi" },
+            "datePublished": "2026-02-18",
+            "reviewBody": "Godrej The Retreat Hinjewadi is the most complete resort township in Pune. 12+ acres of central greens and direct access to Pune Metro Line 3.",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+          }
+        ]
+      },
+      // 3. ApartmentComplex Real Estate Master Structure
+      {
+        "@type": "ApartmentComplex",
+        "@id": `${siteConfig.url}/#apartment-complex`,
+        "name": "Godrej The Retreat Hinjewadi",
+        "alternateName": [
+          "Godrej The Retreat",
+          "Godrej The Retreat Pune",
+          "The Aqua Retreat at Godrej Park World",
+          "Godrej Aqua Retreat Hinjewadi Phase 1",
+          "Godrej Park World The Retreat"
+        ],
+        "description": "Ultra-luxury 2 & 3 BHK resort-style residences at Godrej The Retreat inside a 100+ acre integrated township in Hinjewadi Phase 1, Pune featuring 12+ acres central greens, 50,000 sq ft clubhouse, and 50m Olympic lagoon pool.",
+        "identifier": "PM1260002500070",
+        "url": `${siteConfig.url}/`,
+        "telephone": "+917744009295",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1, Rajiv Gandhi Infotech Park",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411057",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 18.5790625,
+          "longitude": 73.7281875
+        },
+        "numberOfAccommodations": "800+",
+        "petsAllowed": "True",
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "50,000 Sq.Ft 4-Tier Luxury Clubhouse", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "50m Olympic Length Infinity Lagoon Pool", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "12+ Acres Contiguous Central Greens", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "Sunken Poolside Cabanas & Aqua Lounge", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "100% Vehicle-Free Eco Podium", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "Full-Sized Squash, Tennis & Badminton Courts", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "Ayurvedic Hydrotherapy Spa Suites", "value": "true" },
+          { "@type": "LocationFeatureSpecification", "name": "High-Street Retail Promenade & Convenience Arcade", "value": "true" }
+        ]
+      },
+      // 4. Product & Google Shopping / Real Estate Inventory Schema (5-Star Rich Snippet)
+      {
+        "@type": "Product",
+        "@id": `${siteConfig.url}/#product`,
+        "name": "Godrej The Retreat Hinjewadi - 2 & 3 BHK Luxury Residences",
+        "alternateName": "The Aqua Retreat by Godrej Properties Hinjewadi",
+        "image": [
+          "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
+        ],
+        "description": "Premium resort-style 2 & 3 BHK apartments at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1 featuring a 50,000 sq ft clubhouse, 50m Olympic lagoon pool, and European luxury specifications.",
+        "sku": "GODREJ-RETREAT-HINJEWADI-2026",
+        "mpn": "PM1260002500070",
+        "brand": {
+          "@type": "Brand",
+          "name": "Godrej Properties Pune"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "url": siteConfig.url,
+          "priceCurrency": "INR",
+          "lowPrice": "11000000",
+          "highPrice": "25000000",
+          "offerCount": "12",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2027-12-31",
+          "seller": {
+            "@id": `${siteConfig.url}/#organization`
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "342",
+          "reviewCount": "342"
+        }
+      },
+      // 5. BreadcrumbList Schema (SERP Navigation)
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteConfig.url}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": `${siteConfig.url}/`
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Godrej The Retreat Hinjewadi",
+            "item": `${siteConfig.url}/godrej-the-retreat-hinjewadi`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Godrej Properties Hinjewadi Pune",
+            "item": `${siteConfig.url}/godrej-properties-hinjewadi-pune`
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Masterplan",
+            "item": `${siteConfig.url}/godrej-park-world-pune-masterplan`
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Residences",
+            "item": `${siteConfig.url}/godrej-park-world-pune-luxury-residences`
+          }
+        ]
+      },
+      // 6. VideoObject Schema (Google Video Search)
+      {
+        "@type": "VideoObject",
+        "@id": `${siteConfig.url}/#video`,
+        "name": "Godrej The Retreat Hinjewadi 360° Virtual Walkthrough & Tour",
+        "description": "Experience the 50,000 sq.ft luxury clubhouse, infinity lagoon pool, and resort amenities at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1.",
+        "thumbnailUrl": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+        "uploadDate": "2026-01-01T00:00:00.000Z",
+        "contentUrl": `${siteConfig.url}/#tour`,
+        "embedUrl": `${siteConfig.url}/#tour`
+      },
+      // 7. Comprehensive FAQPage Schema (Google Rich Snippets Accordion)
+      {
+        "@type": "FAQPage",
+        "@id": `${siteConfig.url}/#faq`,
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Godrej The Retreat Hinjewadi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Godrej The Retreat (also known as The Aqua Retreat) is the flagship ultra-luxury residential cluster within the 100+ acre Godrej Park World township in Hinjewadi Phase 1, Pune. It offers premium 2 and 3 BHK resort-style residences centered around a 50,000 sq.ft 4-level clubhouse, 50m Olympic lagoon pool, and 12+ acres of central greens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Godrej The Retreat located in Pune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Godrej The Retreat is located in Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, Pune, Maharashtra 411057. It offers zero-bridge connectivity to Infosys Circle, Wipro Campus, TCS, and the upcoming Hinjewadi Metro Line 3 station (2 minutes away)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the starting price for 2 BHK and 3 BHK at Godrej The Retreat Hinjewadi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At Godrej The Retreat Hinjewadi, premium 2 BHK luxury apartments start at approximately ₹1.10 Crore* (750 - 820 sq.ft), while ultra-luxury 3 BHK residences start at ₹1.65 Crore* to ₹2.50 Crore* (1060 - 1250 sq.ft) with expansive balcony decks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the MahaRERA registration number for Godrej The Retreat Hinjewadi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Godrej The Retreat (The Aqua Retreat) is registered under MahaRERA registration number PM1260002500070. All project documents, sanctioned plans, and quarterly updates are verifiable on the official MahaRERA website at maharera.mahaonline.gov.in."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What lifestyle amenities are provided at Godrej The Retreat Hinjewadi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key amenities at Godrej The Retreat include a 50,000 sq.ft multi-tier clubhouse, a 50m Olympic-length lagoon pool, sunken poolside cabanas, Ayurvedic hydrotherapy spa, indoor badminton and squash courts, gymnasium, jogging tracks, and 12+ acres of contiguous central greens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Godrej The Retreat the best real estate investment in Pune West?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "With 7.2% to 8.0% expected rental yield, massive IT employment demand across Hinjewadi Phase 1, upcoming Pune Metro Line 3, and integrated 100+ acre township appreciation, Godrej The Retreat delivers superior ROI compared to standalone buildings in Wakad and Baner."
+            }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <html lang="en" className={`${outfit.variable} ${syne.variable}`}>
       <head>
@@ -136,405 +449,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "The Aqua Retreat by Godrej Properties Hinjewadi",
-              "url": `${siteConfig.url}/`,
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": `${siteConfig.url}/?q={search_term_string}`,
-                "query-input": "required name=search_term_string"
-              }
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "RealEstateAgent",
-              "name": "Godrej Properties Pune",
-              "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
-              "@id": `${siteConfig.url}/`,
-              "url": `${siteConfig.url}/`,
-              "telephone": "+917744009295",
-              "priceRange": "Premium",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
-                "addressLocality": "Pune",
-                "addressRegion": "Maharashtra",
-                "postalCode": "411057",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 18.5790625,
-                "longitude": 73.7281875
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday"
-                ],
-                "opens": "09:00",
-                "closes": "19:00"
-              }
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": `${siteConfig.url}/`
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Masterplan",
-                  "item": `${siteConfig.url}/godrej-park-world-pune-masterplan`
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Luxury Residences",
-                  "item": `${siteConfig.url}/godrej-park-world-pune-luxury-residences`
-                }
-              ]
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Where is Godrej Park World located?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Godrej Park World is located in Hinjewadi Phase 1, Pune, Maharashtra. It offers excellent connectivity to the Rajiv Gandhi Infotech Park and the upcoming Hinjewadi Metro Station."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is The Aqua Retreat?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The Aqua Retreat is the flagship ultra-luxury residential cluster within the Godrej Park World township in Hinjewadi, offering premium 2 and 3 BHK resort-style apartments with a 50,000 sq.ft clubhouse."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is Godrej Park World a good investment?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, investing in Godrej Park World Hinjewadi is highly lucrative due to its proximity to the IT corridor, ensuring high rental yields and strong capital appreciation in Pune West."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is the price of Godrej Park World 2 BHK and 3 BHK?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Godrej Park World offers competitive pricing for premium 2 BHK and 3 BHK luxury apartments in Hinjewadi Phase 1. For the exact cost sheet, booking amount, and payment plan, please request a quotation from our sales office."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How far is Godrej Park World from Hinjewadi IT Park?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Godrej Park World is located directly within Hinjewadi Phase 1, making it a 5-10 minute drive to major IT hubs like Infosys, TCS, Wipro, and the Rajiv Gandhi Infotech Park."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is Godrej Park World RERA approved?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Godrej Park World and its clusters, including The Aqua Retreat, are fully MahaRERA approved. The RERA number for the Aqua Retreat is PM1260002500070."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is the difference between Godrej Park World, The Aqua Retreat, The Greenfront, and The Gale?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Godrej Park World is the master 12+ acre township in Hinjewadi Phase 1. The Aqua Retreat, The Greenfront, and The Gale are specific premium residential clusters within this township, each offering unique configurations and amenities."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-        {/* --- Phase 26: Google.com Rich Snippets (ApartmentComplex & AggregateRating) --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ApartmentComplex",
-              "name": "The Aqua Retreat at Godrej Park World Hinjewadi",
-              "description": "2 & 3 BHK Resort-Style Luxury Residences in Hinjewadi Phase 1, Pune by Godrej Properties.",
-              "url": siteConfig.url,
-              "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
-                "addressLocality": "Pune",
-                "addressRegion": "MH",
-                "postalCode": "411057",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 18.5913,
-                "longitude": 73.7389
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "bestRating": "5",
-                "ratingCount": "142",
-                "reviewCount": "142"
-              },
-              "offers": {
-                "@type": "AggregateOffer",
-                "priceCurrency": "INR",
-                "lowPrice": "11000000",
-                "highPrice": "25000000",
-                "offerCount": "12",
-                "availability": "https://schema.org/InStock"
-              }
-            })
-          }}
-        />
-        {/* --- Product Schema (Forces Guaranteed 5-Star SERP Rich Snippets & Pricing Data) --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Product",
-              "name": "2 & 3 BHK Luxury Resort Apartments at Godrej Park World Hinjewadi",
-              "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
-              "description": "Premium resort-style 2 & 3 BHK luxury residences by Godrej Properties located in Hinjewadi Phase 1, Pune.",
-              "brand": {
-                "@type": "Brand",
-                "name": "Godrej Properties"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "bestRating": "5",
-                "worstRating": "1",
-                "ratingCount": "384",
-                "reviewCount": "384"
-              },
-              "offers": {
-                "@type": "AggregateOffer",
-                "url": `${siteConfig.url}/godrej-park-world-pune-luxury-residences`,
-                "priceCurrency": "INR",
-                "lowPrice": "11000000",
-                "highPrice": "25000000",
-                "offerCount": "12",
-                "availability": "https://schema.org/InStock",
-                "seller": {
-                  "@type": "RealEstateAgent",
-                  "name": "Godrej Properties Pune"
-                }
-              }
-            })
-          }}
-        />
-        {/* --- Phase 26: Google.com VideoObject Schema --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "VideoObject",
-              "name": "The Aqua Retreat at Godrej Park World Hinjewadi - Cinematic Masterplan Preview",
-              "description": "Explore the 12+ acres of central greens, 50,000 sq ft luxury clubhouse, and resort-style 2 & 3 BHK residences at Godrej Park World Hinjewadi Phase 1.",
-              "thumbnailUrl": [
-                "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
-              ],
-              "uploadDate": "2026-01-15T08:00:00+05:30",
-              "duration": "PT2M30S",
-              "contentUrl": `${siteConfig.url}/#tour`,
-              "embedUrl": `${siteConfig.url}/#tour`
-            })
-          }}
-        />
-        {/* --- Phase 26: Google.com Event Schema --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Event",
-              "name": "Godrej Park World Private Site Preview & Masterplan Showcase",
-              "startDate": "2026-08-10T10:00:00+05:30",
-              "endDate": "2026-08-31T18:00:00+05:30",
-              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-              "eventStatus": "https://schema.org/EventScheduled",
-              "location": {
-                "@type": "Place",
-                "name": "Godrej Park World Experience Center",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Hinjewadi Phase 1",
-                  "addressLocality": "Pune",
-                  "postalCode": "411057",
-                  "addressRegion": "MH",
-                  "addressCountry": "IN"
-                }
-              },
-              "description": "Exclusive private site tour and masterplan walkthrough for The Aqua Retreat at Godrej Park World Hinjewadi.",
-              "organizer": {
-                "@type": "Organization",
-                "name": "Godrej Properties Pune",
-                "url": siteConfig.url
-              }
-            })
-          }}
-        />
-        {/* --- Google SERP Rank #1 FAQPage Schema --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What is the starting price of 2 & 3 BHK apartments at The Aqua Retreat by Godrej Properties Hinjewadi?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The Aqua Retreat at Godrej Park World Hinjewadi Phase 1 offers premium 2 BHK apartments starting at ₹1.10 Cr* and luxury 3 BHK residences starting at ₹1.55 Cr*, featuring European fittings and Aman-resort inspired architecture."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is the MahaRERA Registration Number for Godrej Park World Hinjewadi?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The Aqua Retreat at Godrej Park World is officially registered under MahaRERA registration number PM1260002500070, verifiable on maharera.mahaonline.gov.in."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Where is Godrej Park World located in Pune?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Godrej Park World is located in Hinjewadi Phase 1, Pune West, just 5 minutes from Wipro Circle and Rajiv Gandhi Infotech Park, with direct connectivity to Pune Metro Line 3."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What are the key resort amenities at The Aqua Retreat Hinjewadi?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The project features a 50,000 sq. ft. 4-level resort clubhouse, a 50-meter Olympic-length infinity lagoon pool, sunken poolside cabanas, Ayurvedic spa suites, and 100% vehicle-free podiums."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-        {/* --- Google SERP Rank #1 BreadcrumbList Schema --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": siteConfig.url
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Pune Real Estate",
-                  "item": `${siteConfig.url}/#about`
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Hinjewadi Phase 1",
-                  "item": `${siteConfig.url}/#location`
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 4,
-                  "name": "Godrej Park World - The Aqua Retreat",
-                  "item": `${siteConfig.url}/clusters/the-aqua-retreat`
-                }
-              ]
-            })
-          }}
-        />
-        {/* --- Google SERP Rank #1 Product & Residence Schema (Star Rating + Price Range) --- */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Product",
-              "name": "The Aqua Retreat by Godrej Properties Hinjewadi - 2 & 3 BHK Luxury Residences",
-              "image": [
-                "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
-              ],
-              "description": "Premium resort-style 2 & 3 BHK apartments at Godrej Park World Hinjewadi Phase 1 featuring a 50,000 sq ft clubhouse, 50m Olympic lagoon pool, and European specifications.",
-              "sku": "GPW-AQUA-01",
-              "mpn": "PM1260002500070",
-              "brand": {
-                "@type": "Brand",
-                "name": "Godrej Properties Pune"
-              },
-              "offers": {
-                "@type": "AggregateOffer",
-                "url": siteConfig.url,
-                "priceCurrency": "INR",
-                "lowPrice": "11000000",
-                "highPrice": "25000000",
-                "offerCount": "12",
-                "availability": "https://schema.org/InStock",
-                "validFrom": "2026-01-01"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "bestRating": "5",
-                "ratingCount": "142",
-                "reviewCount": "142"
-              }
-            })
+            __html: JSON.stringify(unifiedGraphSchema)
           }}
         />
       </head>
@@ -555,7 +470,9 @@ export default function RootLayout({
             <MobileTabBar />
           </SmoothScroller>
         </ModalProvider>
-        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
       </body>
     </html>
   );

@@ -1,7 +1,5 @@
 import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
 import PageContent from "@/components/layout/PageContent";
 
 import EcosystemMap from "@/components/sections/EcosystemMap";

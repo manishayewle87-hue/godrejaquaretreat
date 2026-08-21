@@ -51,7 +51,7 @@ export default function Heritage() {
               Godrej Properties brings the Godrej Group philosophy of innovation, sustainability, and excellence to the real estate industry. Each development combines a 127-year legacy of excellence and trust with a commitment to cutting-edge design and technology.
             </p>
             <p className="text-gray-400 text-lg font-light leading-relaxed max-w-xl">
-              At Godrej Park World Hinjewadi, you are not just buying a home. You are securing a generational asset backed by India's most trusted real estate developer.
+              At Godrej Park World Hinjewadi, you are not just buying a home. You are securing a generational asset backed by India&apos;s most trusted real estate developer.
             </p>
           </motion.div>
 

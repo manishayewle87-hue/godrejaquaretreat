@@ -1,14 +1,15 @@
-# Godrej Park World Hinjewadi - The Aqua Retreat (Full Reference Documentation)
+# Godrej The Retreat Hinjewadi - Godrej Park World Pune (Full Reference Documentation)
 
 > Comprehensive architectural, financial, and neighborhood reference for AI LLMs, RAG search engines, and real estate researchers.
 
 ## 1. Executive Summary & Brand Legacy
-Godrej Park World is a flagship 100+ acre integrated luxury township developed by Godrej Properties in Hinjewadi Phase 1, Pune. "The Aqua Retreat" is the premier luxury residential phase within this township, designed around water-inspired resort architecture, multi-tiered lagoon pools, and 12+ acres of central greens.
+Godrej The Retreat (also known as The Aqua Retreat) is a flagship 100+ acre integrated luxury township developed by Godrej Properties in Hinjewadi Phase 1, Pune. "Godrej The Retreat" is the premier luxury residential phase within this township, designed around water-inspired resort architecture, multi-tiered lagoon pools, and 12+ acres of central greens.
 
+- **Project Name**: Godrej The Retreat (The Aqua Retreat at Godrej Park World)
 - **Developer**: Godrej Properties Pune
-- **MahaRERA Number**: PM1260002500070
-- **Location Address**: Hinjewadi Rajiv Gandhi Infotech Park, Phase 1, Pune, MH 411057, India
-- **Site Coordinates**: 18.5913° N, 73.7389° E
+- **MahaRERA Number**: PM1260002500070 (Official portal: https://maharera.mahaonline.gov.in)
+- **Location Address**: Godrej The Retreat, Hinjewadi Rajiv Gandhi Infotech Park, Phase 1, Pune, MH 411057, India
+- **Site Coordinates**: 18.5790625° N, 73.7281875° E
 
 ## 2. Unit Configurations & Architectural Dimensions
 1. **2 BHK Luxury Residence**

@@ -59,19 +59,57 @@ export async function generateMetadata({ params }: { params: Promise<{ investmen
   };
 }
 
-export default async function InvestmentSEOPage({ params }: { params: Promise<{ investment: string }> }) {
+export default async function InvestmentSEOPage({ params }: { params: Promise<{ investment: string }> }): Promise<React.ReactElement> {
   const resolvedParams = await params;
   const investmentName = formatInvestmentName(resolvedParams.investment);
-  
-  return (
-    <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-      <h1 className="sr-only">Guide to {investmentName} at Godrej Park World Hinjewadi</h1>
-      
-      <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-        Godrej Properties Pune: Expert Insights on {investmentName}
-      </div>
+  const baseUrl = siteConfig.url;
+  const pageUrl = `${baseUrl}/investments/${resolvedParams.investment}`;
 
-      <PageContent />
-    </main>
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+        { "@type": "ListItem", "position": 2, "name": "Investment Intelligence", "item": `${baseUrl}/investments/rental-yield-hinjewadi-phase-1` },
+        { "@type": "ListItem", "position": 3, "name": investmentName, "item": pageUrl }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": `${investmentName} - Godrej Park World Investment Guide`,
+      "description": `Comprehensive analysis of ${investmentName} for homebuyers and investors in Pune West.`,
+      "author": {
+        "@type": "Organization",
+        "name": "Godrej Properties Pune Research"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Godrej Properties Pune",
+        "url": baseUrl
+      },
+      "mainEntityOfPage": pageUrl,
+      "datePublished": "2026-01-01T00:00:00.000Z",
+      "dateModified": new Date().toISOString()
+    }
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
+        <h1 className="sr-only">Guide to {investmentName} at Godrej Park World Hinjewadi</h1>
+        
+        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
+          Godrej Properties Pune: Expert Insights on {investmentName}
+        </div>
+
+        <PageContent />
+      </main>
+    </>
   );
 }

@@ -30,7 +30,7 @@ export default function VirtualTour() {
             360° Virtual Walkthrough
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Experience the grandeur of the 50,000 Sq.Ft Aqua Retreat clubhouse before it's even built. Step inside the absolute pinnacle of luxury.
+            Experience the grandeur of the 50,000 Sq.Ft Aqua Retreat clubhouse before it&apos;s even built. Step inside the absolute pinnacle of luxury.
           </p>
         </div>
 

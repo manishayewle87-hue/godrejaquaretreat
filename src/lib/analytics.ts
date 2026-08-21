@@ -3,8 +3,8 @@
 // Define standard Meta Pixel and Google Analytics types if not present globally
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
-    fbq?: (...args: any[]) => void;
+    gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
@@ -13,13 +13,13 @@ declare global {
  * @param eventName The name of the event (e.g., 'generate_lead', 'quiz_completed')
  * @param params Additional payload data (e.g., lead value, configuration)
  */
-export const trackConversion = (eventName: string, params?: Record<string, any>) => {
+export const trackConversion = (eventName: string, params?: Record<string, unknown>) => {
   try {
     // 1. Google Analytics Tracking (GA4)
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', eventName, {
         ...params,
-        send_to: 'G-XXXXXXXXXX' // Replace with actual Measurement ID
+        send_to: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX',
       });
       console.log(`📊 [GA4] Fired Event: ${eventName}`, params);
     }
@@ -27,9 +27,9 @@ export const trackConversion = (eventName: string, params?: Record<string, any>)
     // 2. Meta Pixel Tracking (Facebook Ads)
     // We map custom events to standard Facebook events where applicable
     if (typeof window !== 'undefined' && window.fbq) {
-      const fbEventName = eventName === 'generate_lead' ? 'Lead' : 
+      const fbEventName = eventName === 'generate_lead' ? 'Lead' :
                           eventName === 'contact' ? 'Contact' : 'CustomEvent';
-      
+
       if (fbEventName === 'CustomEvent') {
         window.fbq('trackCustom', eventName, params);
       } else {

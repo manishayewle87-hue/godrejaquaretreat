@@ -3,8 +3,8 @@ const OFFLINE_URL = '/';
 
 const URLS_TO_CACHE = [
   '/',
-  '/manifest.json',
-  // Next.js static assets will be cached dynamically on visit
+  '/favicon.ico',
+  '/aqua-logo.svg',
 ];
 
 self.addEventListener('install', (event) => {

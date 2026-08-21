@@ -7,24 +7,28 @@ import KineticText from "@/components/ui/KineticText";
 
 const faqs = [
   {
-    question: "Where is Godrej Park World located?",
-    answer: "Godrej Park World is located in Hinjewadi Phase 1, Pune, Maharashtra. It offers excellent connectivity to the Rajiv Gandhi Infotech Park, the upcoming Hinjewadi Metro Station, and the Mumbai-Pune Expressway."
+    question: "What is Godrej The Retreat Hinjewadi?",
+    answer: "Godrej The Retreat (also known as The Aqua Retreat) is the flagship ultra-luxury residential development inside the 100+ acre Godrej Park World township in Hinjewadi Phase 1, Pune. Developed by Godrej Properties Pune, it features premium 2 & 3 BHK resort-style residences centered around an Olympic lagoon pool and a 50,000 sq.ft 4-level clubhouse."
   },
   {
-    question: "What is The Aqua Retreat?",
-    answer: "The Aqua Retreat is the flagship ultra-luxury residential cluster within the Godrej Park World township in Hinjewadi. It offers premium 2 and 3 BHK resort-style apartments centered around a massive 50,000 sq.ft luxury clubhouse."
+    question: "Where is Godrej The Retreat located in Pune?",
+    answer: "Godrej The Retreat is located in Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, Pune, Maharashtra 411057. It enjoys zero-bridge connectivity to Infosys Circle, Wipro Campus, TCS, and the upcoming Hinjewadi Metro Line 3 station (just 2 minutes away)."
   },
   {
-    question: "Is Godrej Park World a good investment?",
-    answer: "Yes, investing in Godrej Park World Hinjewadi is highly lucrative. Due to its direct proximity to Pune's largest IT corridor, investors typically see significantly higher rental yields (around 6-7%) and strong year-on-year capital appreciation compared to other Pune micro-markets."
+    question: "What is the price of 2 BHK and 3 BHK at Godrej The Retreat Hinjewadi?",
+    answer: "At Godrej The Retreat Hinjewadi, luxury 2 BHK residences start at approximately ₹1.10 Crore* (750 - 820 sq.ft carpet), while regal 3 BHK resort residences range from ₹1.65 Crore* to ₹2.50 Crore* (1060 - 1250 sq.ft carpet) featuring expansive panoramic balcony decks."
   },
   {
-    question: "What are the configuration options available?",
-    answer: "The current phase offers Premium 2 BHK, Luxury 2 BHK + Study, and Ultra-Luxury 3 BHK configurations. Carpet areas range from 558 Sq.Ft to over 1,082 Sq.Ft."
+    question: "What is the MahaRERA registration number for Godrej The Retreat?",
+    answer: "Godrej The Retreat is fully registered under MahaRERA registration number PM1260002500070. All project approvals, layout sanctions, and quarterly completion milestones are verifiable on the official MahaRERA portal (maharera.mahaonline.gov.in)."
   },
   {
-    question: "Is the project RERA approved?",
-    answer: "Yes, Godrej Park World and The Aqua Retreat are fully MahaRERA registered and compliant, ensuring complete transparency and on-time delivery backed by the 127-year Godrej legacy."
+    question: "Why is Godrej The Retreat the top investment in Hinjewadi Phase 1?",
+    answer: "Godrej The Retreat delivers an outstanding 7.2% to 8.0% expected rental yield fueled by over 300,000 IT professionals in Hinjewadi. Combined with the upcoming Pune Metro Line 3 commissioning, investors benefit from high corporate tenant demand and substantial capital appreciation."
+  },
+  {
+    question: "What resort amenities are provided at Godrej The Retreat?",
+    answer: "Key amenities include a 50,000 sq.ft multi-tier luxury clubhouse, a 50m Olympic-length lagoon infinity pool, sunken poolside cabanas, Ayurvedic hydrotherapy spa, indoor badminton and squash courts, 100% vehicle-free podium, and 12+ acres of contiguous central greens."
   }
 ];
 

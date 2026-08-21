@@ -49,6 +49,14 @@ export const LOCATIONS = [
   "new-launch-projects-in-pune", "upcoming-residential-projects-pune",
   "township-projects-in-pune", "luxury-projects-in-pune-west",
 
+  // --- MEGA TIER 1 GODREJ THE RETREAT DOMINATION SLUGS ---
+  "godrej-the-retreat", "godrej-the-retreat-hinjewadi", "godrej-the-retreat-pune", 
+  "godrej-the-retreat-hinjewadi-phase-1", "the-retreat-hinjewadi", "the-retreat-pune", 
+  "the-retreat-godrej-properties", "godrej-the-retreat-price", "godrej-the-retreat-floor-plan",
+  "godrej-the-retreat-brochure", "godrej-the-retreat-reviews", "godrej-the-retreat-possession",
+  "godrej-the-retreat-rera", "godrej-the-retreat-sample-flat", "godrej-the-retreat-contact",
+  "godrej-the-retreat-2-bhk", "godrej-the-retreat-3-bhk", "godrej-the-retreat-master-plan",
+
   // --- MEGA TIER 1 COMMERCIAL & BRAND INJECTION ---
   "godrej-park-world-price", "godrej-park-world-pune-price", "godrej-park-world-hinjewadi-price", 
   "godrej-park-world-price-list", "godrej-park-world-booking", "godrej-park-world-2-bhk",

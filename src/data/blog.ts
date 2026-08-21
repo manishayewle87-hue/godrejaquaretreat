@@ -13,6 +13,62 @@ export interface BlogPost {
 
 const LEGACY_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "godrej-the-retreat-hinjewadi-buyers-guide-2026",
+    title: "Godrej The Retreat Hinjewadi: Complete 2026 Price, Floor Plans, MahaRERA & Review Guide",
+    description: "An exhaustive expert analysis of Godrej The Retreat at Godrej Park World Hinjewadi Phase 1. Discover 2 & 3 BHK prices, 50,000 sq ft clubhouse, MahaRERA PM1260002500070 details & ROI.",
+    date: "2026-08-21",
+    author: "Godrej Properties Pune Research Desk",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: [
+      "Godrej The Retreat Hinjewadi", "Godrej The Retreat", "Godrej The Retreat Pune",
+      "Godrej The Retreat Price", "Godrej The Retreat Floor Plan", "Godrej The Retreat MahaRERA",
+      "Godrej The Retreat Review", "Godrej The Retreat Possession Date"
+    ],
+    content: `
+      <h2>The Flagship Resort Living Experience in Hinjewadi Phase 1</h2>
+      <p><strong>Godrej The Retreat Hinjewadi</strong> (also known in the portfolio as The Aqua Retreat) is Godrej Properties' flagship ultra-luxury residential cluster situated within the 100+ acre <em>Godrej Park World</em> integrated township in Hinjewadi Phase 1, Pune.</p>
+      
+      <h2>Key Project Highlights & MahaRERA Verification</h2>
+      <ul>
+        <li><strong>Project Name:</strong> Godrej The Retreat (The Aqua Retreat at Godrej Park World)</li>
+        <li><strong>Developer:</strong> Godrej Properties Pune</li>
+        <li><strong>MahaRERA Registration:</strong> PM1260002500070 (Official verification on maharera.mahaonline.gov.in)</li>
+        <li><strong>Location:</strong> Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, Pune 411057</li>
+        <li><strong>Clubhouse:</strong> 50,000 Sq. Ft. 4-Tier Luxury Aqua Clubhouse with Olympic Lagoon Pool</li>
+        <li><strong>Greens:</strong> 12+ Acres contiguous central greens with 100% vehicle-free podium</li>
+      </ul>
+
+      <h2>2 & 3 BHK Configurations & Price Breakdown</h2>
+      <p>Godrej The Retreat offers thoughtfully designed, Vastu-compliant layouts engineered for maximum natural illumination and ventilation:</p>
+      <ul>
+        <li><strong>2 BHK Luxury Residence:</strong> 750 - 820 sq. ft. carpet area | Starting ₹1.10 Crore* to ₹1.35 Crore*</li>
+        <li><strong>3 BHK Regal Residence:</strong> 1060 - 1250 sq. ft. carpet area | Starting ₹1.65 Crore* to ₹2.50 Crore*</li>
+      </ul>
+
+      <h2>Why Invest in Godrej The Retreat Hinjewadi?</h2>
+      <p>With rental yields averaging <strong>7.2% to 8.0%</strong> in Hinjewadi Phase 1 and direct 2-minute connectivity to the upcoming Pune Metro Line 3 station, Godrej The Retreat represents Pune West's highest-performing real estate asset for capital appreciation and rental passive income.</p>
+    `
+  },
+  {
+    slug: "godrej-the-retreat-vs-godrej-elements-vs-lodha-panache",
+    title: "Godrej The Retreat vs Godrej Elements vs Lodha Panache: Hinjewadi Phase 1 Showdown",
+    description: "Compare Godrej The Retreat with Godrej Elements and Lodha Panache across pricing, clubhouse scale, open green density, and rental yield in Hinjewadi Phase 1.",
+    date: "2026-08-21",
+    author: "Pune Real Estate Advisory Board",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+    keywords: [
+      "Godrej The Retreat vs Godrej Elements", "Godrej The Retreat vs Lodha Panache",
+      "Best Flats in Hinjewadi Phase 1", "Godrej The Retreat Hinjewadi Comparison"
+    ],
+    content: `
+      <h2>Comparing Hinjewadi Phase 1 Luxury Landmarks</h2>
+      <p>For discerning homebuyers seeking premium 2 and 3 BHK homes in Rajiv Gandhi Infotech Park, the choice often comes down to <strong>Godrej The Retreat</strong>, <strong>Godrej Elements</strong>, and <strong>Lodha Panache</strong>.</p>
+      
+      <h2>The Resort Lifestyle Advantage</h2>
+      <p>While Godrej Elements set the standard for smart home living and Lodha Panache offers urban apartments, <strong>Godrej The Retreat</strong> takes luxury to an unprecedented resort scale with its monolithic 50,000 sq.ft aqua clubhouse, 50m Olympic lagoon pool, and 12+ acres of central greens inside a 100+ acre township ecosystem.</p>
+    `
+  },
+  {
     slug: "godrej-park-world-vs-shapoorji-pallonji-joyville",
     title: "Godrej Park World vs Shapoorji Pallonji Joyville: The Ultimate Hinjewadi Township Comparison",
     description: "An unbiased deep dive comparing Godrej Park World The Aqua Retreat against Shapoorji Pallonji Joyville Sensorium. Discover which 3BHK offers better luxury and ROI.",

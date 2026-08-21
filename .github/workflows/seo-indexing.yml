@@ -1,0 +1,102 @@
+name: Advanced Programmatic SEO & Google Indexing Workflow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package.json'
+  schedule:
+    # Run automatically every day at 03:30 UTC (09:00 AM IST)
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'URL Discovery Mode'
+        required: true
+        default: 'smart'
+        type: choice
+        options:
+          - smart
+          - diff
+          - tier1
+          - sitemap
+      engine:
+        description: 'Search Engine Target'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - google
+          - indexnow
+      limit:
+        description: 'Max URLs to Push (Max 180 for Google Daily Quota)'
+        required: true
+        default: '50'
+        type: string
+      force:
+        description: 'Force re-index regardless of state cache'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  index-workflow:
+    name: 🚀 Multi-Engine Programmatic Indexing
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # Required for git diff comparison
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci --prefer-offline --no-audit
+
+      - name: 🗄️ Restore Indexing State Cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: indexing-state-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            indexing-state-${{ runner.os }}-
+            indexing-state-
+
+      - name: ⏳ Wait for Production CDN Propagation (90s)
+        if: github.event_name == 'push'
+        run: sleep 90
+
+      - name: 🌐 Run Advanced Programmatic Indexing Engine
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
+          INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY || 'godrej-retreat-indexnow-key-2026' }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL || 'https://godrejaquaretreat.godrejparkworld.com' }}
+          GOOGLE_INDEXING_DAILY_LIMIT: '180'
+        run: |
+          MODE="${{ github.event.inputs.mode || 'smart' }}"
+          ENGINE="${{ github.event.inputs.engine || 'all' }}"
+          LIMIT="${{ github.event.inputs.limit || '50' }}"
+          FORCE="${{ github.event.inputs.force || 'false' }}"
+          
+          echo "Executing with Mode: $MODE, Engine: $ENGINE, Limit: $LIMIT, Force: $FORCE"
+          
+          if [ "$FORCE" = "true" ]; then
+            node scripts/advanced-indexer.js --mode="$MODE" --engine="$ENGINE" --limit="$LIMIT" --force
+          else
+            node scripts/advanced-indexer.js --mode="$MODE" --engine="$ENGINE" --limit="$LIMIT"
+          fi

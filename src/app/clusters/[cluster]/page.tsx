@@ -6,7 +6,8 @@ import Image from "next/image";
 // Township Clusters targeting specific competitor/sister projects
 export const CLUSTERS = [
   // Core Clusters
-  "the-aqua-retreat", "the-gale", "the-greenfront", "godrej-woodsville", 
+  "the-aqua-retreat", "godrej-the-retreat", "the-retreat-hinjewadi", "godrej-the-retreat-hinjewadi", 
+  "the-gale", "the-greenfront", "godrej-woodsville", 
   "the-eden-estate-na-plots", "godrej-elements", "godrej-24",
 
   // Competitor Capture (Pune West)

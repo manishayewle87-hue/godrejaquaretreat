@@ -9,90 +9,94 @@ import { siteConfig } from '@/config/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
+  const now = new Date();
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
-  // 1. Static Pages
-  const staticPages = [
-    "",
-    "/eoi",
-    "/godrej-properties-hinjewadi-pune",
-    "/godrej-park-world-pune-aqua-lifestyle",
-    "/godrej-park-world-pune-gallery",
-    "/godrej-park-world-pune-hinjewadi-location",
-    "/godrej-park-world-pune-luxury-residences",
-    "/godrej-park-world-pune-masterplan",
-    "/godrej-park-world-pune-premium-amenities",
-    "/blog",
-    "/privacy-policy",
-    "/terms-of-service",
-    "/disclaimer"
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "daily" as const,
-    priority: route === "" ? 1 : 0.95,
-  }));
-  
-  staticPages.forEach((entry) => sitemapEntries.push(entry));
+  // 1. Tier 1: Core Flagship Authority Pages (Priority 1.0 - 0.95)
+  const tier1Pages: { route: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
+    { route: "", priority: 1.0, changeFrequency: "daily" },
+    { route: "/godrej-the-retreat-hinjewadi", priority: 1.0, changeFrequency: "daily" },
+    { route: "/godrej-properties-hinjewadi-pune", priority: 0.99, changeFrequency: "daily" },
+    { route: "/eoi", priority: 0.98, changeFrequency: "daily" },
+    { route: "/godrej-park-world-pune-masterplan", priority: 0.96, changeFrequency: "daily" },
+    { route: "/godrej-park-world-pune-luxury-residences", priority: 0.96, changeFrequency: "daily" },
+    { route: "/godrej-park-world-pune-aqua-lifestyle", priority: 0.95, changeFrequency: "daily" },
+    { route: "/godrej-park-world-pune-premium-amenities", priority: 0.95, changeFrequency: "daily" },
+    { route: "/godrej-park-world-pune-hinjewadi-location", priority: 0.95, changeFrequency: "daily" },
+    { route: "/godrej-park-world-pune-gallery", priority: 0.93, changeFrequency: "daily" },
+    { route: "/blog", priority: 0.90, changeFrequency: "daily" },
+    { route: "/privacy-policy", priority: 0.70, changeFrequency: "monthly" },
+    { route: "/terms-of-service", priority: 0.70, changeFrequency: "monthly" },
+    { route: "/disclaimer", priority: 0.70, changeFrequency: "monthly" }
+  ];
 
-  // 2. Inject Programmatic Location Pages (Secondary Priority)
-  LOCATIONS.forEach((location) => {
+  tier1Pages.forEach((item) => {
     sitemapEntries.push({
-      url: `${baseUrl}/properties/${location}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}${item.route}`,
+      lastModified: now,
+      changeFrequency: item.changeFrequency,
+      priority: item.priority,
     });
   });
 
-  // 3. Inject Cluster Silos (Sister Projects / Competitor Capture)
+  // 2. Tier 2: Core Configurations & Property Layouts (Priority 0.92)
+  CONFIGURATIONS.forEach((config) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/configurations/${config}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.92,
+    });
+  });
+
+  // 3. Tier 3: Township Clusters & Competitor Capture Hubs (Priority 0.90)
   CLUSTERS.forEach((cluster) => {
     sitemapEntries.push({
       url: `${baseUrl}/clusters/${cluster}`,
-      lastModified: new Date(),
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.90,
+    });
+  });
+
+  // 4. Tier 4: Micro-Market Location Silos (Priority 0.88)
+  LOCATIONS.forEach((location) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/properties/${location}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    });
+  });
+
+  // 5. Tier 5: Resort Lifestyle & Amenities Silos (Priority 0.86)
+  AMENITIES.forEach((amenity) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/amenities/${amenity}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.86,
+    });
+  });
+
+  // 6. Tier 6: Financial ROI & Investment Silos (Priority 0.85)
+  INVESTMENTS.forEach((investment) => {
+    sitemapEntries.push({
+      url: `${baseUrl}/investments/${investment}`,
+      lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.85,
     });
   });
 
-  // 4. Inject Configuration Silos (Property Types)
-  CONFIGURATIONS.forEach((config) => {
-    sitemapEntries.push({
-      url: `${baseUrl}/configurations/${config}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    });
-  });
-
-  // 5. Inject Amenity Silos (Lifestyle Capture)
-  AMENITIES.forEach((amenity) => {
-    sitemapEntries.push({
-      url: `${baseUrl}/amenities/${amenity}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    });
-  });
-
-  // 6. Inject Investment Silos (Financial Intent)
-  INVESTMENTS.forEach((investment) => {
-    sitemapEntries.push({
-      url: `${baseUrl}/investments/${investment}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    });
-  });
-
-  // 7. Inject Blog Posts (Content Marketing)
+  // 7. Tier 7: Authority Blog & Market Insights (Priority 0.82)
   BLOG_POSTS.forEach((post) => {
     sitemapEntries.push({
       url: `${baseUrl}/blog/${post.slug}`,
       lastModified: new Date(post.date),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.82,
     });
   });
 

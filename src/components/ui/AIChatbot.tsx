@@ -60,16 +60,17 @@ export default function AIChatbot() {
       const aiResponse = getAIResponse(userMsg.text);
       setMessages(prev => [...prev, { id: (Date.now() + 1).toString(), sender: 'ai', text: aiResponse }]);
       
-      // If user typed a phone number, send it to our API
-      if (userMsg.text.match(/[0-9]{10}/)) {
+      // If user typed a phone number, extract digits and send to lead API
+      const digits = userMsg.text.replace(/\D/g, '');
+      if (digits.length >= 10) {
         fetch('/api/contact', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             name: "AI Chat Lead",
-            phone: userMsg.text,
+            phone: digits.slice(-10),
             email: "",
-            configuration: "Chatbot Capture"
+            configuration: `Chatbot Lead (${userMsg.text.slice(0, 100)})`
           })
         }).catch(console.error);
       }
