@@ -89,8 +89,8 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "IN-MH",
     "geo.placename": "Pune",
-    "geo.position": "18.5913;73.7389",
-    "ICBM": "18.5913, 73.7389"
+    "geo.position": "18.5790625;73.7281875",
+    "ICBM": "18.5790625, 73.7281875"
   },
   verification: {
     google: "0wrEaGVPHBj6OBUSf4IwT6iOuQejVAt1WvxZgKIS7co",
@@ -161,8 +161,8 @@ export default function RootLayout({
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 18.5913,
-                "longitude": 73.7389
+                "latitude": 18.5790625,
+                "longitude": 73.7281875
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",

@@ -42,7 +42,7 @@ export default function GoogleMapsSection() {
             </div>
 
             <a 
-              href="https://maps.app.goo.gl/tbs3QZ2P6f8f7cM88" 
+              href="https://www.google.com/maps/place/The+Aqua+Retreat+at+Godrej+Park+World,+Hinjawadi+%E2%80%93+Pune/@18.5790625,73.4233169,56306m/data=!3m1!1e3!4m10!1m2!2m1!1sgodrej+the+retreat!3m6!1s0x3bc2bb32c6aeb61b:0xc01e91cce72fec57!8m2!3d18.5790625!4d73.7281875!15sChJnb2RyZWogdGhlIHJldHJlYXRaFCISZ29kcmVqIHRoZSByZXRyZWF0kgEUY29uc3RydWN0aW9uX2NvbXBhbnmaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRrUmxOc1VsUlNSMHB4WlVVeFUxWkViRUppZW14cVlrZFdWbVF3UlJBQuABAPoBBAgAEDM!16s%2Fg%2F11xggk984v?entry=ttu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#15181E] text-white font-medium hover:bg-emerald-aqua transition-colors rounded-[32px] text-sm tracking-wide"
@@ -54,7 +54,7 @@ export default function GoogleMapsSection() {
           {/* Google Maps iFrame */}
           <div className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.4284897288673!2d73.7389!3d18.5913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbc056729221%3A0xc3c5f9b4c0b49f4b!2sHinjawadi%20Phase%201%2C%20Hinjawadi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              src="https://maps.google.com/maps?q=The+Aqua+Retreat+at+Godrej+Park+World,+Hinjawadi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
