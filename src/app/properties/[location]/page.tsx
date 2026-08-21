@@ -47,7 +47,37 @@ export const LOCATIONS = [
   "pune-real-estate-market", "real-estate-pune", "baner-real-estate-market",
   "mahalunge-real-estate-market", "hinjewadi-real-estate-market", "buy-home-in-pune",
   "new-launch-projects-in-pune", "upcoming-residential-projects-pune",
-  "township-projects-in-pune", "luxury-projects-in-pune-west"
+  "township-projects-in-pune", "luxury-projects-in-pune-west",
+
+  // --- MEGA TIER 1 COMMERCIAL & BRAND INJECTION ---
+  "godrej-park-world-price", "godrej-park-world-pune-price", "godrej-park-world-hinjewadi-price", 
+  "godrej-park-world-price-list", "godrej-park-world-booking", "godrej-park-world-2-bhk",
+  "godrej-park-world-3-bhk", "godrej-park-world-flats", "godrej-park-world-apartments",
+  "godrej-park-world-property", "godrej-park-world-brochure", "godrej-park-world-floor-plan",
+  "godrej-park-world-site-visit", "godrej-park-world-investment",
+  
+  // The Aqua Retreat Specific
+  "godrej-aqua-retreat", "godrej-aqua-retreat-pune", "godrej-aqua-retreat-hinjewadi",
+  "the-aqua-retreat-pune", "the-aqua-retreat-hinjewadi-phase-1", "aqua-retreat-2-bhk", "aqua-retreat-3-bhk",
+  
+  // The Greenfront & The Gale
+  "the-greenfront-pune", "the-greenfront-hinjewadi", "godrej-greenfront-pune", 
+  "the-gale-pune", "the-gale-hinjewadi", "godrej-gale-pune",
+  
+  // Godrej Hill Retreat (Distinct)
+  "godrej-hill-retreat", "godrej-hill-retreat-pune", "godrej-hill-retreat-mahalunge", 
+  "godrej-hill-retreat-hinjewadi", "godrej-hill-retreat-price", "godrej-hill-retreat-2-bhk",
+  
+  // Broad Brand & Intent
+  "best-godrej-project-pune", "godrej-project-investment", "godrej-property-investment-pune",
+  "buy-godrej-flat-pune", "buy-godrej-apartment-pune", "buy-godrej-property-hinjewadi",
+  "godrej-projects-comparison-pune", "godrej-park-world-vs-godrej-elements",
+  "godrej-park-world-vs-godrej-hillside", "godrej-park-world-vs-godrej-infinity",
+  "godrej-properties-hinjewadi", "godrej-property-hinjewadi", "godrej-flats-hinjewadi",
+  "godrej-apartments-hinjewadi", "godrej-new-project-hinjewadi", "godrej-upcoming-project-pune",
+  "godrej-new-launch-pune", "godrej-luxury-apartments-pune", "godrej-properties-pune",
+  "godrej-park-world-possession", "godrej-park-world-rera", "godrej-park-world-amenities",
+  "godrej-park-world-master-plan", "godrej-park-world-sales-office", "godrej-park-world-contact"
 ];
 
 // Helper to format slugs into Title Case (e.g., "viman-nagar" -> "Viman Nagar")

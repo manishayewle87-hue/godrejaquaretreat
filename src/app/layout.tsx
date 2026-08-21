@@ -240,6 +240,38 @@ export default function RootLayout({
                     "@type": "Answer",
                     "text": "Yes, investing in Godrej Park World Hinjewadi is highly lucrative due to its proximity to the IT corridor, ensuring high rental yields and strong capital appreciation in Pune West."
                   }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the price of Godrej Park World 2 BHK and 3 BHK?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Godrej Park World offers competitive pricing for premium 2 BHK and 3 BHK luxury apartments in Hinjewadi Phase 1. For the exact cost sheet, booking amount, and payment plan, please request a quotation from our sales office."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How far is Godrej Park World from Hinjewadi IT Park?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Godrej Park World is located directly within Hinjewadi Phase 1, making it a 5-10 minute drive to major IT hubs like Infosys, TCS, Wipro, and the Rajiv Gandhi Infotech Park."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is Godrej Park World RERA approved?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Godrej Park World and its clusters, including The Aqua Retreat, are fully MahaRERA approved. The RERA number for the Aqua Retreat is PM1260002500070."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the difference between Godrej Park World, The Aqua Retreat, The Greenfront, and The Gale?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Godrej Park World is the master 12+ acre township in Hinjewadi Phase 1. The Aqua Retreat, The Greenfront, and The Gale are specific premium residential clusters within this township, each offering unique configurations and amenities."
+                  }
                 }
               ]
             })

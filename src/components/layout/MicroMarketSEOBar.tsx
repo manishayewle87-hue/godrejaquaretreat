@@ -91,6 +91,26 @@ const MICRO_MARKET_GROUPS: MicroMarketGroup[] = [
       { label: 'Godrej Park World vs VTP Bellissimo Comparison', slug: 'godrej-park-world-hinjewadi' },
       { label: 'Pune West Real Estate Investment Yield Matrix', slug: 'godrej-park-world-hinjewadi' },
     ]
+  },
+  {
+    id: 'core-directory',
+    title: 'Godrej Park World Core Directory',
+    icon: '🏆',
+    description: 'Direct high-intent commercial and brand portal for all Godrej Park World properties, pricing, and configurations.',
+    keywords: [
+      { label: 'Godrej Park World Price', slug: 'godrej-park-world-price', highlight: true },
+      { label: 'Godrej Park World 2 BHK & 3 BHK', slug: 'godrej-park-world-2-bhk' },
+      { label: 'Godrej Park World Booking & Quotation', slug: 'godrej-park-world-booking' },
+      { label: 'Godrej Park World Floor Plan & Brochure', slug: 'godrej-park-world-floor-plan' },
+      { label: 'The Greenfront by Godrej Pune', slug: 'the-greenfront-pune' },
+      { label: 'The Gale at Godrej Park World', slug: 'the-gale-pune' },
+      { label: 'Godrej Hill Retreat Mahalunge (Distinct Project)', slug: 'godrej-hill-retreat-mahalunge' },
+      { label: 'Godrej Park World vs Godrej Elements', slug: 'godrej-park-world-vs-godrej-elements' },
+      { label: 'Godrej Properties Hinjewadi Phase 1', slug: 'godrej-properties-hinjewadi' },
+      { label: 'Buy Godrej Property in Pune', slug: 'buy-godrej-flat-pune' },
+      { label: 'Godrej Park World Possession & RERA', slug: 'godrej-park-world-possession' },
+      { label: 'Godrej Park World Master Plan', slug: 'godrej-park-world-master-plan' }
+    ]
   }
 ];
 
