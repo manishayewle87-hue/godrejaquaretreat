@@ -34,6 +34,7 @@ const Quiz = dynamic(() => import("@/components/sections/Quiz"));
 const FAQ = dynamic(() => import("@/components/sections/FAQ"));
 const ResidentStoriesMatrix = dynamic(() => import("@/components/sections/ResidentStoriesMatrix"));
 const MicroMarketSEOBar = dynamic(() => import("@/components/layout/MicroMarketSEOBar"));
+const GoogleMapsSection = dynamic(() => import("@/components/sections/GoogleMapsSection"));
 
 export default function PageContent() {
   return (
@@ -63,6 +64,7 @@ export default function PageContent() {
       <MetroConnectivityScorecard />
       <NeighborhoodSocialMatrix />
       <Location />
+      <GoogleMapsSection />
       <ConstructionProgress />
       <FAQ />
       <ResidentStoriesMatrix />
