@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -30,10 +31,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://godrejaquaretreat.godrejparkworld.com/blog/${post.slug}`,
+      url: `${siteConfig.url}/blog/${post.slug}`,
       images: [
         {
-          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent('Godrej Park World Blog')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent('Godrej Park World Blog')}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [`https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent('Godrej Park World Blog')}`],
+      images: [`${siteConfig.url}/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent('Godrej Park World Blog')}`],
     },
   };
 }
@@ -65,7 +66,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "@type": "BlogPosting",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://godrejaquaretreat.godrejparkworld.com/blog/${post.slug}`
+      "@id": `${siteConfig.url}/blog/${post.slug}`
     },
     "headline": post.title,
     "description": post.description,
@@ -75,7 +76,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "author": {
       "@type": "Organization",
       "name": post.author,
-      "url": "https://godrejaquaretreat.godrejparkworld.com"
+      "url": siteConfig.url
     },
     "publisher": {
       "@type": "Organization",

@@ -5,9 +5,10 @@ import { CONFIGURATIONS } from './configurations/[config]/page';
 import { AMENITIES } from './amenities/[amenity]/page';
 import { INVESTMENTS } from './investments/[investment]/page';
 import { BLOG_POSTS } from '@/data/blog';
+import { siteConfig } from '@/config/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://godrejaquaretreat.godrejparkworld.com';
+  const baseUrl = siteConfig.url;
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 

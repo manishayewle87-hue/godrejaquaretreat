@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import { ImageResponse } from '@vercel/og';
 
 export const runtime = 'edge';
@@ -104,7 +105,7 @@ export async function GET(request: Request) {
             }}
           >
             <span style={{ color: '#FAFAFA', fontSize: 24, letterSpacing: '0.1em' }}>
-              godrejaquaretreat.godrejparkworld.com
+              {siteConfig.url.replace('https://', '')}
             </span>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
@@ -40,15 +41,15 @@ export async function generateMetadata({ params }: { params: Promise<{ investmen
       "Hinjewadi Property Rates", "Godrej Properties Pune Investment"
     ],
     alternates: {
-      canonical: `https://godrejaquaretreat.godrejparkworld.com/investments/${resolvedParams.investment}`,
+      canonical: `${siteConfig.url}/investments/${resolvedParams.investment}`,
     },
     openGraph: {
       title: `${investmentName} | Godrej Park World`,
       description: `Maximize your ROI with ${investmentName} at Godrej Park World, Hinjewadi Phase 1.`,
-      url: `https://godrejaquaretreat.godrejparkworld.com/investments/${resolvedParams.investment}`,
+      url: `${siteConfig.url}/investments/${resolvedParams.investment}`,
       images: [
         {
-          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(investmentName)}&subtitle=${encodeURIComponent('Godrej Park World Investment')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(investmentName)}&subtitle=${encodeURIComponent('Godrej Park World Investment')}`,
           width: 1200,
           height: 630,
           alt: investmentName,

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
@@ -40,15 +41,15 @@ export async function generateMetadata({ params }: { params: Promise<{ amenity: 
       "The Aqua Retreat Amenities", "Pune Luxury Real Estate"
     ],
     alternates: {
-      canonical: `https://godrejaquaretreat.godrejparkworld.com/amenities/${resolvedParams.amenity}`,
+      canonical: `${siteConfig.url}/amenities/${resolvedParams.amenity}`,
     },
     openGraph: {
       title: `${amenityName} | Godrej Park World`,
       description: `Explore premium ${amenityName} at The Aqua Retreat, Hinjewadi.`,
-      url: `https://godrejaquaretreat.godrejparkworld.com/amenities/${resolvedParams.amenity}`,
+      url: `${siteConfig.url}/amenities/${resolvedParams.amenity}`,
       images: [
         {
-          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(amenityName)}&subtitle=${encodeURIComponent('Godrej Park World Amenities')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(amenityName)}&subtitle=${encodeURIComponent('Godrej Park World Amenities')}`,
           width: 1200,
           height: 630,
           alt: amenityName,

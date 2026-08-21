@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import SmoothScroller from "@/components/layout/SmoothScroller";
@@ -6,7 +7,7 @@ import FloatingCTA from "@/components/ui/FloatingCTA";
 import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://godrejaquaretreat.godrejparkworld.com"),
+  metadataBase: new URL(siteConfig.url),
   alternates: {
     canonical: "/",
   },
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Godrej Park World Hinjewadi | Pune Real Estate Investment | The Aqua Retreat",
     description: "Experience The Aqua Retreat by Godrej Properties. Discover the finest Pune Real Estate projects, featuring premium 2 & 3 BHK resort-style luxury residences in Hinjewadi Phase 1.",
-    url: "https://godrejaquaretreat.godrejparkworld.com",
+    url: siteConfig.url,
     siteName: "Godrej Properties Pune",
     images: [
       {
@@ -129,10 +130,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "The Aqua Retreat by Godrej Properties Hinjewadi",
-              "url": "https://godrejaquaretreat.godrejparkworld.com/",
+              "url": `${siteConfig.url}/`,
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://godrejaquaretreat.godrejparkworld.com/?q={search_term_string}",
+                "target": `${siteConfig.url}/?q={search_term_string}`,
                 "query-input": "required name=search_term_string"
               }
             })
@@ -146,8 +147,8 @@ export default function RootLayout({
               "@type": "RealEstateAgent",
               "name": "Godrej Properties Pune",
               "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
-              "@id": "https://godrejaquaretreat.godrejparkworld.com/",
-              "url": "https://godrejaquaretreat.godrejparkworld.com/",
+              "@id": `${siteConfig.url}/`,
+              "url": `${siteConfig.url}/`,
               "telephone": "+917744009295",
               "priceRange": "Premium",
               "address": {
@@ -191,19 +192,19 @@ export default function RootLayout({
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com/"
+                  "item": `${siteConfig.url}/`
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Masterplan",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com/godrej-park-world-pune-masterplan"
+                  "item": `${siteConfig.url}/godrej-park-world-pune-masterplan`
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Luxury Residences",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com/godrej-park-world-pune-luxury-residences"
+                  "item": `${siteConfig.url}/godrej-park-world-pune-luxury-residences`
                 }
               ]
             })
@@ -253,7 +254,7 @@ export default function RootLayout({
               "@type": "ApartmentComplex",
               "name": "The Aqua Retreat at Godrej Park World Hinjewadi",
               "description": "2 & 3 BHK Resort-Style Luxury Residences in Hinjewadi Phase 1, Pune by Godrej Properties.",
-              "url": "https://godrejaquaretreat.godrejparkworld.com",
+              "url": siteConfig.url,
               "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
               "address": {
                 "@type": "PostalAddress",
@@ -300,8 +301,8 @@ export default function RootLayout({
               ],
               "uploadDate": "2026-01-15T08:00:00+05:30",
               "duration": "PT2M30S",
-              "contentUrl": "https://godrejaquaretreat.godrejparkworld.com/#tour",
-              "embedUrl": "https://godrejaquaretreat.godrejparkworld.com/#tour"
+              "contentUrl": `${siteConfig.url}/#tour`,
+              "embedUrl": `${siteConfig.url}/#tour`
             })
           }}
         />
@@ -333,7 +334,7 @@ export default function RootLayout({
               "organizer": {
                 "@type": "Organization",
                 "name": "Godrej Properties Pune",
-                "url": "https://godrejaquaretreat.godrejparkworld.com"
+                "url": siteConfig.url
               }
             })
           }}
@@ -394,25 +395,25 @@ export default function RootLayout({
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com"
+                  "item": siteConfig.url
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Pune Real Estate",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com/#about"
+                  "item": `${siteConfig.url}/#about`
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Hinjewadi Phase 1",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com/#location"
+                  "item": `${siteConfig.url}/#location`
                 },
                 {
                   "@type": "ListItem",
                   "position": 4,
                   "name": "Godrej Park World - The Aqua Retreat",
-                  "item": "https://godrejaquaretreat.godrejparkworld.com/clusters/the-aqua-retreat"
+                  "item": `${siteConfig.url}/clusters/the-aqua-retreat`
                 }
               ]
             })
@@ -438,7 +439,7 @@ export default function RootLayout({
               },
               "offers": {
                 "@type": "AggregateOffer",
-                "url": "https://godrejaquaretreat.godrejparkworld.com",
+                "url": siteConfig.url,
                 "priceCurrency": "INR",
                 "lowPrice": "11000000",
                 "highPrice": "25000000",

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
@@ -73,15 +74,15 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
     ],
     alternates: {
       // CRITICAL: Set canonical to itself so Google indexes it as a unique landing page
-      canonical: `https://godrejaquaretreat.godrejparkworld.com/properties/${resolvedParams.location}`,
+      canonical: `${siteConfig.url}/properties/${resolvedParams.location}`,
     },
     openGraph: {
       title: `${locName} - Godrej Properties Hinjewadi`,
       description: `Explore premium Godrej Properties in ${locName}, Pune. Buy luxury 2 & 3 BHK flats at The Aqua Retreat by Godrej Properties Hinjewadi Phase 1.`,
-      url: `https://godrejaquaretreat.godrejparkworld.com/properties/${resolvedParams.location}`,
+      url: `${siteConfig.url}/properties/${resolvedParams.location}`,
       images: [
         {
-          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(locName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(locName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
           width: 1200,
           height: 630,
           alt: `${locName} Real Estate`,
@@ -95,7 +96,7 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
 export default async function LocationSEOPage({ params }: { params: Promise<{ location: string }> }) {
   const resolvedParams = await params;
   const locName = formatLocation(resolvedParams.location);
-  const baseUrl = 'https://godrejaquaretreat.godrejparkworld.com';
+  const baseUrl = siteConfig.url;
   const pageUrl = `${baseUrl}/properties/${resolvedParams.location}`;
   
   const jsonLd = [

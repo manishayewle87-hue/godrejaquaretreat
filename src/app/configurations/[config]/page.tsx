@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
@@ -40,15 +41,15 @@ export async function generateMetadata({ params }: { params: Promise<{ config: s
       "Godrej Park World Hinjewadi", "Pune Real Estate"
     ],
     alternates: {
-      canonical: `https://godrejaquaretreat.godrejparkworld.com/configurations/${resolvedParams.config}`,
+      canonical: `${siteConfig.url}/configurations/${resolvedParams.config}`,
     },
     openGraph: {
       title: `${configName} | Godrej Park World`,
       description: `Explore premium ${configName} at Godrej Park World, Hinjewadi Phase 1.`,
-      url: `https://godrejaquaretreat.godrejparkworld.com/configurations/${resolvedParams.config}`,
+      url: `${siteConfig.url}/configurations/${resolvedParams.config}`,
       images: [
         {
-          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(configName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(configName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
           width: 1200,
           height: 630,
           alt: configName,

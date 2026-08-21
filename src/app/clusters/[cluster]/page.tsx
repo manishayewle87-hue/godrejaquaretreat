@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -37,10 +38,10 @@ export async function generateMetadata({ params }: { params: Promise<{ cluster: 
     openGraph: {
       title: `${clusterName} | Godrej Park World Hinjewadi`,
       description: `Explore ${clusterName} at Godrej Park World, Hinjewadi Phase 1. Premium luxury residences by Godrej Properties Pune.`,
-      url: `https://godrejaquaretreat.godrejparkworld.com/clusters/${resolvedParams.cluster}`,
+      url: `${siteConfig.url}/clusters/${resolvedParams.cluster}`,
       images: [
         {
-          url: `https://godrejaquaretreat.godrejparkworld.com/api/og?title=${encodeURIComponent(clusterName)}&subtitle=${encodeURIComponent('Godrej Park World Township')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(clusterName)}&subtitle=${encodeURIComponent('Godrej Park World Township')}`,
           width: 1200,
           height: 630,
           alt: clusterName,
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ cluster: 
       ],
     },
     alternates: {
-      canonical: `https://godrejaquaretreat.godrejparkworld.com/clusters/${resolvedParams.cluster}`,
+      canonical: `${siteConfig.url}/clusters/${resolvedParams.cluster}`,
     }
   };
 }
@@ -62,7 +63,7 @@ export default async function ClusterSiloPage({ params }: { params: Promise<{ cl
     "@type": "RealEstateListing",
     "name": `${clusterName} at Godrej Park World`,
     "description": `Premium real estate offering inside the Godrej Park World township in Hinjewadi.`,
-    "url": `https://godrejaquaretreat.godrejparkworld.com/clusters/${resolvedParams.cluster}`,
+    "url": `${siteConfig.url}/clusters/${resolvedParams.cluster}`,
     "offers": {
       "@type": "Offer",
       "priceCurrency": "INR",

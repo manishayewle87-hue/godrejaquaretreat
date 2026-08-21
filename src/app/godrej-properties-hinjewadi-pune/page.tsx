@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   description: "The ultimate guide to Godrej Properties Hinjewadi Pune. Explore Godrej Park World, The Aqua Retreat, The Gale, and more premium luxury townships in Hinjewadi Phase 1.",
   keywords: ["Godrej Properties Hinjewadi Pune", "Godrej Park World Hinjewadi", "The Aqua Retreat Hinjewadi", "Godrej Hinjewadi Township", "Buy Godrej flats in Pune"],
   alternates: {
-    canonical: "https://godrejaquaretreat.godrejparkworld.com/godrej-properties-hinjewadi-pune",
+    canonical: `${siteConfig.url}/godrej-properties-hinjewadi-pune`,
   }
 };
 
@@ -21,7 +22,7 @@ export default function PillarPage() {
       "@type": "WebPage",
       "name": "Godrej Properties Hinjewadi Pune",
       "description": "Comprehensive guide to all Godrej Properties residential clusters within the Hinjewadi IT corridor, focusing on Godrej Park World.",
-      "url": "https://godrejaquaretreat.godrejparkworld.com/godrej-properties-hinjewadi-pune"
+      "url": `${siteConfig.url}/godrej-properties-hinjewadi-pune`
     },
     {
       "@context": "https://schema.org",

@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 import { BLOG_POSTS } from "@/data/blog";
 import BlogFilterMatrix from "@/components/blog/BlogFilterMatrix";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     "NRI Property Buy India"
   ],
   alternates: {
-    canonical: "https://godrejaquaretreat.godrejparkworld.com/blog",
+    canonical: `${siteConfig.url}/blog`,
   }
 };
 
