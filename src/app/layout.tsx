@@ -437,6 +437,189 @@ export default function RootLayout({
             }
           }
         ]
+      },
+      // 8. Detailed FloorPlan Schemas (Google Real Estate Rich Snippets)
+      {
+        "@type": "FloorPlan",
+        "@id": `${siteConfig.url}/#floorplan-2bhk`,
+        "name": "Godrej The Retreat - 2 BHK Luxury Residence Floor Plan",
+        "description": "Spacious 2 BHK resort-style residence layout at Godrej The Retreat Hinjewadi Phase 1 with sunken balcony deck and premium Vastu-compliant layout.",
+        "numberOfBedrooms": 2,
+        "numberOfBathroomsTotal": 2,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 780,
+          "unitCode": "FTK"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "11000000",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        },
+        "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp"
+      },
+      {
+        "@type": "FloorPlan",
+        "@id": `${siteConfig.url}/#floorplan-3bhk`,
+        "name": "Godrej The Retreat - 3 BHK Regal Residence Floor Plan",
+        "description": "Ultra-luxury 3 BHK grand layout at Godrej The Retreat Hinjewadi Phase 1 with double-width panoramic Sahyadri mountain and lagoon viewing deck.",
+        "numberOfBedrooms": 3,
+        "numberOfBathroomsTotal": 3,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 1180,
+          "unitCode": "FTK"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "16500000",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        },
+        "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp"
+      },
+      // 9. SiteNavigationElement (Google Sitelinks Rich Results)
+      {
+        "@type": "ItemList",
+        "@id": `${siteConfig.url}/#site-navigation`,
+        "name": "Godrej The Retreat Main Navigation Hubs",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Godrej The Retreat Hinjewadi",
+            "description": "Official project portal, configurations, and MahaRERA details.",
+            "url": `${siteConfig.url}/godrej-the-retreat-hinjewadi`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Floor Plans & Residences",
+            "description": "Explore 2 & 3 BHK luxury layout diagrams and dimensions.",
+            "url": `${siteConfig.url}/godrej-park-world-pune-luxury-residences`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Masterplan & Central Greens",
+            "description": "100+ acre township masterplan with 12+ acres of green parks.",
+            "url": `${siteConfig.url}/godrej-park-world-pune-masterplan`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "50,000 Sq.Ft Clubhouse & Amenities",
+            "description": "Olympic lagoon pool, spa, squash courts, and lifestyle amenities.",
+            "url": `${siteConfig.url}/godrej-park-world-pune-premium-amenities`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Location & Metro Line 3",
+            "description": "Hinjewadi Phase 1 IT Park proximity and transit connectivity.",
+            "url": `${siteConfig.url}/godrej-park-world-pune-hinjewadi-location`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 6,
+            "name": "Priority EOI Booking",
+            "description": "Submit Expression of Interest for launch pricing and allocation.",
+            "url": `${siteConfig.url}/eoi`
+          }
+        ]
+      },
+      // 10. HowTo Schema (Step-by-Step Purchase & Booking Rich Snippet)
+      {
+        "@type": "HowTo",
+        "@id": `${siteConfig.url}/#howto-booking`,
+        "name": "How to Book a Luxury Apartment at Godrej The Retreat Hinjewadi",
+        "description": "Follow this official 5-step process to secure your 2 or 3 BHK residence at Godrej The Retreat Hinjewadi Phase 1.",
+        "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+        "totalTime": "P1D",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Download Official Brochure & Cost Sheet",
+            "text": "Access the complete architectural floor plan booklet and unit-wise cost sheet on the official website.",
+            "url": `${siteConfig.url}/#residences`
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Schedule an Exclusive VIP Experience Center Tour",
+            "text": "Book a private site visit at the Hinjewadi Phase 1 sales lounge to walk through the fully furnished sample apartments.",
+            "url": `${siteConfig.url}/#tour`
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Preferred Configuration & Floor Rise",
+            "text": "Choose between 2 BHK Luxury (750 - 820 sq.ft) or 3 BHK Regal (1060 - 1250 sq.ft) and select lagoon or central green views.",
+            "url": `${siteConfig.url}/godrej-the-retreat-hinjewadi`
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Submit Expression of Interest (EOI)",
+            "text": "Submit your digital EOI to lock in early-bird launch pricing and priority inventory allocation.",
+            "url": `${siteConfig.url}/eoi`
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Execute MahaRERA Allotment Agreement",
+            "text": "Complete the registered agreement under MahaRERA PM1260002500070 with approved home loans from SBI, HDFC, or ICICI Bank.",
+            "url": `${siteConfig.url}/disclaimer`
+          }
+        ]
+      },
+      // 11. Event Schema (VIP Experience Center & Site Visit Open House)
+      {
+        "@type": "Event",
+        "@id": `${siteConfig.url}/#vip-tour-event`,
+        "name": "Godrej The Retreat Hinjewadi - Daily VIP Site Walkthrough & Model Flat Experience",
+        "description": "Daily guided walkthrough of the 50,000 sq.ft luxury clubhouse, Olympic lagoon pool, and furnished sample flats at Godrej Park World Hinjewadi Phase 1.",
+        "startDate": "2026-01-01T09:00:00+05:30",
+        "endDate": "2027-12-31T20:00:00+05:30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Godrej The Retreat Experience Center",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411057",
+            "addressCountry": "IN"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "url": `${siteConfig.url}/#tour`
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Godrej Properties Pune",
+          "url": siteConfig.url
+        }
+      },
+      // 12. SpeakableSpecification (Voice Search & AI Assistant Optimization)
+      {
+        "@type": "WebPage",
+        "@id": `${siteConfig.url}/#webpage`,
+        "url": siteConfig.url,
+        "name": "Godrej The Retreat Hinjewadi Phase 1 Pune",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "h2", "p"]
+        }
       }
     ]
   };

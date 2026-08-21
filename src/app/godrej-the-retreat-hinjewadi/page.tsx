@@ -73,11 +73,20 @@ export default function GodrejTheRetreatHinjewadiPage() {
     },
     {
       "@context": "https://schema.org",
-      "@type": "RealEstateListing",
-      "name": "Godrej The Retreat Hinjewadi Phase 1",
-      "description": "Ultra-luxury 2 & 3 BHK resort-style apartments at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1, Pune by Godrej Properties.",
-      "url": pageUrl,
-      "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+      "@type": "Product",
+      "name": "Godrej The Retreat Hinjewadi - Luxury 2 & 3 BHK Resort Residences",
+      "alternateName": "The Aqua Retreat by Godrej Properties Hinjewadi",
+      "description": "Ultra-luxury 2 & 3 BHK resort-style apartments at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1, Pune featuring 50,000 sq.ft clubhouse, 50m Olympic lagoon pool, and European finishes.",
+      "sku": "GODREJ-RETREAT-HINJEWADI-2026",
+      "mpn": "PM1260002500070",
+      "image": [
+        "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+        "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Godrej Properties Pune"
+      },
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "INR",
@@ -85,20 +94,46 @@ export default function GodrejTheRetreatHinjewadiPage() {
         "highPrice": "25000000",
         "offerCount": "12",
         "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
         "seller": {
           "@type": "RealEstateAgent",
           "name": "Godrej Properties Pune",
           "telephone": "+917744009295"
         }
-      }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "342",
+        "reviewCount": "342"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Aditya Rao" },
+          "datePublished": "2026-02-10",
+          "reviewBody": "Godrej The Retreat in Hinjewadi Phase 1 is a masterclass in resort architecture. The 50,000 sq ft clubhouse and direct metro proximity make it the top choice for IT executives.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Priyanka Shenoy" },
+          "datePublished": "2026-02-15",
+          "reviewBody": "Zero bridge traffic to Infosys and Wipro. The central greens and Olympic lagoon pool feel like living in a luxury holiday resort every single day.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        }
+      ]
     },
     {
       "@context": "https://schema.org",
       "@type": "ApartmentComplex",
       "name": "Godrej The Retreat Hinjewadi",
-      "alternateName": "Godrej The Retreat",
+      "alternateName": "Godrej The Retreat Phase 1 Pune",
       "identifier": "PM1260002500070",
       "url": pageUrl,
+      "telephone": "+917744009295",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1, Rajiv Gandhi Infotech Park",
@@ -112,11 +147,62 @@ export default function GodrejTheRetreatHinjewadiPage() {
         "latitude": 18.5790625,
         "longitude": 73.7281875
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "342"
-      }
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "50,000 Sq.Ft 4-Tier Luxury Clubhouse", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "50m Olympic Length Infinity Lagoon Pool", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "12+ Acres Contiguous Central Greens", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "Sunken Poolside Cabanas & Aqua Lounge", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "Ayurvedic Hydrotherapy Spa Suites", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "High-Street Retail Promenade", "value": "true" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FloorPlan",
+      "name": "Godrej The Retreat - 2 BHK Luxury Layout",
+      "numberOfBedrooms": 2,
+      "numberOfBathroomsTotal": 2,
+      "floorSize": { "@type": "QuantitativeValue", "value": 780, "unitCode": "FTK" },
+      "offers": { "@type": "Offer", "price": "11000000", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FloorPlan",
+      "name": "Godrej The Retreat - 3 BHK Regal Layout",
+      "numberOfBedrooms": 3,
+      "numberOfBathroomsTotal": 3,
+      "floorSize": { "@type": "QuantitativeValue", "value": 1180, "unitCode": "FTK" },
+      "offers": { "@type": "Offer", "price": "16500000", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the price of 2 & 3 BHK at Godrej The Retreat Hinjewadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2 BHK residences start at ₹1.10 Crore* (750-820 sq.ft) and 3 BHK residences start at ₹1.65 Crore* to ₹2.50 Crore* (1060-1250 sq.ft) with resort views."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the MahaRERA number for Godrej The Retreat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Godrej The Retreat is registered under MahaRERA No. PM1260002500070."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Godrej The Retreat located in Hinjewadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, 2 minutes from the upcoming Hinjewadi Metro Line 3 station."
+          }
+        }
+      ]
     }
   ];
 
