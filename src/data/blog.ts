@@ -13,6 +13,48 @@ export interface BlogPost {
 
 const LEGACY_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "godrej-park-world-vs-shapoorji-pallonji-joyville",
+    title: "Godrej Park World vs Shapoorji Pallonji Joyville: The Ultimate Hinjewadi Township Comparison",
+    description: "An unbiased deep dive comparing Godrej Park World The Aqua Retreat against Shapoorji Pallonji Joyville Sensorium. Discover which 3BHK offers better luxury and ROI.",
+    date: "2026-08-21",
+    author: "Godrej Properties Pune",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: ["Shapoorji Pallonji Joyville vs Godrej Park World", "Shapoorji Pallonji Sensorium Hinjewadi", "Best Township in Pune West"],
+    content: `
+      <h2>The Battle of Pune West Townships</h2>
+      <p>When homebuyers search for premium townships in Hinjewadi and Mahalunge, the decision often comes down to <strong>Godrej Park World</strong> and <strong>Shapoorji Pallonji Joyville</strong>. While both offer exceptional community living, <em>The Aqua Retreat at Godrej Park World</em> differentiates itself with a massive 50,000 sq.ft. resort-style clubhouse and unparalleled European interior specifications.</p>
+      
+      <h2>Configurations: 2BHK and 3BHK Showdown</h2>
+      <p>Godrej Park World’s 3BHK Grand Lagoon suites offer expansive balconies with unhindered views of the Hinjewadi IT skyline, providing a distinct edge in luxury living over standard layouts.</p>
+    `
+  },
+  {
+    slug: "kumar-magnacity-vs-godrej-properties-mahalunge",
+    title: "Kumar Magnacity vs Godrej Properties Mahalunge: Where Should You Invest?",
+    description: "Comparing Kumar Magnacity and Godrej Park World The Retreat. Real estate investment analysis for Pune's fastest-growing IT corridors.",
+    date: "2026-08-21",
+    author: "Pune Real Estate Insights",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+    keywords: ["Kumar Magnacity vs Godrej Properties", "Kumar Magnacity Pune", "Godrej Mahalunge Real Estate", "Pune West Property Investment"],
+    content: `
+      <h2>Evaluating High-Growth Corridors</h2>
+      <p>With massive infrastructure upgrades bridging Mahalunge and Hinjewadi, investors are constantly comparing <strong>Kumar Magnacity</strong> with Godrej Properties' flagship developments. Godrej Park World stands out as the ultimate lifestyle destination with its multi-level Aqua Clubhouse.</p>
+    `
+  },
+  {
+    slug: "vyomora-pune-vs-godrej-park-world-hinjewadi",
+    title: "Vyomora Pune vs Godrej Park World The Aqua Retreat",
+    description: "Detailed comparison between Vyomora Pune and Godrej Park World Hinjewadi for luxury 4BHK and skyduplex home buyers.",
+    date: "2026-08-21",
+    author: "Pune Luxury Homes",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: ["Vyomora Pune vs Godrej Park World", "Luxury Skyduplex Pune", "Vyomora Baner Review", "Godrej 4BHK Hinjewadi"],
+    content: `
+      <h2>Defining True Luxury in Pune West</h2>
+      <p>For buyers seeking 4BHK apartments, duplexes, or skyduplexes in Pune, projects like <strong>Vyomora</strong> and <strong>Godrej Park World</strong> top the list. The Aqua Retreat’s sweeping 270-degree valley views and exclusive sky-level amenities make it the premier choice for ultra-high-net-worth individuals.</p>
+    `
+  },
+  {
     slug: "rental-yield-hinjewadi-phase-1",
     title: "Why Hinjewadi Phase 1 Offers the Highest Rental Yields in Pune",
     description: "An in-depth mathematical analysis of rental yields in Pune West and why Godrej Park World guarantees high occupancy rates.",

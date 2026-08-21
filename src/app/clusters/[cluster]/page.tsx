@@ -5,13 +5,20 @@ import Image from "next/image";
 
 // Township Clusters targeting specific competitor/sister projects
 export const CLUSTERS = [
-  "the-aqua-retreat",
-  "the-gale",
-  "the-greenfront",
-  "godrej-woodsville",
-  "the-eden-estate-na-plots",
-  "godrej-elements",
-  "godrej-24"
+  // Core Clusters
+  "the-aqua-retreat", "the-gale", "the-greenfront", "godrej-woodsville", 
+  "the-eden-estate-na-plots", "godrej-elements", "godrej-24",
+
+  // Competitor Capture (Pune West)
+  "vs-shapoorji-pallonji-joyville-hinjewadi", "vs-shapoorji-pallonji-sensorium", 
+  "vs-kumar-magnacity-pune", "vs-vyomora-pune", "vs-lodha-panache-hinjewadi", 
+  "vs-lodha-belmondo", "vs-vtp-blue-waters-mahalunge", "vs-vtp-earth-one", 
+  "vs-vtp-bellissimo-hinjewadi", "vs-kolte-patil-life-republic", 
+  "vs-kasturi-apostrophe-hinjewadi", "vs-rohan-nidita-hinjewadi", 
+  "vs-paranjape-blue-ridge", "vs-megapolis-hinjewadi", "vs-godrej-properties",
+  
+  // Theme Capture
+  "best-township-in-hinjewadi", "luxury-resort-homes-pune", "premium-clubhouse-projects-pune"
 ];
 
 const formatClusterName = (slug: string) => {

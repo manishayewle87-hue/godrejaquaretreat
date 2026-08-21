@@ -3,16 +3,25 @@ import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
 export const CONFIGURATIONS = [
-  "2-bhk-flats-in-hinjewadi",
-  "3-bhk-flats-in-hinjewadi",
-  "3-bhk-luxury-apartments-in-pune",
-  "premium-villas-near-hinjewadi",
-  "residential-townships-in-pune-west",
-  "2-bhk-near-infosys-pune",
-  "3-bhk-near-wipro-pune",
-  "luxury-homes-hinjewadi-phase-1",
-  "premium-apartments-pune-west",
-  "resort-style-apartments-pune"
+  // Core Godrej Configurations
+  "2-bhk-flats-in-hinjewadi", "3-bhk-flats-in-hinjewadi", "3-bhk-luxury-apartments-in-pune",
+  "2-bhk-flats-in-mahalunge", "3-bhk-flats-in-mahalunge",
+  "4-bhk-apartments-in-baner", "4-bhk-flats-in-mahalunge", "4-bhk-luxury-in-hinjewadi",
+  "5-bhk-villas-near-hinjewadi", "5-bhk-pune-west",
+
+  // Specialty & Premium Layouts
+  "duplex-apartments-in-hinjewadi", "duplex-apartments-in-mahalunge", "duplex-pune-west",
+  "skyduplex-in-pune", "skyduplex-hinjewadi", "skyduplex-mahalunge",
+  "simplex-homes-pune", "simplex-apartments-hinjewadi", "simplex-mahalunge",
+  
+  // IT Park Targeted
+  "2-bhk-near-infosys-pune", "3-bhk-near-wipro-pune", "2-bhk-near-tcs-hinjewadi", "3-bhk-near-tech-mahindra-hinjewadi",
+  "luxury-homes-hinjewadi-phase-1", "premium-apartments-pune-west", "resort-style-apartments-pune",
+  
+  // High Intent Catch-all
+  "premium-villas-near-hinjewadi", "residential-townships-in-pune-west",
+  "godrej-2bhk-pune", "godrej-3bhk-pune", "godrej-4bhk-pune",
+  "new-launch-2bhk-hinjewadi", "new-launch-3bhk-hinjewadi", "new-launch-4bhk-mahalunge"
 ];
 
 const formatConfigName = (slug: string) => {

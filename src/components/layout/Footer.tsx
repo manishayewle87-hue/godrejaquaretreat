@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from 'next/link';
 import MahaRERABadge from "@/components/ui/MahaRERABadge";
+import SEOFooterMesh from "./SEOFooterMesh";
 
 export default function Footer() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
@@ -220,6 +221,8 @@ export default function Footer() {
             Keywords and references to third-party developers (Lodha, VTP, Kolte Patil, Gera, Shapoorji Pallonji, Mahindra, Kohinoor, Kasturi, Rohan Builders, Pride Purple, Nyati, Kumar, Vilas Javdekar) are for comparative market analysis only.
           </p>
         </div>
+        
+        <SEOFooterMesh />
 
         {/* Legal */}
         <motion.div 

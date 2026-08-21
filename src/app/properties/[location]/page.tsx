@@ -41,7 +41,13 @@ export const LOCATIONS = [
   "godrej-green-vistas-mahalunge", "godrej-meadows-mahalunge", "godrej-boulevard-mahalunge",
   "godrej-eden-estate-mahalunge", "godrej-properties-mahalunge", "godrej-park-world-hinjewadi",
   "the-aqua-retreat-hinjewadi", "godrej-aqua-retreat-hinjewadi", "godrej-properties-hinjewadi",
-  "godrej-properties-pune-projects"
+  "godrej-properties-pune-projects",
+
+  // Mega SEO Domination Slugs
+  "pune-real-estate-market", "real-estate-pune", "baner-real-estate-market",
+  "mahalunge-real-estate-market", "hinjewadi-real-estate-market", "buy-home-in-pune",
+  "new-launch-projects-in-pune", "upcoming-residential-projects-pune",
+  "township-projects-in-pune", "luxury-projects-in-pune-west"
 ];
 
 // Helper to format slugs into Title Case (e.g., "viman-nagar" -> "Viman Nagar")
