@@ -65,6 +65,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         crawlDelay: 2,
       },
+      // 8. Global Search Engines (Yahoo, Baidu, Yandex, DuckDuckGo)
+      {
+        userAgent: 'Slurp',
+        allow: '/',
+      },
+      {
+        userAgent: 'Baiduspider',
+        allow: '/',
+      },
+      {
+        userAgent: 'YandexBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'DuckDuckBot',
+        allow: '/',
+      },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
   };

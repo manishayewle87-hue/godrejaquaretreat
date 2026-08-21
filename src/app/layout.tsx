@@ -63,11 +63,21 @@ export const metadata: Metadata = {
         url: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
         width: 1920,
         height: 900,
-        alt: "The Aqua Retreat by Godrej Properties Hinjewadi",
+        alt: "Godrej Park World The Aqua Retreat Hinjewadi",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+  alternates: {
+    canonical: siteConfig.url,
+    languages: {
+      'en-US': siteConfig.url,
+      'en-GB': siteConfig.url,
+      'en-AE': siteConfig.url, // UAE - Huge NRI market
+      'en-IN': siteConfig.url,
+      'en-SG': siteConfig.url, // Singapore NRI market
+    },
   },
   twitter: {
     card: "summary_large_image",
