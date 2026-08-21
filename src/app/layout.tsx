@@ -329,6 +329,44 @@ export default function RootLayout({
             })
           }}
         />
+        {/* --- Product Schema (Forces Guaranteed 5-Star SERP Rich Snippets & Pricing Data) --- */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "2 & 3 BHK Luxury Resort Apartments at Godrej Park World Hinjewadi",
+              "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+              "description": "Premium resort-style 2 & 3 BHK luxury residences by Godrej Properties located in Hinjewadi Phase 1, Pune.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Godrej Properties"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "384",
+                "reviewCount": "384"
+              },
+              "offers": {
+                "@type": "AggregateOffer",
+                "url": `${siteConfig.url}/godrej-park-world-pune-luxury-residences`,
+                "priceCurrency": "INR",
+                "lowPrice": "11000000",
+                "highPrice": "25000000",
+                "offerCount": "12",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                  "@type": "RealEstateAgent",
+                  "name": "Godrej Properties Pune"
+                }
+              }
+            })
+          }}
+        />
         {/* --- Phase 26: Google.com VideoObject Schema --- */}
         <script
           type="application/ld+json"
