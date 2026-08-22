@@ -20,6 +20,7 @@ export default function robots(): MetadataRoute.Robots {
           '/godrej-park-world-pune-premium-amenities',
           '/godrej-park-world-pune-hinjewadi-location',
           '/godrej-park-world-pune-gallery',
+          '/directory',
           '/clusters/',
           '/configurations/',
           '/amenities/',

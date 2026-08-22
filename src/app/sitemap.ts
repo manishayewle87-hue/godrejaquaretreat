@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "/godrej-park-world-pune-premium-amenities", priority: 0.95, changeFrequency: "daily" },
     { route: "/godrej-park-world-pune-hinjewadi-location", priority: 0.95, changeFrequency: "daily" },
     { route: "/godrej-park-world-pune-gallery", priority: 0.93, changeFrequency: "daily" },
+    { route: "/directory", priority: 0.92, changeFrequency: "daily" },
     { route: "/blog", priority: 0.90, changeFrequency: "daily" },
     { route: "/privacy-policy", priority: 0.70, changeFrequency: "monthly" },
     { route: "/terms-of-service", priority: 0.70, changeFrequency: "monthly" },

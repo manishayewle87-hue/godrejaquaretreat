@@ -21,6 +21,7 @@ export default function SEOFooterMesh() {
               <Link href="/properties/godrej-the-retreat-brochure" className="hover:text-white transition-colors">The Retreat PDF Brochure</Link>
               <Link href="/properties/godrej-the-retreat-sample-flat" className="hover:text-white transition-colors">The Retreat Sample Flat Tour</Link>
               <Link href="/properties/godrej-the-retreat-rera" className="hover:text-white transition-colors">MahaRERA PM1260002500070</Link>
+              <Link href="/directory" className="text-emerald-aqua hover:text-white transition-colors font-semibold">📁 Ecosystem Directory (330+ Pages)</Link>
             </div>
 
             {/* Top Micro Markets */}
