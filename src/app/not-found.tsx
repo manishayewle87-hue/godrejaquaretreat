@@ -18,7 +18,7 @@ export default function NotFound() {
           The residence or page you are looking for might have been moved, renamed, or is currently exclusive to another sector of Godrej Park World.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto flex-wrap justify-center">
           <Link
             href="/"
             className="px-8 py-3.5 bg-emerald-aqua text-gray-900 font-semibold text-xs tracking-widest uppercase rounded-full hover:bg-emerald-aqua/80 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-aqua/10"
@@ -26,10 +26,16 @@ export default function NotFound() {
             <Home size={16} /> Return Home
           </Link>
           <Link
-            href="/godrej-park-world-pune-masterplan"
+            href="/godrej-the-retreat-hinjewadi"
+            className="px-8 py-3.5 bg-white/10 border border-emerald-aqua/40 text-emerald-aqua font-semibold text-xs tracking-widest uppercase rounded-full hover:bg-emerald-aqua hover:text-black transition-all flex items-center justify-center gap-2"
+          >
+            ⭐ Godrej The Retreat
+          </Link>
+          <Link
+            href="/directory"
             className="px-8 py-3.5 border border-white/20 text-white font-medium text-xs tracking-widest uppercase rounded-full hover:border-emerald-aqua hover:text-emerald-aqua transition-all flex items-center justify-center gap-2"
           >
-            <Compass size={16} /> Master Plan
+            <Compass size={16} /> Ecosystem Directory
           </Link>
         </div>
       </div>
