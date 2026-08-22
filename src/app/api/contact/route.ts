@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getClientIp, rateLimitLeadSubmission } from '@/lib/rate-limit';
 import { sanitizeString, validatePhone, validateEmail, isHoneypotTriggered } from '@/lib/security';
+import { sendLeadNotificationEmail } from '@/lib/email';
 
 export async function POST(request: Request) {
   try {
@@ -46,13 +47,15 @@ export async function POST(request: Request) {
       );
     }
 
-    // 4. CRM Push (Logging / Webhook)
-    console.log('====================================');
-    console.log('🚨 NEW LEAD CAPTURED: GODREJ PARK WORLD');
-    console.log(`Name: ${name} | Phone: ${cleanPhone}`);
-    if (email) console.log(`Email: ${email}`);
-    console.log(`Interest: ${configuration}`);
-    console.log('====================================');
+    // 4. Send Instant Email Alert to propsmartrealty@gmail.com
+    await sendLeadNotificationEmail({
+      name,
+      phone: cleanPhone,
+      email: email || undefined,
+      source: sanitizeString(body.source || 'Website Contact Form', 100),
+      configuration,
+      ip,
+    });
 
     // 5. Automated WhatsApp API Webhook (if configured)
     const WA_API_ENDPOINT = process.env.WHATSAPP_API_ENDPOINT || 'https://api.whatsapp.com/v1/messages';

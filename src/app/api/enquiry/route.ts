@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
-import nodemailer from 'nodemailer';
 import crypto from 'crypto';
 import { getClientIp, rateLimitLeadSubmission } from '@/lib/rate-limit';
-import { escapeHtml, sanitizeString, validatePhone, validateEmail, isHoneypotTriggered } from '@/lib/security';
+import { sanitizeString, validatePhone, validateEmail, isHoneypotTriggered } from '@/lib/security';
+import { sendLeadNotificationEmail } from '@/lib/email';
 
 // Define the temporary file path for storing leads in serverless environments
 const LEADS_FILE = '/tmp/leads.json';
@@ -113,49 +113,15 @@ export async function POST(req: Request) {
 
     console.log(`[LEAD CAPTURED] ${name} | ${validPhone} | ${source}`);
 
-    // 5. Secure Nodemailer Email Dispatch
-    if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
-      try {
-        const transporter = nodemailer.createTransport({
-          service: 'gmail',
-          auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
-          },
-        });
-
-        // Escape HTML to prevent injection in emails
-        const safeName = escapeHtml(name);
-        const safePhone = escapeHtml(validPhone);
-        const safeEmail = escapeHtml(validEmail || 'N/A');
-        const safeSource = escapeHtml(source);
-        const safeConfig = escapeHtml(config || 'N/A');
-
-        const mailOptions = {
-          from: `"Godrej Park World" <${process.env.EMAIL_USER}>`,
-          to: process.env.ADMIN_EMAIL || 'propsmartrealty@gmail.com',
-          subject: `🚨 New Lead: ${safeSource} - ${safeName}`,
-          html: `
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;">
-              <h2 style="color: #0D211C; border-bottom: 2px solid #3BA0D1; padding-bottom: 10px;">Godrej Park World | New Lead</h2>
-              <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-                <tr><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;">${safeName}</td></tr>
-                <tr><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;"><a href="tel:${safePhone}">${safePhone}</a></td></tr>
-                <tr><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;">${safeEmail}</td></tr>
-                <tr><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;"><strong>Source:</strong></td><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;">${safeSource}</td></tr>
-                <tr><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;"><strong>Intent/Config:</strong></td><td style="padding: 10px; border-bottom: 1px solid #f0f0f0;">${safeConfig}</td></tr>
-                <tr><td style="padding: 10px;"><strong>Time:</strong></td><td style="padding: 10px;">${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</td></tr>
-              </table>
-            </div>
-          `,
-        };
-
-        await transporter.sendMail(mailOptions);
-        console.log('Lead notification email sent successfully.');
-      } catch (mailError) {
-        console.error('Nodemailer failed to send email:', mailError);
-      }
-    }
+    // 5. Secure Email Dispatch to propsmartrealty@gmail.com
+    await sendLeadNotificationEmail({
+      name,
+      phone: validPhone,
+      email: validEmail || undefined,
+      source,
+      configuration: config,
+      ip,
+    });
 
     // 6. CRM Webhook Dispatch (Zapier, Make, Zoho, Salesforce)
     const CRM_WEBHOOK_URL = process.env.CRM_WEBHOOK_URL;
