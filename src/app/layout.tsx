@@ -129,6 +129,7 @@ const syne = Syne({ subsets: ['latin'], weight: ['400', '500', '600', '700', '80
 
 import { GoogleAnalytics } from '@next/third-parties/google';
 import MobileTabBar from "@/components/ui/MobileTabBar";
+import GoogleWebVitals from "@/components/analytics/GoogleWebVitals";
 
 export default function RootLayout({
   children,
@@ -658,7 +659,10 @@ export default function RootLayout({
           </SmoothScroller>
         </ModalProvider>
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+          <>
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+            <GoogleWebVitals />
+          </>
         )}
       </body>
     </html>

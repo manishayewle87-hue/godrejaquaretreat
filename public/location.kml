@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Godrej The Retreat Hinjewadi Phase 1 Pune</name>
+    <description>Ultra-Luxury 2 &amp; 3 BHK Resort Residences at Godrej Park World, Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, Pune, Maharashtra 411057. MahaRERA: PM1260002500070.</description>
+    <Placemark>
+      <name>Godrej The Retreat - Experience Center &amp; Sales Lounge</name>
+      <description><![CDATA[
+        <h1>Godrej The Retreat Hinjewadi</h1>
+        <p><strong>Developer:</strong> Godrej Properties Pune</p>
+        <p><strong>MahaRERA:</strong> PM1260002500070</p>
+        <p><strong>Address:</strong> Hinjewadi Phase 1, Rajiv Gandhi Infotech Park, Pune 411057</p>
+        <p><strong>Configurations:</strong> 2 &amp; 3 BHK Luxury Resort Apartments</p>
+        <p><strong>Website:</strong> <a href="https://godrejaquaretreat.godrejparkworld.com/godrej-the-retreat-hinjewadi">https://godrejaquaretreat.godrejparkworld.com</a></p>
+      ]]></description>
+      <Point>
+        <coordinates>73.7281875,18.5790625,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
