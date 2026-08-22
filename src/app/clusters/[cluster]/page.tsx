@@ -65,23 +65,80 @@ export async function generateMetadata({ params }: { params: Promise<{ cluster: 
 export default async function ClusterSiloPage({ params }: { params: Promise<{ cluster: string }> }) {
   const resolvedParams = await params;
   const clusterName = formatClusterName(resolvedParams.cluster);
+  const baseUrl = siteConfig.url;
+  const pageUrl = `${baseUrl}/clusters/${resolvedParams.cluster}`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "RealEstateListing",
-    "name": `${clusterName} at Godrej Park World`,
-    "description": `Premium real estate offering inside the Godrej Park World township in Hinjewadi.`,
-    "url": `${siteConfig.url}/clusters/${resolvedParams.cluster}`,
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock",
-      "seller": {
-        "@type": "Organization",
-        "name": "Godrej Properties Pune"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+        { "@type": "ListItem", "position": 2, "name": "Godrej The Retreat Hinjewadi", "item": `${baseUrl}/godrej-the-retreat-hinjewadi` },
+        { "@type": "ListItem", "position": 3, "name": clusterName, "item": pageUrl }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": `${clusterName} - Godrej The Retreat Hinjewadi`,
+      "description": `Premium real estate offering inside the Godrej Park World township in Hinjewadi Phase 1, Pune. MahaRERA PM1260002500070.`,
+      "url": pageUrl,
+      "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "11000000",
+        "highPrice": "25000000",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "RealEstateAgent",
+          "name": "Godrej Properties Pune",
+          "telephone": "+917744009295"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "342"
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ApartmentComplex",
+      "name": "Godrej The Retreat Hinjewadi",
+      "identifier": "PM1260002500070",
+      "url": pageUrl,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411057",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5790625,
+        "longitude": 73.7281875
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `How does ${clusterName} compare with Godrej The Retreat?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `Godrej The Retreat is the flagship luxury cluster within Godrej Park World Hinjewadi Phase 1, featuring a 50,000 sq ft clubhouse, 50m lagoon pool, and 12+ acres central greens under MahaRERA PM1260002500070.`
+          }
+        }
+      ]
     }
-  };
+  ];
 
   return (
     <>

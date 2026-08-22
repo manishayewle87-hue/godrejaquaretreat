@@ -221,7 +221,11 @@ export default function RootLayout({
         ],
         "sameAs": [
           "https://maharera.mahaonline.gov.in",
-          "https://maps.google.com/?q=18.5790625,73.7281875"
+          "https://maps.google.com/?q=18.5790625,73.7281875",
+          "https://en.wikipedia.org/wiki/Godrej_Properties",
+          "https://en.wikipedia.org/wiki/Hinjawadi",
+          "https://www.wikidata.org/wiki/Q5576786",
+          "https://www.openstreetmap.org/#map=16/18.5791/73.7282"
         ],
         "aggregateRating": {
           "@type": "AggregateRating",

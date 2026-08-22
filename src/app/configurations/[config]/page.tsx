@@ -3,6 +3,11 @@ import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
 export const CONFIGURATIONS = [
+  // Core Godrej The Retreat Slugs
+  "godrej-the-retreat-2-bhk-flats-hinjewadi", "godrej-the-retreat-3-bhk-luxury-apartments",
+  "godrej-the-retreat-floor-plans-pune", "godrej-the-retreat-price-list",
+  "godrej-the-retreat-sample-flat-hinjewadi",
+
   // Core Godrej Configurations
   "2-bhk-flats-in-hinjewadi", "3-bhk-flats-in-hinjewadi", "3-bhk-luxury-apartments-in-pune",
   "2-bhk-flats-in-mahalunge", "3-bhk-flats-in-mahalunge",
@@ -42,26 +47,26 @@ export async function generateMetadata({ params }: { params: Promise<{ config: s
   const configName = formatConfigName(resolvedParams.config);
   
   return {
-    title: `Buy ${configName} | Godrej Park World Hinjewadi`,
-    description: `Searching for ${configName}? Discover Godrej Park World, an ultra-luxury township in Hinjewadi Phase 1 offering premium resort-style living by Godrej Properties.`,
+    title: `${configName} | Godrej The Retreat Hinjewadi Phase 1`,
+    description: `Searching for ${configName}? Discover Godrej The Retreat at Godrej Park World, Hinjewadi Phase 1 offering premium 2 & 3 BHK resort-style residences with 50,000 sq ft clubhouse. MahaRERA PM1260002500070.`,
     keywords: [
       configName, `Buy ${configName}`, `${configName} Price`, 
-      `Godrej Properties ${configName}`, `The Aqua Retreat ${configName}`,
-      "Godrej Park World Hinjewadi", "Pune Real Estate"
+      `Godrej Properties ${configName}`, `Godrej The Retreat ${configName}`,
+      "Godrej The Retreat Hinjewadi", "Pune Real Estate"
     ],
     alternates: {
       canonical: `${siteConfig.url}/configurations/${resolvedParams.config}`,
     },
     openGraph: {
-      title: `${configName} | Godrej Park World`,
-      description: `Explore premium ${configName} at Godrej Park World, Hinjewadi Phase 1.`,
+      title: `${configName} | Godrej The Retreat Hinjewadi`,
+      description: `Explore premium ${configName} at Godrej The Retreat, Hinjewadi Phase 1.`,
       url: `${siteConfig.url}/configurations/${resolvedParams.config}`,
       images: [
         {
-          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(configName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(configName)}&subtitle=${encodeURIComponent('Godrej The Retreat Hinjewadi')}`,
           width: 1200,
           height: 630,
-          alt: configName,
+          alt: `${configName} Layout`,
         }
       ],
     },
@@ -80,16 +85,17 @@ export default async function ConfigurationSEOPage({ params }: { params: Promise
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
-        { "@type": "ListItem", "position": 2, "name": "Configurations", "item": `${baseUrl}/configurations/2-bhk-flats-in-hinjewadi` },
+        { "@type": "ListItem", "position": 2, "name": "Godrej The Retreat Hinjewadi", "item": `${baseUrl}/godrej-the-retreat-hinjewadi` },
         { "@type": "ListItem", "position": 3, "name": configName, "item": pageUrl }
       ]
     },
     {
       "@context": "https://schema.org",
-      "@type": "RealEstateListing",
-      "name": `${configName} - The Aqua Retreat at Godrej Park World`,
-      "description": `Premium ${configName} layout at Godrej Park World Hinjewadi Phase 1 by Godrej Properties Pune.`,
+      "@type": "Product",
+      "name": `${configName} - Godrej The Retreat Hinjewadi`,
+      "description": `Premium ${configName} layout at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1 by Godrej Properties Pune. MahaRERA: PM1260002500070.`,
       "url": pageUrl,
+      "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "INR",
@@ -102,7 +108,54 @@ export default async function ConfigurationSEOPage({ params }: { params: Promise
           "name": "Godrej Properties Pune",
           "telephone": "+917744009295"
         }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "342"
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ApartmentComplex",
+      "name": "Godrej The Retreat Hinjewadi",
+      "identifier": "PM1260002500070",
+      "url": pageUrl,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411057",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5790625,
+        "longitude": 73.7281875
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `What is the price and layout for ${configName}?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `At Godrej The Retreat Hinjewadi Phase 1, luxury residences range from ₹1.10 Crore* (2 BHK) to ₹1.65 Crore* - ₹2.50 Crore* (3 BHK) with resort views and 50,000 sq ft clubhouse access.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Godrej The Retreat MahaRERA registered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Godrej The Retreat is registered under MahaRERA No. PM1260002500070."
+          }
+        }
+      ]
     }
   ];
 
@@ -113,10 +166,14 @@ export default async function ConfigurationSEOPage({ params }: { params: Promise
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-        <h1 className="sr-only">Buy {configName} - Godrej Park World Hinjewadi Phase 1</h1>
+        <h1 className="sr-only">{configName} - Godrej The Retreat Hinjewadi Phase 1 Pune</h1>
         
-        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-          Godrej Properties Pune presents premium {configName}
+        <div className="bg-[#0B0C10] text-gray-300 text-center py-2.5 px-4 text-[11px] font-sans tracking-[0.2em] uppercase border-b border-white/10 relative z-50 flex items-center justify-center gap-3">
+          <span className="text-emerald-aqua font-bold">{configName}</span>
+          <span className="text-gray-500">•</span>
+          <span>Godrej The Retreat Hinjewadi Phase 1</span>
+          <span className="text-gray-500">•</span>
+          <span className="text-emerald-aqua">MahaRERA PM1260002500070</span>
         </div>
 
         <PageContent />

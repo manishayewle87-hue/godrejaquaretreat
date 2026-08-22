@@ -71,24 +71,69 @@ export default async function AmenitySEOPage({ params }: { params: Promise<{ ame
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
-        { "@type": "ListItem", "position": 2, "name": "Amenities", "item": `${baseUrl}/amenities/50000-sq-ft-clubhouse-apartments-pune` },
+        { "@type": "ListItem", "position": 2, "name": "Godrej The Retreat Hinjewadi", "item": `${baseUrl}/godrej-the-retreat-hinjewadi` },
         { "@type": "ListItem", "position": 3, "name": amenityName, "item": pageUrl }
       ]
     },
     {
       "@context": "https://schema.org",
-      "@type": "Place",
-      "name": `${amenityName} - Godrej Park World`,
-      "description": `World-class lifestyle feature (${amenityName}) at Godrej Park World Hinjewadi by Godrej Properties Pune.`,
+      "@type": "Product",
+      "name": `${amenityName} - Godrej The Retreat Hinjewadi`,
+      "description": `World-class lifestyle feature (${amenityName}) at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1 by Godrej Properties Pune. MahaRERA PM1260002500070.`,
+      "url": pageUrl,
+      "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "11000000",
+        "highPrice": "25000000",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "RealEstateAgent",
+          "name": "Godrej Properties Pune",
+          "telephone": "+917744009295"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "342"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ApartmentComplex",
+      "name": "Godrej The Retreat Hinjewadi",
+      "identifier": "PM1260002500070",
       "url": pageUrl,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
+        "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1",
         "addressLocality": "Pune",
         "addressRegion": "Maharashtra",
         "postalCode": "411057",
         "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5790625,
+        "longitude": 73.7281875
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `What amenities are included with ${amenityName} at Godrej The Retreat?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `Residents enjoy a 50,000 sq ft 4-tier clubhouse, 50m Olympic lagoon pool, 12+ acres central greens, sports courts, and hydrotherapy spa at Godrej The Retreat Hinjewadi Phase 1.`
+          }
+        }
+      ]
     }
   ];
 
@@ -99,10 +144,14 @@ export default async function AmenitySEOPage({ params }: { params: Promise<{ ame
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-        <h1 className="sr-only">Experience {amenityName} at Godrej Park World Hinjewadi</h1>
+        <h1 className="sr-only">Experience {amenityName} at Godrej The Retreat Hinjewadi Phase 1</h1>
         
-        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-          Godrej Properties Pune offers exclusive {amenityName}
+        <div className="bg-[#0B0C10] text-gray-300 text-center py-2.5 px-4 text-[11px] font-sans tracking-[0.2em] uppercase border-b border-white/10 relative z-50 flex items-center justify-center gap-3">
+          <span className="text-emerald-aqua font-bold">{amenityName}</span>
+          <span className="text-gray-500">•</span>
+          <span>Godrej The Retreat Hinjewadi Phase 1</span>
+          <span className="text-gray-500">•</span>
+          <span className="text-emerald-aqua">MahaRERA PM1260002500070</span>
         </div>
 
         <PageContent />
