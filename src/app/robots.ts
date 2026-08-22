@@ -12,6 +12,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: [
           '/',
           '/godrej-the-retreat-hinjewadi',
+          '/godrej-park-world-hinjewadi',
           '/eoi',
           '/godrej-properties-hinjewadi-pune',
           '/godrej-park-world-pune-masterplan',

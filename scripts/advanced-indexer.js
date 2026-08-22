@@ -50,6 +50,7 @@ const SHOW_STATUS = getArg('status', false) === true;
 const TIER1_ROUTES = [
   '/',
   '/godrej-the-retreat-hinjewadi',
+  '/godrej-park-world-hinjewadi',
   '/godrej-properties-hinjewadi-pune',
   '/eoi',
   '/directory',
