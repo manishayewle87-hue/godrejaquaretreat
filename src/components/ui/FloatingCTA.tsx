@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PhoneCall } from 'lucide-react';
+import { MessageCircle, PhoneCall } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
 
 export default function FloatingCTA() {
@@ -22,19 +22,35 @@ export default function FloatingCTA() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 1.5, duration: 1, ease: [0.83, 0, 0.17, 1] }}
-      className="hidden md:flex fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[90] flex-col gap-4 items-end"
+      className="hidden md:flex fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[90] flex-col gap-3 items-end"
     >
       <AnimatePresence>
         {expanded && (
-          <motion.a
-            href="tel:+917744009295"
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            className="w-14 h-14 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-emerald-aqua shadow-xl hover:bg-white transition-colors"
-          >
-            <PhoneCall size={20} />
-          </motion.a>
+          <>
+            <motion.a
+              href="https://wa.me/917744009295?text=Hi%2C%20I%20am%20interested%20in%20Godrej%20The%20Retreat%20Hinjewadi.%20Please%20share%20the%20brochure%2C%20floor%20plans%2C%20and%20price%20list."
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: 20 }}
+              className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-xl hover:bg-[#20bd5a] transition-all hover:scale-110"
+              title="Chat on WhatsApp"
+            >
+              <MessageCircle size={24} />
+            </motion.a>
+
+            <motion.a
+              href="tel:+917744009295"
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: 20 }}
+              className="w-14 h-14 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-emerald-aqua shadow-xl hover:bg-white transition-colors"
+              title="Call Sales Lounge"
+            >
+              <PhoneCall size={20} />
+            </motion.a>
+          </>
         )}
       </AnimatePresence>
       
