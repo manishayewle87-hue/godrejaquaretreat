@@ -19,6 +19,7 @@ const FloorRiseViewSelector = dynamic(() => import("@/components/sections/FloorR
 const BalconyVisualizer = dynamic(() => import("@/components/sections/BalconyVisualizer"));
 const Amenities = dynamic(() => import("@/components/sections/Amenities"));
 const Specifications = dynamic(() => import("@/components/sections/Specifications"));
+const ProjectFactSheet = dynamic(() => import("@/components/sections/ProjectFactSheet"));
 const InteriorStyleCustomizer = dynamic(() => import("@/components/sections/InteriorStyleCustomizer"));
 const InvestmentCalculator = dynamic(() => import("@/components/sections/InvestmentCalculator"));
 const UnitPriceEstimator = dynamic(() => import("@/components/sections/UnitPriceEstimator"));
@@ -43,6 +44,7 @@ export default function PageContent() {
       <Heritage />
       <VideoTour />
       <About />
+      <ProjectFactSheet />
       <AquaLifestyle />
       <ClubhouseAmenityExplorer />
       <InteractiveMasterplan />

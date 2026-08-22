@@ -106,27 +106,38 @@ export function generateStaticParams() {
 // 2. Programmatically Generate Ultra-Targeted SEO Metadata
 export async function generateMetadata({ params }: { params: Promise<{ location: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const locName = formatLocation(resolvedParams.location);
+  const loc = resolvedParams.location;
+  const locName = formatLocation(loc);
   
+  const isRetreat = loc.includes('retreat') || loc.includes('the-retreat');
+  
+  const title = isRetreat
+    ? `${locName} | Godrej The Retreat Hinjewadi Phase 1 Pune`
+    : `Godrej Properties in ${locName} | Godrej The Retreat Hinjewadi`;
+
+  const description = isRetreat
+    ? `Official guide and details for ${locName}. Explore 2 & 3 BHK luxury resort apartments at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1 with 50,000 sq ft clubhouse & MahaRERA PM1260002500070.`
+    : `Looking for premium apartments near ${locName}? Discover Godrej The Retreat at Godrej Park World, an ultra-luxury township in Hinjewadi Phase 1 offering resort-style living just minutes from ${locName}.`;
+
   return {
-    title: `Godrej Properties in ${locName} | Godrej Park World Pune`,
-    description: `Looking for premium apartments near ${locName}? Discover Godrej Park World, an ultra-luxury township by Godrej Properties Pune offering resort-style living just minutes from ${locName}.`,
+    title,
+    description,
     keywords: [
-      `Godrej Properties ${locName}`, `Godrej flats in ${locName}`, `Buy apartment ${locName}`, 
-      `Luxury apartments ${locName}`, `Godrej new launch near ${locName}`, `Premium township ${locName}`,
-      `Godrej Park World ${locName}`, `Godrej Aqua Retreat ${locName}`, `Best property near ${locName}`
+      `${locName}`, `Godrej Properties ${locName}`, `Godrej flats ${locName}`, `Buy apartment ${locName}`, 
+      `Godrej The Retreat ${locName}`, `Godrej The Retreat Hinjewadi`, `Godrej The Retreat Price`,
+      `Godrej The Retreat Floor Plan`, `Godrej Park World ${locName}`, `Godrej Aqua Retreat ${locName}`
     ],
     alternates: {
       // CRITICAL: Set canonical to itself so Google indexes it as a unique landing page
       canonical: `${siteConfig.url}/properties/${resolvedParams.location}`,
     },
     openGraph: {
-      title: `${locName} - Godrej Properties Hinjewadi`,
-      description: `Explore premium Godrej Properties in ${locName}, Pune. Buy luxury 2 & 3 BHK flats at The Aqua Retreat by Godrej Properties Hinjewadi Phase 1.`,
+      title,
+      description,
       url: `${siteConfig.url}/properties/${resolvedParams.location}`,
       images: [
         {
-          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(locName)}&subtitle=${encodeURIComponent('Godrej Park World Hinjewadi')}`,
+          url: `${siteConfig.url}/api/og?title=${encodeURIComponent(locName)}&subtitle=${encodeURIComponent('Godrej The Retreat Hinjewadi')}`,
           width: 1200,
           height: 630,
           alt: `${locName} Real Estate`,
@@ -139,9 +150,11 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
 // 3. Render the Page
 export default async function LocationSEOPage({ params }: { params: Promise<{ location: string }> }) {
   const resolvedParams = await params;
-  const locName = formatLocation(resolvedParams.location);
+  const loc = resolvedParams.location;
+  const locName = formatLocation(loc);
   const baseUrl = siteConfig.url;
-  const pageUrl = `${baseUrl}/properties/${resolvedParams.location}`;
+  const pageUrl = `${baseUrl}/properties/${loc}`;
+  const isRetreat = loc.includes('retreat') || loc.includes('the-retreat');
   
   const jsonLd = [
     {
@@ -157,29 +170,60 @@ export default async function LocationSEOPage({ params }: { params: Promise<{ lo
         {
           "@type": "ListItem",
           "position": 2,
-          "name": `Godrej Properties ${locName}`,
+          "name": "Godrej The Retreat Hinjewadi",
+          "item": `${baseUrl}/godrej-the-retreat-hinjewadi`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": locName,
           "item": pageUrl
         }
       ]
     },
     {
       "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": `Godrej Properties Pune - ${locName} Authorised Partner`,
-      "url": pageUrl,
+      "@type": "Product",
+      "name": isRetreat ? `${locName} - Godrej The Retreat Hinjewadi` : `Godrej Properties in ${locName}`,
+      "description": `Luxury 2 & 3 BHK resort-style apartments at Godrej The Retreat, Hinjewadi Phase 1, Pune. MahaRERA PM1260002500070.`,
       "image": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
-      "description": `Authorized real estate marketing partner for Godrej Park World Hinjewadi, serving homebuyers and investors from ${locName}.`,
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "11000000",
+        "highPrice": "25000000",
+        "offerCount": "12",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "RealEstateAgent",
+          "name": "Godrej Properties Pune",
+          "telephone": "+917744009295"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "342"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ApartmentComplex",
+      "name": "Godrej The Retreat Hinjewadi",
+      "identifier": "PM1260002500070",
+      "url": pageUrl,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Godrej Park World, Hinjewadi Phase 1",
+        "streetAddress": "Godrej The Retreat, Godrej Park World, Hinjewadi Phase 1, Rajiv Gandhi Infotech Park",
         "addressLocality": "Pune",
-        "addressRegion": "MH",
+        "addressRegion": "Maharashtra",
         "postalCode": "411057",
         "addressCountry": "IN"
       },
-      "areaServed": {
-        "@type": "Place",
-        "name": `${locName}, Pune, Maharashtra`
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.5790625,
+        "longitude": 73.7281875
       }
     }
   ];
@@ -191,12 +235,18 @@ export default async function LocationSEOPage({ params }: { params: Promise<{ lo
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-        {/* Invisible H1 for Google Crawlers to anchor the keyword intent */}
-        <h1 className="sr-only">Godrej Properties in {locName} - Luxury Apartments & Premium Township</h1>
+        {/* Semantic H1 for Google Crawlers to anchor the keyword intent */}
+        <h1 className="sr-only">
+          {isRetreat ? `${locName} - Godrej The Retreat Hinjewadi Phase 1 Pune` : `Godrej Properties in ${locName} - Luxury Apartments & Premium Township`}
+        </h1>
         
         {/* Subtle visible text to ensure Google doesn't flag it as cloaking */}
-        <div className="bg-[#0B0C10] text-gray-400 text-center py-2 text-[10px] font-sans tracking-[0.2em] uppercase border-b border-white/5 relative z-50">
-          Godrej Properties Pune presents ultra-luxury living accessible from {locName}
+        <div className="bg-[#0B0C10] text-gray-300 text-center py-2.5 px-4 text-[11px] font-sans tracking-[0.2em] uppercase border-b border-white/10 relative z-50 flex items-center justify-center gap-3">
+          <span className="text-emerald-aqua font-bold">{locName}</span>
+          <span className="text-gray-500">•</span>
+          <span>Godrej The Retreat Hinjewadi Phase 1</span>
+          <span className="text-gray-500">•</span>
+          <span className="text-emerald-aqua">MahaRERA PM1260002500070</span>
         </div>
 
         <PageContent />

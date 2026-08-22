@@ -62,7 +62,7 @@ export default function About() {
           {/* Left: Typography & Story */}
           <div ref={textRef} className="flex flex-col justify-center py-10 md:py-20 pr-8">
             <span className="reveal-text text-emerald-aqua uppercase tracking-[0.4em] text-xs font-semibold mb-8 block">
-              The Philosophy of Godrej Properties Pune
+              Godrej The Retreat Hinjewadi • Godrej Properties Pune
             </span>
             <h2 className="reveal-text font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-10 text-luxury-light">
               Soak in the essence of <br className="hidden md:block" />
@@ -70,15 +70,20 @@ export default function About() {
             </h2>
             <div className="reveal-text w-20 h-[1px] bg-emerald-aqua/30 mb-10"></div>
             <p className="reveal-text text-base md:text-xl text-gray-600 font-light leading-relaxed mb-8">
-              A premium gated community meticulously crafted around a resilient landscape centerpiece, standing as the apex of <strong>Pune Real Estate Investment</strong>: Godrej Park World Phase 1 features 12+ Acres of Central Greens & Playgrounds.
+              A premium gated resort community meticulously crafted around a resilient landscape centerpiece, standing as the apex of <strong>Pune Real Estate Investment</strong>: <strong>Godrej The Retreat</strong> at Godrej Park World Hinjewadi Phase 1 features 12+ Acres of Central Greens, 50,000 sq.ft 4-level clubhouse, and Olympic lagoon pools.
             </p>
             <p className="reveal-text text-base md:text-xl text-gray-600 font-light leading-relaxed mb-12">
-              At the heart of this integrated township near the Hinjewadi IT Park lies the restoration of an existing stream, nurturing a diverse array of flora and fauna. If you are seeking the ultimate asset in the Pune property market, The Aqua Retreat offers an unparalleled blend of natural tranquility and urban ROI.
+              At the heart of this integrated 100+ acre township in Rajiv Gandhi Infotech Park lies the restoration of an existing natural stream, nurturing a serene eco-sanctuary. Whether seeking high rental yield (7.2% - 8.0%) or luxury living 2 minutes from Pune Metro Line 3, <strong>Godrej The Retreat Hinjewadi</strong> offers an unmatched standard of tranquility and capital appreciation.
             </p>
-            <div className="reveal-text flex mt-4">
+            <div className="reveal-text flex flex-wrap gap-4 mt-4">
+               <Magnetic strength={0.3}>
+                 <Link href="/godrej-the-retreat-hinjewadi" scroll={false} className="bg-emerald-aqua text-black px-6 py-3 rounded-full text-xs md:text-sm tracking-[0.1em] uppercase font-bold hover:bg-black hover:text-white transition-all duration-500 shadow-md inline-block">
+                   Godrej The Retreat Portal
+                 </Link>
+               </Magnetic>
                <Magnetic strength={0.3}>
                  <Link href="/godrej-park-world-pune-masterplan" scroll={false} className="bg-emerald-aqua/10 text-emerald-aqua px-6 py-3 rounded-full text-xs md:text-sm tracking-[0.1em] uppercase font-semibold hover:bg-emerald-aqua hover:text-white transition-all duration-500 shadow-sm inline-block">
-                   Explore the Masterplan
+                   Explore Masterplan
                  </Link>
                </Magnetic>
             </div>
