@@ -2,6 +2,8 @@
 
 An enterprise-grade, automated indexing pipeline engineered to instantly submit, verify, and monitor 300+ programmatic SEO routes and core landing pages across **Google Search** (via Google Indexing API v3) and **Bing / Yandex / Seznam / Naver** (via IndexNow Protocol).
 
+*Service Account Configured:* `godrejaqua@vivid-reality-419916.iam.gserviceaccount.com`
+
 ---
 
 ## 1. System Architecture
