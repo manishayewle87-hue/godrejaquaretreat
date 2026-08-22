@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle2, ChevronLeft, Building2, Home } from 'lucide-react';
 import Link from 'next/link';
+import { trackConversion } from '@/lib/analytics';
 
 type EOIForm = {
   config: string;
@@ -45,6 +46,13 @@ export default function EOIPage() {
       });
 
       if (!response.ok) throw new Error("Failed");
+
+      trackConversion('generate_lead', {
+        event_category: 'Priority EOI',
+        event_label: `${formData.config} - ${formData.floorBand}`,
+        value: formData.config.includes('3') ? 16500000 : 11000000,
+        currency: 'INR'
+      });
       
       setStatus('success');
     } catch (error) {
