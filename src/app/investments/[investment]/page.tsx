@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
+import ProgrammaticContextHero from "@/components/layout/ProgrammaticContextHero";
 
 export const INVESTMENTS = [
   "rental-yield-hinjewadi-phase-1",
@@ -137,16 +138,12 @@ export default async function InvestmentSEOPage({ params }: { params: Promise<{ 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-        <h1 className="sr-only">Guide to {investmentName} at Godrej The Retreat Hinjewadi</h1>
-        
-        <div className="bg-[#0B0C10] text-gray-300 text-center py-2.5 px-4 text-[11px] font-sans tracking-[0.2em] uppercase border-b border-white/10 relative z-50 flex items-center justify-center gap-3">
-          <span className="text-emerald-aqua font-bold">{investmentName}</span>
-          <span className="text-gray-500">•</span>
-          <span>Godrej The Retreat Hinjewadi Phase 1</span>
-          <span className="text-gray-500">•</span>
-          <span className="text-emerald-aqua">MahaRERA PM1260002500070</span>
-        </div>
-
+        <ProgrammaticContextHero
+          title={investmentName}
+          category="Investment Intelligence"
+          categoryLink="/investments/rental-yield-hinjewadi-phase-1"
+          description={`Comprehensive financial forecast, rental yield analysis, and capital appreciation trends for ${investmentName} at Godrej The Retreat, Hinjewadi Phase 1, Pune. MahaRERA PM1260002500070.`}
+        />
         <PageContent />
       </main>
     </>

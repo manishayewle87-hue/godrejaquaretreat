@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
+import ProgrammaticContextHero from "@/components/layout/ProgrammaticContextHero";
 
 // Ultra-comprehensive list of Pune micro-markets and Godrej Projects
 export const LOCATIONS = [
@@ -156,6 +157,10 @@ export default async function LocationSEOPage({ params }: { params: Promise<{ lo
   const pageUrl = `${baseUrl}/properties/${loc}`;
   const isRetreat = loc.includes('retreat') || loc.includes('the-retreat');
   
+  const heroDescription = isRetreat
+    ? `Explore official floor plans, price breakdowns, and MahaRERA PM1260002500070 documentation for ${locName} at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1.`
+    : `Discover ultra-luxury 2 & 3 BHK resort-style residences at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1, conveniently accessible from ${locName}, Pune.`;
+  
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -235,20 +240,12 @@ export default async function LocationSEOPage({ params }: { params: Promise<{ lo
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-        {/* Semantic H1 for Google Crawlers to anchor the keyword intent */}
-        <h1 className="sr-only">
-          {isRetreat ? `${locName} - Godrej The Retreat Hinjewadi Phase 1 Pune` : `Godrej Properties in ${locName} - Luxury Apartments & Premium Township`}
-        </h1>
-        
-        {/* Subtle visible text to ensure Google doesn't flag it as cloaking */}
-        <div className="bg-[#0B0C10] text-gray-300 text-center py-2.5 px-4 text-[11px] font-sans tracking-[0.2em] uppercase border-b border-white/10 relative z-50 flex items-center justify-center gap-3">
-          <span className="text-emerald-aqua font-bold">{locName}</span>
-          <span className="text-gray-500">•</span>
-          <span>Godrej The Retreat Hinjewadi Phase 1</span>
-          <span className="text-gray-500">•</span>
-          <span className="text-emerald-aqua">MahaRERA PM1260002500070</span>
-        </div>
-
+        <ProgrammaticContextHero
+          title={isRetreat ? `${locName}` : `Godrej Properties in ${locName}`}
+          category={isRetreat ? "Godrej The Retreat Silo" : "Micro-Market Hub"}
+          categoryLink="/godrej-the-retreat-hinjewadi"
+          description={heroDescription}
+        />
         <PageContent />
       </main>
     </>

@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
+import ProgrammaticContextHero from "@/components/layout/ProgrammaticContextHero";
 
 export const CONFIGURATIONS = [
   // Core Godrej The Retreat Slugs
@@ -166,16 +167,12 @@ export default async function ConfigurationSEOPage({ params }: { params: Promise
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="flex min-h-screen flex-col bg-[#FAFAFA] selection:bg-emerald-aqua/30 selection:text-white">
-        <h1 className="sr-only">{configName} - Godrej The Retreat Hinjewadi Phase 1 Pune</h1>
-        
-        <div className="bg-[#0B0C10] text-gray-300 text-center py-2.5 px-4 text-[11px] font-sans tracking-[0.2em] uppercase border-b border-white/10 relative z-50 flex items-center justify-center gap-3">
-          <span className="text-emerald-aqua font-bold">{configName}</span>
-          <span className="text-gray-500">•</span>
-          <span>Godrej The Retreat Hinjewadi Phase 1</span>
-          <span className="text-gray-500">•</span>
-          <span className="text-emerald-aqua">MahaRERA PM1260002500070</span>
-        </div>
-
+        <ProgrammaticContextHero
+          title={configName}
+          category="Residences & Layouts"
+          categoryLink="/godrej-park-world-pune-luxury-residences"
+          description={`Discover luxurious architectural plans, carpet area breakdowns, and pricing for ${configName} at Godrej The Retreat, Hinjewadi Phase 1, Pune. MahaRERA PM1260002500070.`}
+        />
         <PageContent />
       </main>
     </>
