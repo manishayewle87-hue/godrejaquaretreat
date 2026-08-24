@@ -3,13 +3,16 @@ import type { Metadata } from "next";
 import PageContent from "@/components/layout/PageContent";
 
 export const metadata: Metadata = {
-  title: "Godrej The Retreat Hinjewadi | Price, Floor Plans, RERA & Brochure 2026",
-  description: "Official Godrej The Retreat Hinjewadi Phase 1 Portal. Explore 2 & 3 BHK luxury resort apartments starting ₹1.10 Cr* with 50,000 sq.ft clubhouse, 12+ acres greens & MahaRERA PM1260002500070.",
+  title: "Godrej The Retreat Hinjewadi Park World | Luxury 2 & 3 BHK Resort Apartments Pune",
+  description: "Official Godrej The Retreat at Godrej Park World Hinjewadi Phase 1, Pune by Godrej Properties. Luxury 2 & 3 BHK apartments starting ₹1.10 Cr* with 50,000 sq.ft clubhouse, 12+ acres central greens. MahaRERA: PM1260002500070.",
   keywords: [
+    "Godrej The Retreat Hinjewadi Park World",
+    "Godrej The Retreat at Godrej Park World",
     "Godrej The Retreat Hinjewadi",
     "Godrej The Retreat",
     "Godrej The Retreat Pune",
     "Godrej The Retreat Hinjewadi Phase 1",
+    "Godrej Park World The Retreat Hinjewadi",
     "Godrej The Retreat Price",
     "Godrej The Retreat Floor Plan",
     "Godrej The Retreat Brochure",

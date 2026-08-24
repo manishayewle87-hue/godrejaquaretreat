@@ -20,6 +20,7 @@ const LEGACY_BLOG_POSTS: BlogPost[] = [
     author: "Godrej Properties Pune Research Desk",
     image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
     keywords: [
+      "Godrej The Retreat Hinjewadi Park World", "Godrej The Retreat at Godrej Park World",
       "Godrej The Retreat Hinjewadi", "Godrej The Retreat", "Godrej The Retreat Pune",
       "Godrej The Retreat Price", "Godrej The Retreat Floor Plan", "Godrej The Retreat MahaRERA",
       "Godrej The Retreat Review", "Godrej The Retreat Possession Date"

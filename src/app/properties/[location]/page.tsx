@@ -52,7 +52,10 @@ export const LOCATIONS = [
 
   // --- MEGA TIER 1 GODREJ THE RETREAT DOMINATION SLUGS ---
   "godrej-the-retreat", "godrej-the-retreat-hinjewadi", "godrej-the-retreat-pune", 
-  "godrej-the-retreat-hinjewadi-phase-1", "the-retreat-hinjewadi", "the-retreat-pune", 
+  "godrej-the-retreat-hinjewadi-phase-1", "godrej-the-retreat-hinjewadi-park-world",
+  "godrej-the-retreat-at-godrej-park-world", "godrej-the-retreat-at-godrej-park-world-hinjewadi",
+  "godrej-park-world-the-retreat-hinjewadi", "godrej-the-retreat-park-world-pune",
+  "the-retreat-hinjewadi", "the-retreat-pune", 
   "the-retreat-godrej-properties", "godrej-the-retreat-price", "godrej-the-retreat-floor-plan",
   "godrej-the-retreat-brochure", "godrej-the-retreat-reviews", "godrej-the-retreat-possession",
   "godrej-the-retreat-rera", "godrej-the-retreat-sample-flat", "godrej-the-retreat-contact",

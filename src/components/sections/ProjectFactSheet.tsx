@@ -65,10 +65,10 @@ export default function ProjectFactSheet() {
             Official Project Summary & RERA Verification
           </span>
           <h2 className="font-serif text-3xl md:text-5xl text-white tracking-wide mt-2 mb-4">
-            Godrej The Retreat <i className="text-emerald-aqua font-light">Hinjewadi</i> Fact Sheet
+            Godrej The Retreat <i className="text-emerald-aqua font-light">Hinjewadi Park World</i> Fact Sheet
           </h2>
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
-            Direct, verified architectural, pricing, and MahaRERA specifications for <strong>Godrej The Retreat Hinjewadi Phase 1, Pune</strong> by Godrej Properties.
+            Direct, verified architectural, pricing, and MahaRERA specifications for <strong>Godrej The Retreat Hinjewadi Park World</strong> (Phase 1, Pune) by Godrej Properties.
           </p>
         </div>
 

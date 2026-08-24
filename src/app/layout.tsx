@@ -13,13 +13,15 @@ export const metadata: Metadata = {
   keywords: [
     // --- Core Primary Target Keywords ---
     "Godrej The Retreat", "Godrej The Retreat Hinjewadi", "Godrej The Retreat Pune", 
-    "Godrej The Retreat Hinjewadi Phase 1", "The Retreat by Godrej Properties Hinjewadi",
-    "The Retreat Hinjewadi", "The Retreat Pune", "Godrej The Retreat price", 
-    "Godrej The Retreat floor plan", "Godrej The Retreat brochure", "Godrej The Retreat reviews",
-    "Godrej The Retreat possession date", "Godrej The Retreat RERA", "Godrej The Retreat sample flat",
-    "Godrej The Retreat location", "Godrej The Retreat 2 BHK", "Godrej The Retreat 3 BHK",
-    "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Aqua Retreat", "The Aqua Retreat", 
-    "Aqua Retreat Hinjewadi", "Aqua Retreat Pune", "Godrej Aqua Retreat Pune",
+    "Godrej The Retreat Hinjewadi Phase 1", "Godrej The Retreat Hinjewadi Park World",
+    "Godrej The Retreat at Godrej Park World", "Godrej The Retreat at Godrej Park World Hinjewadi",
+    "Godrej Park World The Retreat Hinjewadi", "Godrej The Retreat Park World Pune",
+    "The Retreat by Godrej Properties Hinjewadi", "The Retreat Hinjewadi", "The Retreat Pune", 
+    "Godrej The Retreat price", "Godrej The Retreat floor plan", "Godrej The Retreat brochure", 
+    "Godrej The Retreat reviews", "Godrej The Retreat possession date", "Godrej The Retreat RERA", 
+    "Godrej The Retreat sample flat", "Godrej The Retreat location", "Godrej The Retreat 2 BHK", 
+    "Godrej The Retreat 3 BHK", "The Aqua Retreat by Godrej Properties Hinjewadi", "Godrej Aqua Retreat", 
+    "The Aqua Retreat", "Aqua Retreat Hinjewadi", "Aqua Retreat Pune", "Godrej Aqua Retreat Pune",
     "Godrej Properties Pune", "Godrej Properties Hinjewadi", "Godrej Homes Pune",
     
     // --- Godrej Park World Township Ecosystem ---
