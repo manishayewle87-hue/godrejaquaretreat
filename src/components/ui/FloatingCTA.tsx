@@ -31,6 +31,14 @@ export default function FloatingCTA() {
               href="https://wa.me/917744009295?text=Hi%2C%20I%20am%20interested%20in%20Godrej%20The%20Retreat%20Hinjewadi.%20Please%20share%20the%20brochure%2C%20floor%20plans%2C%20and%20price%20list."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'whatsapp_click', {
+                    event_category: 'Lead Generation',
+                    event_label: 'Desktop Floating WhatsApp',
+                  });
+                }
+              }}
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 20 }}
@@ -42,6 +50,14 @@ export default function FloatingCTA() {
 
             <motion.a
               href="tel:+917744009295"
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'phone_call_click', {
+                    event_category: 'Lead Generation',
+                    event_label: 'Desktop Floating Phone Call',
+                  });
+                }
+              }}
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 20 }}

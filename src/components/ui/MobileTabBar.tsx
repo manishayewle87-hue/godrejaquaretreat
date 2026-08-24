@@ -26,13 +26,31 @@ export default function MobileTabBar() {
         <a href="https://wa.me/917744009295?text=Hi%2C%20I%20am%20interested%20in%20Godrej%20The%20Retreat%20Hinjewadi.%20Please%20share%20the%20brochure%2C%20floor%20plans%2C%20and%20price%20list." 
            target="_blank" 
            rel="noopener noreferrer" 
+           onClick={() => {
+             if (typeof window !== 'undefined' && window.gtag) {
+               window.gtag('event', 'whatsapp_click', {
+                 event_category: 'Lead Generation',
+                 event_label: 'Mobile Tab Bar WhatsApp',
+               });
+             }
+           }}
            className="flex flex-col items-center gap-1 text-gray-400 hover:text-[#25D366] transition-colors w-16"
         >
           <MessageCircle className="w-5 h-5 text-[#25D366]" />
           <span className="text-[10px] font-semibold tracking-wider uppercase text-[#25D366]">Chat</span>
         </a>
         
-        <a href="tel:+917744009295" className="flex flex-col items-center gap-1 text-emerald-aqua hover:text-white transition-colors w-16">
+        <a href="tel:+917744009295" 
+           onClick={() => {
+             if (typeof window !== 'undefined' && window.gtag) {
+               window.gtag('event', 'phone_call_click', {
+                 event_category: 'Lead Generation',
+                 event_label: 'Mobile Tab Bar Phone Call',
+               });
+             }
+           }}
+           className="flex flex-col items-center gap-1 text-emerald-aqua hover:text-white transition-colors w-16"
+        >
           <div className="bg-emerald-aqua/20 p-1.5 rounded-full border border-emerald-aqua/30">
             <PhoneCall className="w-4 h-4 text-emerald-aqua" />
           </div>
