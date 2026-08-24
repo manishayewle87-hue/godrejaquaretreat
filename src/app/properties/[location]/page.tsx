@@ -103,7 +103,12 @@ export const LOCATIONS = [
   "godrej-pune-brochure-download", "godrej-pune-sample-flat-video", "godrej-pune-possession-dates",
   "godrej-pune-rera-numbers", "godrej-pune-2-bhk-flats", "godrej-pune-3-bhk-flats",
   "godrej-pune-4-bhk-luxury-apartments", "godrej-pune-resale-flats", "godrej-pune-nri-investment",
-  "godrej-properties-maharera-pune", "godrej-park-world-possession", "godrej-park-world-rera", 
+  "godrej-properties-maharera-pune", "godrej-properties-pune-office", "godrej-properties-pune-sales-gallery",
+  "godrej-properties-pune-under-1-crore", "godrej-properties-pune-luxury-villas", "godrej-properties-pune-ready-to-move",
+  "godrej-properties-pune-rera-approved", "godrej-flats-near-pune-metro-line-3", "godrej-projects-in-hinjewadi",
+  "godrej-projects-in-mahalunge", "godrej-projects-in-pcmc", "godrej-projects-in-kharadi",
+  "godrej-projects-in-undri", "godrej-projects-in-keshavnagar", "godrej-projects-in-mamurdi",
+  "godrej-park-world-possession", "godrej-park-world-rera", 
   "godrej-park-world-amenities", "godrej-park-world-master-plan", "godrej-park-world-sales-office", 
   "godrej-park-world-contact"
 ];

@@ -30,21 +30,29 @@ export const metadata: Metadata = {
     "Godrej Park World Location", "Godrej Park World Central Greens", "Godrej Park World Investment",
     "Godrej Park World The Retreat", "Godrej Park World Aqua Retreat", "Godrej Hinjewadi project",
     
-    // --- Godrej Pune Portfolio & Competitor Intercepts ---
-    "Godrej Residential Pune", "Godrej New Launch Pune", "Godrej Premium Homes", "Godrej Luxury Apartments", 
-    "Godrej Township Pune", "Godrej Projects Pune", "Godrej Upcoming Projects Pune", "Godrej Under Construction Pune", 
-    "Godrej Ready Possession Pune", "Godrej Smart Homes Pune", "Godrej Real Estate Pune", "Godrej Properties Hinjewadi",
-    "Godrej Flats Pune", "Godrej Developers Pune", "Godrej Builders Pune", "Godrej IT Park Homes", "Godrej 2 BHK Pune", 
-    "Godrej 3 BHK Pune", "Godrej 4 BHK Pune", "Godrej Pre Launch Pune", "Godrej NFO Pune", "Godrej Phase 1",
-    "Godrej Elements", "Godrej 24", "Godrej Rejuve", "Godrej Woodsville", "Godrej Hillside", "Godrej Green Vistas", 
-    "Godrej Meadows", "Godrej Rivergreens", "Godrej Gale", "Godrej Greenfront", "Godrej Emerald Waters", 
-    "Godrej Urban Retreat", "Godrej Parkridge", "Godrej Forest Grove", "Godrej Boulevard", "Godrej Nurture", 
-    "Godrej Prana", "Godrej Infinity", "Godrej Central Park",
+    // --- Complete Godrej Properties Pune Portfolio Domination ---
+    "Godrej Properties Pune All Projects", "Godrej Properties Pune Price List 2026", "Godrej Properties Pune Ongoing Projects",
+    "Godrej Properties Pune Upcoming Projects 2026", "Godrej Properties Pune New Launch", "Godrej Properties Pune Contact Number",
+    "Godrej Properties Pune Sales Lounge", "Godrej Properties Pune Brochure Download", "Godrej Properties Pune MahaRERA Numbers",
+    "Godrej Properties Pune Construction Status", "Godrej Properties Pune Possession 2026", "Godrej Properties Pune 2 BHK Price",
+    "Godrej Properties Pune 3 BHK Price", "Godrej Properties Pune 4 BHK Price", "Godrej Properties Pune Ready to Move Flats",
+    "Godrej Properties Pune Pre Launch Offers", "Godrej Properties Pune Township Projects", "Godrej Properties Pune Resale Flats",
+    "Godrej Properties Pune Rental Yield", "Godrej Properties Pune NRI Investment", "Godrej Residential Pune",
+    "Godrej Premium Homes Pune", "Godrej Luxury Apartments Pune", "Godrej Smart Homes Pune", "Godrej Real Estate Pune",
+    "Godrej Flats Pune", "Godrej Developers Pune", "Godrej Builders Pune", "Godrej IT Park Homes Pune",
+    
+    // --- Specific Godrej Pune Projects ---
+    "Godrej Elements Hinjewadi", "Godrej 24 Hinjewadi", "Godrej Rejuve Keshavnagar", "Godrej Woodsville Hinjewadi",
+    "Godrej Hillside Mahalunge", "Godrej Green Vistas Mahalunge", "Godrej Meadows Mahalunge", "Godrej Rivergreens Mahalunge",
+    "Godrej Boulevard Mahalunge", "Godrej Sky Greens Mahalunge", "Godrej Gale Hinjewadi", "Godrej Greenfront Hinjewadi",
+    "Godrej Emerald Waters Pimpri", "Godrej Urban Retreat Kharadi", "Godrej Sky Vistas Kharadi", "Godrej Parkridge Manjari",
+    "Godrej Forest Grove Mamurdi", "Godrej Central Park Mamurdi", "Godrej Nurture Mamurdi", "Godrej Prana Undri",
+    "Godrej Greens Undri", "Godrej Horizon Undri", "Godrej Infinity Keshavnagar", "Godrej Sunrise Mundhwa",
     
     // --- Pune Real Estate Micro Markets ---
-    "Luxury Real Estate Pune", "Buy Flat Pune", "Buy Apartment Hinjewadi", "Buy Home Pune", "Buy Luxury Apartment",
-    "Best Property Pune", "Invest in Pune", "Invest in Hinjewadi", "Pune Property Investment", "Rental Income Pune", 
-    "Metro Investment Pune", "IT Corridor Investment", "Flats near Infosys Pune", "Flats near TCS Pune", "Flats near Wipro Pune",
+    "Luxury Real Estate Pune", "Buy Flat Pune", "Buy Apartment Hinjewadi", "Buy Home Pune", "Buy Luxury Apartment Pune",
+    "Best Property Pune", "Invest in Pune Real Estate", "Invest in Hinjewadi", "Pune Property Investment", "Rental Income Hinjewadi", 
+    "Metro Line 3 Investment Pune", "IT Corridor Investment Pune", "Flats near Infosys Pune", "Flats near TCS Pune", "Flats near Wipro Pune",
     "Flats in Hinjewadi Phase 1", "Flats in Hinjewadi Phase 2", "Flats in Hinjewadi Phase 3", "Flats in Wakad", 
     "Flats in Baner", "Flats in Balewadi", "Flats in Mahalunge", "Flats in Bavdhan", "Flats in Tathawade", 
     "Flats in Punawale", "Flats in Ravet", "Flats in Kiwale", "Flats in Pimple Saudagar", "Flats in Aundh", 
@@ -52,9 +60,13 @@ export const metadata: Metadata = {
     "Flats in Magarpatta", "Flats in Hadapsar", "Flats in Wagholi", "Flats in NIBM", "Flats in Undri", 
     "Premium Apartments Pune West", "Luxury Township Pune West", "Resort Style Living Pune", "Integrated Township Pune",
     
+    // --- Competitor Intercepts & Comparative Queries ---
+    "Godrej vs Lodha Pune", "Godrej vs Kolte Patil Life Republic", "Godrej vs Shapoorji Joyville Hinjewadi",
+    "Godrej vs VTP Blue Waters", "Godrej vs Kohinoor Pune", "Godrej vs Kumar Magnacity", "Godrej vs Kasturi Balmoral",
+    
     // --- High ROI & Commercial Search Intent ---
-    "Top Builders in Pune", "Best Real Estate Developer Pune", "Pune Real Estate Market", "Property Rates in Pune", 
-    "Hinjewadi Property Rates", "New Residential Projects Pune", "Upcoming Townships Pune", "Buy 2 BHK Pune", 
+    "Top Builders in Pune", "Best Real Estate Developer Pune", "Pune Real Estate Market 2026", "Property Rates in Pune 2026", 
+    "Hinjewadi Property Rates 2026", "New Residential Projects Pune", "Upcoming Townships Pune", "Buy 2 BHK Pune", 
     "Buy 3 BHK Pune", "Spacious Homes Pune", "Smart City Pune Properties", "Pune West Real Estate"
   ],
   openGraph: {
