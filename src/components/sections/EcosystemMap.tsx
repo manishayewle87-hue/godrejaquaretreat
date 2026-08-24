@@ -4,28 +4,34 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { MapPin, Building2, Train, Building, Trees, Waves } from 'lucide-react';
 
+import Link from 'next/link';
+
 const ecosystemData = [
   {
-    title: "The Aqua Retreat",
-    subtitle: "Flagship Ultra-Luxury Resort Cluster",
+    title: "Godrej The Retreat (The Aqua Retreat)",
+    subtitle: "Active Flagship Resort Cluster • MahaRERA PM1260002500070",
+    href: "/godrej-the-retreat-hinjewadi",
     icon: <Waves className="w-6 h-6 text-emerald-aqua" />,
-    description: "The crown jewel of Godrej Park World, featuring a 50,000 sq.ft clubhouse, cascading infinity pools, and resort-style 2 & 3 BHK residences."
+    description: "The crown jewel of Godrej Park World, featuring a 50,000 sq.ft clubhouse, cascading 50m Olympic lagoon pools, and luxury 2 & 3 BHK residences starting ₹1.10 Cr*."
   },
   {
-    title: "The Gale",
-    subtitle: "High-Energy Urban Dynamism",
+    title: "Godrej Park World Township",
+    subtitle: "100+ Acre Integrated Master Township",
+    href: "/godrej-park-world-hinjewadi",
     icon: <Building2 className="w-6 h-6 text-emerald-aqua" />,
-    description: "Designed for the modern IT professional. Seamlessly integrated with high-street retail, bustling promenades, and ultimate connectivity."
+    description: "The master development encompassing 12+ acres of central greens, high-street retail, civic infrastructure, and multi-tier lifestyle destinations in Hinjewadi Phase 1."
   },
   {
-    title: "Godrej Woodsville",
-    subtitle: "Premium Residential Enclave",
+    title: "The Gale at Godrej Park World",
+    subtitle: "High-Energy Urban Dynamism",
+    href: "/clusters/the-gale",
     icon: <Building className="w-6 h-6 text-emerald-aqua" />,
-    description: "A serene residential offering within the township, balancing modern architectural elegance with Godrej's signature trust and quality."
+    description: "Designed for the modern IT professional. Seamlessly integrated with high-street retail, bustling promenades, and ultimate connectivity to Rajiv Gandhi IT Park."
   },
   {
-    title: "The Greenfront",
+    title: "The Greenfront at Godrej Park World",
     subtitle: "Expansive Nature Sanctuary",
+    href: "/clusters/the-greenfront",
     icon: <Trees className="w-6 h-6 text-emerald-aqua" />,
     description: "Dedicated to mental wellness and tranquility. Overlooking massive central greens, providing a vital escape from the Hinjewadi IT corridor."
   }
@@ -109,18 +115,25 @@ export default function EcosystemMap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="bg-[#15181E] border border-white/5 p-10 hover:border-emerald-aqua/30 transition-colors group relative overflow-hidden"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-aqua/5 blur-[100px] rounded-full group-hover:bg-emerald-aqua/10 transition-colors" />
-              
-              <div className="mb-6 bg-white/5 w-14 h-14 rounded-full flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
-                {cluster.icon}
-              </div>
-              <h3 className="text-2xl font-serif text-white mb-2">{cluster.title}</h3>
-              <span className="text-emerald-aqua text-xs uppercase tracking-widest block mb-6">{cluster.subtitle}</span>
-              <p className="text-gray-400 font-light leading-relaxed text-sm">
-                {cluster.description}
-              </p>
+              <Link
+                href={cluster.href}
+                className="block h-full bg-[#15181E] border border-white/5 p-10 hover:border-emerald-aqua/40 transition-all group relative overflow-hidden rounded-2xl hover:bg-white/[0.03]"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-aqua/5 blur-[100px] rounded-full group-hover:bg-emerald-aqua/15 transition-colors" />
+                
+                <div className="mb-6 bg-white/5 w-14 h-14 rounded-full flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
+                  {cluster.icon}
+                </div>
+                <h3 className="text-2xl font-serif text-white mb-2 group-hover:text-emerald-aqua transition-colors">{cluster.title}</h3>
+                <span className="text-emerald-aqua text-xs uppercase tracking-widest block mb-4">{cluster.subtitle}</span>
+                <p className="text-gray-400 font-light leading-relaxed text-sm mb-6">
+                  {cluster.description}
+                </p>
+                <span className="text-emerald-aqua text-xs font-semibold uppercase tracking-wider inline-flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                  Explore Cluster Specs ➔
+                </span>
+              </Link>
             </motion.div>
           ))}
         </div>
