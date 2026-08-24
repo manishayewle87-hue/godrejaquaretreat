@@ -66,6 +66,12 @@ export default function DirectoryPage() {
               <Link href="/godrej-the-retreat-hinjewadi" className="p-3 bg-emerald-aqua text-black font-bold rounded-xl hover:bg-white transition-colors">
                 ⭐ Godrej The Retreat Flagship Hub
               </Link>
+              <Link href="/godrej-the-aqua-retreat-hinjewadi" className="p-3 bg-black/40 hover:bg-emerald-aqua/20 border border-emerald-aqua/40 rounded-xl text-emerald-aqua font-bold transition-colors">
+                🌊 Godrej The Aqua Retreat Portal
+              </Link>
+              <Link href="/godrej-park-world-hinjewadi" className="p-3 bg-black/40 hover:bg-emerald-aqua/20 border border-white/10 rounded-xl hover:text-emerald-aqua transition-colors font-medium">
+                🌳 Godrej Park World Township
+              </Link>
               <Link href="/godrej-properties-hinjewadi-pune" className="p-3 bg-black/40 hover:bg-emerald-aqua/20 border border-white/10 rounded-xl hover:text-emerald-aqua transition-colors font-medium">
                 🏢 Godrej Properties Hinjewadi
               </Link>
@@ -76,7 +82,7 @@ export default function DirectoryPage() {
                 📐 Luxury Residences & Floor Plans
               </Link>
               <Link href="/godrej-park-world-pune-masterplan" className="p-3 bg-black/40 hover:bg-emerald-aqua/20 border border-white/10 rounded-xl hover:text-emerald-aqua transition-colors font-medium">
-                🌳 100+ Acre Township Masterplan
+                🌳 100+ Acre Masterplan
               </Link>
               <Link href="/godrej-park-world-pune-premium-amenities" className="p-3 bg-black/40 hover:bg-emerald-aqua/20 border border-white/10 rounded-xl hover:text-emerald-aqua transition-colors font-medium">
                 🏊 50,000 Sq.Ft Aqua Clubhouse
