@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const tier1Pages: { route: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
     { route: "", priority: 1.0, changeFrequency: "daily" },
     { route: "/godrej-the-retreat-hinjewadi", priority: 1.0, changeFrequency: "daily" },
+    { route: "/godrej-the-aqua-retreat-hinjewadi", priority: 1.0, changeFrequency: "daily" },
     { route: "/godrej-park-world-hinjewadi", priority: 1.0, changeFrequency: "daily" },
     { route: "/godrej-properties-hinjewadi-pune", priority: 0.99, changeFrequency: "daily" },
     { route: "/eoi", priority: 0.98, changeFrequency: "daily" },
