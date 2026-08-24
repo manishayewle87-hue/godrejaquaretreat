@@ -54,6 +54,10 @@ export default function Hero() {
             <span className="text-emerald-aqua tracking-[0.2em] uppercase text-[11px] font-bold bg-emerald-aqua/15 text-emerald-aqua px-3.5 py-1.5 rounded-full border border-emerald-aqua/30 font-mono shadow-sm">
               MahaRERA: PM1260002500070
             </span>
+            <span className="flex items-center gap-1.5 text-xs text-emerald-900 font-medium bg-emerald-500/15 px-3 py-1 rounded-full border border-emerald-500/30">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Phase 1 VIP Allocation Active
+            </span>
             <h1 className="text-gray-800 tracking-[0.3em] uppercase text-xs font-semibold">
               Godrej The Retreat Hinjewadi Park World • Phase 1 Pune
             </h1>
