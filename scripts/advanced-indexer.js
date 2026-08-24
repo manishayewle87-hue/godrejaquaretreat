@@ -23,7 +23,7 @@ const { google } = require('googleapis');
 const xml2js = require('xml2js');
 
 // --- CONFIGURATION ---
-const DEFAULT_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://godrejaquaretreat.godrejparkworld.com';
+const DEFAULT_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://godrejparkworld.com';
 const SITEMAP_URL = `${DEFAULT_SITE_URL}/sitemap.xml`;
 const CACHE_DIR = path.join(process.cwd(), '.cache');
 const STATE_FILE = path.join(CACHE_DIR, 'indexing-state.json');

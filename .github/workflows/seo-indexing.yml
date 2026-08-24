@@ -85,7 +85,7 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
           INDEXNOW_API_KEY: ${{ secrets.INDEXNOW_API_KEY || 'godrej-retreat-indexnow-key-2026' }}
-          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL || 'https://godrejaquaretreat.godrejparkworld.com' }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL || 'https://godrejparkworld.com' }}
           GOOGLE_INDEXING_DAILY_LIMIT: '180'
         run: |
           MODE="${{ github.event.inputs.mode || 'smart' }}"
