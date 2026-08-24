@@ -573,6 +573,141 @@ const LEGACY_BLOG_POSTS: BlogPost[] = [
       <h2>Investment Outlook</h2>
       <p>For investors looking to maximize rental yields and secure long-term capital appreciation, the math is clear. Investing in Hinjewadi Phase 1 properties like Godrej Aqua Retreat offers a significantly higher ROI compared to saturated markets in central Pune.</p>
     `
+  },
+  {
+    slug: "godrej-properties-pune-master-price-list-2026-all-projects-breakdown",
+    title: "Godrej Properties Pune Master Price List 2026: Complete 25+ Projects Price Breakdown, Carpet Area & RERA Numbers",
+    description: "The definitive 2026 master price list for all Godrej Properties developments across Pune. Compare 2, 3 & 4 BHK prices, square footage, and official MahaRERA registrations for Godrej The Retreat, Godrej Park World, Mahalunge, Kharadi, Pimpri & Undri.",
+    date: "2026-08-24",
+    author: "Godrej Properties Pune Research Bureau",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: [
+      "Godrej Properties Pune Price List 2026", "Godrej Pune All Projects", "Godrej The Retreat Hinjewadi Price",
+      "Godrej Park World Price List", "Godrej Mahalunge Price", "Godrej Emerald Waters Pimpri Price",
+      "Godrej Urban Retreat Kharadi Price", "Godrej Infinity Pune Price", "Godrej 2 BHK Pune Price", "Godrej 3 BHK Pune Price"
+    ],
+    content: `
+      <h2>Comprehensive Godrej Properties Pune Master Price Matrix (2026)</h2>
+      <p>Godrej Properties is Pune's leading Grade-A real estate developer, with master-planned townships and luxury residential communities spanning Hinjewadi, Mahalunge, Pimpri-Chinchwad, Kharadi, Keshavnagar, and Undri. Below is the verified 2026 price breakdown, carpet area specifications, and official MahaRERA numbers for all active developments.</p>
+      
+      <h2>1. Hinjewadi IT Park Corridor (Pune West)</h2>
+      <ul>
+        <li><strong>Godrej The Retreat (The Aqua Retreat):</strong> 2 BHK (750 - 820 sq.ft) ₹1.10 Cr* - ₹1.35 Cr* | 3 BHK (1060 - 1250 sq.ft) ₹1.65 Cr* - ₹2.50 Cr* | <em>MahaRERA: PM1260002500070</em></li>
+        <li><strong>Godrej Park World (100+ Acre Township):</strong> Master development with 12+ acres central greens, high-street retail, and multiple themed sectors | <em>MahaRERA Registered</em></li>
+        <li><strong>Godrej Elements Hinjewadi Phase 1:</strong> 2 & 3 BHK Smart Residences | ₹98 Lakh* to ₹1.45 Crore* | <em>MahaRERA: P52100016626</em></li>
+        <li><strong>Godrej 24 Hinjewadi:</strong> 24/7 Lifestyle Residences with round-the-clock amenities | ₹88 Lakh* to ₹1.30 Crore* | <em>MahaRERA: P52100018598</em></li>
+        <li><strong>Godrej Woodsville Hinjewadi:</strong> 2 & 3 BHK Enclave near Rajiv Gandhi IT Park | ₹82 Lakh* to ₹1.25 Crore*</li>
+      </ul>
+
+      <h2>2. Mahalunge & Baner-Balewadi Corridor (Pune West)</h2>
+      <ul>
+        <li><strong>Godrej Rivergreens Mahalunge:</strong> 100+ Acre Riverfront Township | ₹65 Lakh* to ₹1.40 Crore*</li>
+        <li><strong>Godrej Hillside Mahalunge (Phases 1, 2, 3):</strong> Hillside Residences overlooking 400+ acre green hills | ₹62 Lakh* to ₹1.20 Crore*</li>
+        <li><strong>Godrej Meadows Mahalunge:</strong> Wellness-themed residential community with 3,000+ trees | ₹60 Lakh* to ₹1.15 Crore*</li>
+        <li><strong>Godrej Green Vistas Mahalunge:</strong> Pure Nature residences with forest trails | ₹58 Lakh* to ₹1.10 Crore*</li>
+        <li><strong>Godrej Boulevard Mahalunge:</strong> Premium high-street residential boulevard | ₹68 Lakh* to ₹1.35 Crore*</li>
+      </ul>
+
+      <h2>3. PCMC & Pimpri-Chinchwad Luxury Corridor</h2>
+      <ul>
+        <li><strong>Godrej Emerald Waters Pimpri:</strong> Ultra-Luxury High-Rise with private balconies on Old Mumbai-Pune Highway | ₹1.25 Cr* to ₹2.80 Cr*</li>
+        <li><strong>Godrej Forest Grove Mamurdi:</strong> 2 & 3 BHK Parkland residences | ₹55 Lakh* to ₹95 Lakh*</li>
+        <li><strong>Godrej Central Park Mamurdi:</strong> Expansive 6-acre central park residences | ₹52 Lakh* to ₹88 Lakh*</li>
+      </ul>
+
+      <h2>4. East Pune (Kharadi & Keshavnagar Corridor)</h2>
+      <ul>
+        <li><strong>Godrej Urban Retreat Kharadi:</strong> Luxury resort-style residences near EON Free Zone & World Trade Center | ₹92 Lakh* to ₹1.75 Crore*</li>
+        <li><strong>Godrej Infinity Keshavnagar Mundhwa:</strong> Riverfront residential community | ₹85 Lakh* to ₹1.60 Crore*</li>
+        <li><strong>Godrej Rejuve Keshavnagar:</strong> Healthy living residential apartments | ₹82 Lakh* to ₹1.50 Crore*</li>
+      </ul>
+
+      <h2>5. South Pune (Undri & NIBM Corridor)</h2>
+      <ul>
+        <li><strong>Godrej Greens Undri:</strong> Forest-themed 2 & 3 BHK homes | ₹48 Lakh* to ₹85 Lakh*</li>
+        <li><strong>Godrej Horizon Undri:</strong> Panoramic hillside residences | ₹52 Lakh* to ₹90 Lakh*</li>
+        <li><strong>Godrej Prana Undri:</strong> Pranayama and wellness-oriented residential cluster | ₹50 Lakh* to ₹88 Lakh*</li>
+      </ul>
+
+      <h2>Direct Booking & Site Tour Consultation</h2>
+      <p>For verified inventory, all-inclusive cost sheets, bank pre-approval assistance, and private site visits at Godrej The Retreat Hinjewadi or any Godrej Pune development, connect directly with our authorized sales advisors via WhatsApp or by submitting an Expression of Interest.</p>
+    `
+  },
+  {
+    slug: "top-10-godrej-township-projects-in-pune-ranked-2026",
+    title: "Top 10 Godrej Properties Projects in Pune Ranked (2026 Edition): ROI, Location, Amenities & Rental Yields",
+    description: "An analytical real estate evaluation ranking the top 10 Godrej Properties residential projects in Pune for 2026. Discover which developments offer the highest rental yield, best infrastructure, and strongest resale ROI.",
+    date: "2026-08-24",
+    author: "Godrej Properties Pune Analytics Desk",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/overview-1740x810-cmrnngdyo000lj2phcjaf0u8l.webp",
+    keywords: [
+      "Top Godrej Projects in Pune", "Best Godrej Project Pune 2026", "Godrej Park World Ranking",
+      "Godrej The Retreat Review", "Godrej Rivergreens vs Godrej Park World", "Best Property Investment Pune",
+      "Hinjewadi Real Estate Rental Yield", "Godrej Properties Pune ROI"
+    ],
+    content: `
+      <h2>Ranking Pune's Leading Godrej Properties Developments</h2>
+      <p>With more than 20 developments delivered and under active construction across Pune, choosing the right Godrej property requires evaluating capital growth trajectory, rental demand from IT professionals, lifestyle amenity infrastructure, and connectivity to Pune Metro Line 3.</p>
+      
+      <h2>#1. Godrej The Retreat at Godrej Park World (Hinjewadi Phase 1) — Overall Winner</h2>
+      <p><strong>Rank: 9.8 / 10</strong> | <em>Category: Ultra-Luxury Resort Living</em></p>
+      <p>As the flagship cluster of the 100+ acre Godrej Park World master township, Godrej The Retreat (MahaRERA: PM1260002500070) combines a 50,000 sq.ft 4-tier aqua clubhouse, Olympic-length lagoon pool, and 12+ acres of central greens. It commands Pune West's highest rental yield (7.2% - 8.0%) due to its walking distance proximity to Infosys, Wipro, and Metro Line 3.</p>
+
+      <h2>#2. Godrej Emerald Waters (Pimpri-Chinchwad)</h2>
+      <p><strong>Rank: 9.4 / 10</strong> | <em>Category: Urban Luxury High-Rise</em></p>
+      <p>Positioned on the Old Mumbai-Pune Highway, Godrej Emerald Waters caters to high-net-worth industrial executives, doctors, and business owners in PCMC. Features private infinity deck pools and panoramic cityscape vistas.</p>
+
+      <h2>#3. Godrej Rivergreens (Mahalunge)</h2>
+      <p><strong>Rank: 9.2 / 10</strong> | <em>Category: Master-Planned Riverfront Township</em></p>
+      <p>A sprawling 100+ acre riverfront development offering serene natural vistas combined with immediate access to the Baner-Balewadi sports complex and high-street dining corridors.</p>
+
+      <h2>#4. Godrej Urban Retreat (Kharadi)</h2>
+      <p><strong>Rank: 9.0 / 10</strong> | <em>Category: Eastern IT Corridor Flagship</em></p>
+      <p>Located near EON Free Zone and World Trade Center, Godrej Urban Retreat is East Pune's premier residential destination for senior software architects and corporate leaders.</p>
+
+      <h2>#5. Godrej Hillside (Mahalunge)</h2>
+      <p><strong>Rank: 8.9 / 10</strong> | <em>Category: Elevated Hillside Living</em></p>
+      <p>Overlooking 400+ acres of protected hill reserves, Godrej Hillside provides an eco-sanctuary lifestyle with crisp air quality index (AQI) levels and resort jogging loops.</p>
+
+      <h2>Summary Table: Top 5 Godrej Pune Projects at a Glance</h2>
+      <p>Whether prioritizing immediate rental yield in Hinjewadi Phase 1 or multi-acre riverfront tranquility in Mahalunge, Godrej Properties offers unmatched security, Grade-A construction quality, and timely possession milestones across Pune.</p>
+    `
+  },
+  {
+    slug: "godrej-the-aqua-retreat-hinjewadi-50000-sq-ft-clubhouse-review",
+    title: "Godrej The Aqua Retreat Hinjewadi: 50,000 Sq.Ft Aqua Clubhouse & Olympic Lagoon Pool Masterplan Deep-Dive",
+    description: "An exclusive architectural review of the 50,000 sq.ft multi-tier Aqua Clubhouse at Godrej The Retreat Hinjewadi Phase 1. Explore the 50m Olympic infinity lagoon pool, sunken cabanas, hydrotherapy spa, and indoor sports arena.",
+    date: "2026-08-24",
+    author: "Godrej Properties Luxury Architecture Group",
+    image: "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+    keywords: [
+      "Godrej The Aqua Retreat Hinjewadi", "Godrej The Retreat Clubhouse", "Godrej Aqua Retreat Pool",
+      "50000 sq ft Clubhouse Pune", "Resort Apartments Hinjewadi Phase 1", "Godrej Park World Amenities",
+      "Luxury Flats with Swimming Pool Pune", "The Aqua Retreat Floor Plans"
+    ],
+    content: `
+      <h2>The Concept: 5-Star Resort Living in the Heart of Hinjewadi</h2>
+      <p><strong>Godrej The Aqua Retreat</strong> (Godrej The Retreat) at Godrej Park World Hinjewadi Phase 1 was conceived around a single architectural philosophy: bringing international resort escapism directly to urban residential living. At its core lies an iconic <strong>50,000 sq.ft 4-Tier Luxury Aqua Clubhouse</strong> designed by world-renowned landscape architects.</p>
+
+      <h2>1. The 50-Meter Olympic-Length Infinity Lagoon Pool</h2>
+      <p>Unlike standard residential swimming pools, The Aqua Retreat features an expansive 50-meter Olympic-length infinity lagoon pool with temperature-controlled zones, zero-edge overflow water channels, and dedicated shallow splash arenas for children.</p>
+
+      <h2>2. Sunken Poolside Cabanas & Aqua Lounge</h2>
+      <p>Surrounding the lagoon are submerged aqua recliners and sunken cabanas, allowing residents to host private gatherings or unwind in complete privacy overlooking 12+ acres of central greens.</p>
+
+      <h2>3. Ayurvedic Hydrotherapy Spa & Wellness Suites</h2>
+      <p>The interior clubhouse encompasses certified hydrotherapy jacuzzi tubs, steam saunas, and dedicated Ayurvedic massage suites designed for holistic rejuvenation after high-stress workdays in the Hinjewadi IT corridor.</p>
+
+      <h2>4. Professional Indoor Sports & Fitness Arena</h2>
+      <ul>
+        <li><strong>Full-Sized Squash Court:</strong> Wooden-floored glass squash courts meeting international tournament standards.</li>
+        <li><strong>Dual Badminton & Tennis Courts:</strong> High-impact synthetic courts with pro lighting for evening play.</li>
+        <li><strong>Cardio & CrossFit Gymnasium:</strong> Equipped with imported biomechanical strength machines, personal trainer bays, and dedicated yoga studios.</li>
+      </ul>
+
+      <h2>Experience The Aqua Retreat Sales Lounge</h2>
+      <p>Walk through the physical scale models and fully furnished 2 & 3 BHK sample apartments at the Godrej The Retreat Experience Center in Hinjewadi Phase 1. Schedule your private VIP appointment today.</p>
+    `
   }
 ];
 
