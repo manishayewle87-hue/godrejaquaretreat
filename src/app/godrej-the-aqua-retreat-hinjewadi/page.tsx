@@ -111,7 +111,11 @@ export default function GodrejTheAquaRetreatHinjewadiPage() {
       "@context": "https://schema.org",
       "@type": "ApartmentComplex",
       "name": "Godrej The Aqua Retreat",
-      "alternateName": "The Aqua Retreat at Godrej Park World Hinjewadi",
+      "alternateName": [
+        "Godrej The Aqua Retreat Hinjewadi",
+        "The Aqua Retreat at Godrej Park World",
+        "Godrej Aqua Retreat Hinjewadi Phase 1"
+      ],
       "identifier": "PM1260002500070",
       "url": pageUrl,
       "address": {
@@ -127,7 +131,62 @@ export default function GodrejTheAquaRetreatHinjewadiPage() {
         "latitude": 18.5790625,
         "longitude": 73.7281875
       },
-      "telephone": "+917744009295"
+      "hasMap": "https://www.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi",
+      "telephone": "+917744009295",
+      "containedInPlace": {
+        "@type": "Place",
+        "name": "Godrej Park World Township",
+        "description": "100+ Acre Integrated Master Township with 12+ Acres Central Greens"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "50,000 Sq.Ft 4-Tier Aqua Clubhouse", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "50m Olympic Length Infinity Lagoon Pool", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "12+ Acres Contiguous Central Greens", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "Sunken Poolside Cabanas & Aqua Lounge", "value": "true" },
+        { "@type": "LocationFeatureSpecification", "name": "100% Vehicle-Free Eco Podium", "value": "true" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FloorPlan",
+      "@id": `${pageUrl}/#floorplan-2bhk`,
+      "name": "2 BHK Luxury Resort Residence",
+      "description": "2 BHK Luxury Residence with private sun deck overlooking Olympic lagoon pool.",
+      "numberOfRooms": 2,
+      "numberOfBedrooms": 2,
+      "numberOfBathroomsTotal": 2,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 780,
+        "unitCode": "FTK"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "11000000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FloorPlan",
+      "@id": `${pageUrl}/#floorplan-3bhk`,
+      "name": "3 BHK Regal Resort Residence",
+      "description": "3 BHK Regal Residence with expansive master suite, double-height sundeck, and panoramic central green views.",
+      "numberOfRooms": 3,
+      "numberOfBedrooms": 3,
+      "numberOfBathroomsTotal": 3,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 1180,
+        "unitCode": "FTK"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "16500000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
     },
     {
       "@context": "https://schema.org",
