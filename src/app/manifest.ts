@@ -36,7 +36,7 @@ export default function manifest(): MetadataRoute.Manifest {
       },
       {
         name: 'Floor Plans & Pricing',
-        url: '/configurations/2-bhk-apartments',
+        url: '/configurations/godrej-the-retreat-2-bhk-flats-hinjewadi',
         description: 'Explore 2 & 3 BHK Layouts & Pricing',
       },
     ],
