@@ -49,6 +49,7 @@ const SHOW_STATUS = getArg('status', false) === true;
 // --- TIER 1 PRIORITY URLS ---
 const TIER1_ROUTES = [
   '/',
+  '/godrej-properties-pune',
   '/godrej-the-retreat-hinjewadi',
   '/godrej-the-aqua-retreat-hinjewadi',
   '/godrej-park-world-hinjewadi',

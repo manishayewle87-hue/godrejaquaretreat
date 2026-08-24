@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1. Tier 1: Core Flagship Authority Pages (Priority 1.0 - 0.95)
   const tier1Pages: { route: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
     { route: "", priority: 1.0, changeFrequency: "daily" },
+    { route: "/godrej-properties-pune", priority: 1.0, changeFrequency: "daily" },
     { route: "/godrej-the-retreat-hinjewadi", priority: 1.0, changeFrequency: "daily" },
     { route: "/godrej-the-aqua-retreat-hinjewadi", priority: 1.0, changeFrequency: "daily" },
     { route: "/godrej-park-world-hinjewadi", priority: 1.0, changeFrequency: "daily" },
