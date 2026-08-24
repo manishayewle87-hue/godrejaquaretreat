@@ -95,9 +95,17 @@ export const LOCATIONS = [
   "godrej-park-world-vs-godrej-hillside", "godrej-park-world-vs-godrej-infinity",
   "godrej-properties-hinjewadi", "godrej-property-hinjewadi", "godrej-flats-hinjewadi",
   "godrej-apartments-hinjewadi", "godrej-new-project-hinjewadi", "godrej-upcoming-project-pune",
-  "godrej-new-launch-pune", "godrej-luxury-apartments-pune", "godrej-properties-pune",
-  "godrej-park-world-possession", "godrej-park-world-rera", "godrej-park-world-amenities",
-  "godrej-park-world-master-plan", "godrej-park-world-sales-office", "godrej-park-world-contact"
+  // Complete Godrej Properties Pune Wide Portfolio Expansion
+  "godrej-greens-undri", "godrej-horizon-undri", "godrej-sky-greens-mahalunge",
+  "godrej-sky-vistas-kharadi", "godrej-sunrise-mundhwa", "godrej-keshavnagar-pune",
+  "godrej-undri-pune", "godrej-kharadi-pune", "godrej-manjari-pune",
+  "godrej-mamurdi-pune", "godrej-pimpri-pune", "godrej-pune-new-launch-2026",
+  "godrej-pune-brochure-download", "godrej-pune-sample-flat-video", "godrej-pune-possession-dates",
+  "godrej-pune-rera-numbers", "godrej-pune-2-bhk-flats", "godrej-pune-3-bhk-flats",
+  "godrej-pune-4-bhk-luxury-apartments", "godrej-pune-resale-flats", "godrej-pune-nri-investment",
+  "godrej-properties-maharera-pune", "godrej-park-world-possession", "godrej-park-world-rera", 
+  "godrej-park-world-amenities", "godrej-park-world-master-plan", "godrej-park-world-sales-office", 
+  "godrej-park-world-contact"
 ];
 
 // Helper to format slugs into Title Case (e.g., "viman-nagar" -> "Viman Nagar")
