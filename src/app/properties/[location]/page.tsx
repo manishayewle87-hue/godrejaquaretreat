@@ -44,11 +44,19 @@ export const LOCATIONS = [
   "the-aqua-retreat-hinjewadi", "godrej-aqua-retreat-hinjewadi", "godrej-properties-hinjewadi",
   "godrej-properties-pune-projects",
 
-  // Mega SEO Domination Slugs
+  // Mega SEO Domination Slugs - Pune Real Estate, Hinjewadi & Pune West
   "pune-real-estate-market", "real-estate-pune", "baner-real-estate-market",
   "mahalunge-real-estate-market", "hinjewadi-real-estate-market", "buy-home-in-pune",
   "new-launch-projects-in-pune", "upcoming-residential-projects-pune",
   "township-projects-in-pune", "luxury-projects-in-pune-west",
+  "godrej-properties-pune-all-projects", "godrej-projects-in-pune", "godrej-upcoming-projects-in-pune",
+  "godrej-properties-pune-price-list-2026", "godrej-townships-in-pune", "godrej-flats-in-pune", "best-godrej-project-in-pune",
+  "hinjewadi-real-estate", "hinjewadi-real-estate-market-2026", "property-rates-in-hinjewadi",
+  "best-residential-projects-in-hinjewadi", "flats-for-sale-in-hinjewadi-pune", "luxury-apartments-in-hinjewadi",
+  "top-builders-in-hinjewadi", "hinjewadi-phase-1-real-estate", "upcoming-projects-in-hinjewadi-phase-1",
+  "pune-west-real-estate", "pune-west-real-estate-market", "best-property-investment-in-pune-west",
+  "luxury-townships-in-pune-west", "pune-west-luxury-apartments", "real-estate-investment-in-pune-west",
+  "pune-metro-line-3-real-estate",
 
   // --- MEGA TIER 1 GODREJ THE RETREAT DOMINATION SLUGS ---
   "godrej-the-retreat", "godrej-the-retreat-hinjewadi", "godrej-the-retreat-pune", 
