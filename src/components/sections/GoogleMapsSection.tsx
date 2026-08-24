@@ -42,19 +42,19 @@ export default function GoogleMapsSection() {
             </div>
 
             <a 
-              href="https://www.google.com/maps/place/The+Aqua+Retreat+at+Godrej+Park+World,+Hinjawadi+%E2%80%93+Pune/@18.5790625,73.4233169,56306m/data=!3m1!1e3!4m10!1m2!2m1!1sgodrej+the+retreat!3m6!1s0x3bc2bb32c6aeb61b:0xc01e91cce72fec57!8m2!3d18.5790625!4d73.7281875!15sChJnb2RyZWogdGhlIHJldHJlYXRaFCISZ29kcmVqIHRoZSByZXRyZWF0kgEUY29uc3RydWN0aW9uX2NvbXBhbnmaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRrUmxOc1VsUlNSMHB4WlVVeFUxWkViRUppZW14cVlrZFdWbVF3UlJBQuABAPoBBAgAEDM!16s%2Fg%2F11xggk984v?entry=ttu" 
+              href="https://www.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#15181E] text-white font-medium hover:bg-emerald-aqua transition-colors rounded-[32px] text-sm tracking-wide"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#15181E] text-white font-medium hover:bg-emerald-aqua hover:text-black transition-all rounded-[32px] text-sm tracking-wide shadow-lg"
             >
-              Get Directions on Google Maps
+              Get Directions on Google Maps ➔
             </a>
           </div>
 
           {/* Google Maps iFrame */}
-          <div className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
             <iframe 
-              src="https://maps.google.com/maps?q=The+Aqua+Retreat+at+Godrej+Park+World,+Hinjawadi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -62,6 +62,7 @@ export default function GoogleMapsSection() {
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700"
+              title="Godrej The Aqua Retreat Hinjewadi Google Maps"
             ></iframe>
           </div>
           

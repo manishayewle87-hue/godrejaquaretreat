@@ -291,6 +291,7 @@ export default function RootLayout({
           "latitude": 18.5790625,
           "longitude": 73.7281875
         },
+        "hasMap": "https://www.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi",
         "numberOfAccommodations": "800+",
         "petsAllowed": "True",
         "amenityFeature": [
