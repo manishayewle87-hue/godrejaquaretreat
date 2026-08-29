@@ -25,7 +25,7 @@ const BLOCKED_PATH_PATTERNS = [
 // Allowed HTTP methods for API routes
 const ALLOWED_API_METHODS = new Set(['GET', 'POST', 'OPTIONS', 'HEAD']);
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // 1. Block Path Traversal and Null Byte Attacks

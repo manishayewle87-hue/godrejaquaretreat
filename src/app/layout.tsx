@@ -5,6 +5,8 @@ import Navbar from "@/components/layout/Navbar";
 import SmoothScroller from "@/components/layout/SmoothScroller";
 import FloatingCTA from "@/components/ui/FloatingCTA";
 import CustomCursor from "@/components/ui/CustomCursor";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -702,6 +704,8 @@ export default function RootLayout({
             <GoogleWebVitals />
           </>
         )}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
