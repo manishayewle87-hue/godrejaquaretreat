@@ -9,7 +9,13 @@ export const metadata: Metadata = {
     "Godrej Park World", "Godrej Park World Hinjewadi", "Godrej Park World Pune",
     "Godrej Park World Hinjewadi Phase 1", "Godrej Park World Township", "Godrej Park World Price",
     "Godrej Park World Floor Plan", "Godrej Park World Masterplan", "Godrej Park World 2 BHK",
-    "Godrej Park World 3 BHK", "Godrej The Retreat Park World", "The Aqua Retreat Park World"
+    "Godrej Park World 3 BHK", "Godrej The Retreat Park World", "The Aqua Retreat Park World",
+    "Godrej Park World Brochure PDF", "Godrej Park World Construction Status", "Godrej Park World Possession Date",
+    "Godrej Park World MahaRERA PM1260002500070", "Godrej Park World Sales Office", "Godrej Park World Contact Number",
+    "Godrej Park World Sample Flat Video", "Godrej Park World Reviews", "Godrej Park World Location",
+    "Godrej Park World Rajiv Gandhi Infotech Park", "Godrej Park World Central Greens", "Godrej Park World 50000 sq ft Clubhouse",
+    "Flats in Godrej Park World", "Apartments in Godrej Park World", "Buy Flat in Godrej Park World Hinjewadi",
+    "Godrej Park World vs Kolte Patil Life Republic", "Godrej Park World vs Shapoorji Joyville", "Godrej Park World Pre Launch Offers"
   ],
   alternates: {
     canonical: `${siteConfig.url}/godrej-park-world-hinjewadi`,
@@ -51,7 +57,7 @@ export default function GodrejParkWorldFlagshipPage() {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "342"
+        "ratingCount": "342"
       }
     },
     {
@@ -60,6 +66,7 @@ export default function GodrejParkWorldFlagshipPage() {
       "name": "Godrej Park World Hinjewadi",
       "identifier": "PM1260002500070",
       "url": pageUrl,
+      "hasMap": "https://www.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Godrej Park World, Hinjewadi Phase 1, Rajiv Gandhi Infotech Park",
@@ -72,6 +79,68 @@ export default function GodrejParkWorldFlagshipPage() {
         "@type": "GeoCoordinates",
         "latitude": 18.5790625,
         "longitude": 73.7281875
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FloorPlan",
+      "@id": `${pageUrl}/#floorplan-2bhk`,
+      "name": "Godrej Park World 2 BHK Luxury Residence",
+      "description": "Premium 2 BHK resort residence with private sundeck and designer fittings.",
+      "numberOfRooms": 2,
+      "numberOfBedrooms": 2,
+      "numberOfBathroomsTotal": 2,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 780,
+        "unitCode": "FTK"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "11000000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FloorPlan",
+      "@id": `${pageUrl}/#floorplan-3bhk`,
+      "name": "Godrej Park World 3 BHK Regal Residence",
+      "description": "Expansive 3 BHK residence with master bedroom suite and Olympic lagoon pool views.",
+      "numberOfRooms": 3,
+      "numberOfBedrooms": 3,
+      "numberOfBathroomsTotal": 3,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 1180,
+        "unitCode": "FTK"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "16500000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "@id": `${pageUrl}/#video-tour`,
+      "name": "Godrej Park World Hinjewadi 100+ Acre Township Virtual Tour",
+      "description": "Take a 3D cinematic tour of Godrej Park World Hinjewadi Phase 1, the 50,000 sq ft clubhouse, 12+ acres central greens, and luxury sample apartments.",
+      "thumbnailUrl": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+      "uploadDate": "2026-08-20T10:00:00+05:30",
+      "duration": "PT3M45S",
+      "contentUrl": `${pageUrl}/#tour`,
+      "embedUrl": `${pageUrl}/#tour`,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Godrej Properties Pune",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteConfig.url}/favicon.ico`
+        }
       }
     },
     {
