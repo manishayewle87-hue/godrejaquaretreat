@@ -324,6 +324,132 @@ export default function GodrejPropertiesPuneMasterPage() {
             ))}
           </div>
 
+          {/* Master 2026 Godrej Properties Pune Price & Specs Comparison Table (Google Position 0 Target) */}
+          <div className="mt-20 bg-white/[0.03] border border-white/10 rounded-3xl p-8 md:p-12">
+            <div className="text-center max-w-3xl mx-auto mb-10">
+              <span className="text-emerald-aqua uppercase tracking-[0.3em] text-xs font-semibold mb-3 block">
+                Official Benchmark Comparison
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl text-white">
+                Godrej Properties Pune Projects Master Comparison (2026)
+              </h2>
+              <p className="text-gray-400 text-sm font-light mt-3">
+                Side-by-side evaluation of all active Godrej Properties residential developments in Pune covering typologies, carpet areas, starting prices, and official MahaRERA registrations.
+              </p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="border-b border-white/15 text-emerald-aqua uppercase tracking-wider font-semibold">
+                    <th className="py-4 px-4">Project Name</th>
+                    <th className="py-4 px-4">Micro-Location</th>
+                    <th className="py-4 px-4">Typologies</th>
+                    <th className="py-4 px-4">Starting Price</th>
+                    <th className="py-4 px-4">Rental Yield</th>
+                    <th className="py-4 px-4">MahaRERA ID</th>
+                    <th className="py-4 px-4 text-right">Action</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5 text-gray-300">
+                  <tr className="hover:bg-white/[0.02] transition-colors bg-emerald-aqua/5 font-medium">
+                    <td className="py-4 px-4 text-white font-bold flex items-center gap-2">
+                      <span className="text-emerald-aqua">★</span> Godrej The Retreat (Aqua Retreat)
+                    </td>
+                    <td className="py-4 px-4 text-gray-300">Hinjewadi Phase 1 (Pune West)</td>
+                    <td className="py-4 px-4 text-emerald-aqua font-semibold">2 & 3 BHK Resort Residences</td>
+                    <td className="py-4 px-4 text-white font-bold">₹1.10 Cr* - ₹2.50 Cr*</td>
+                    <td className="py-4 px-4 text-emerald-aqua font-bold">7.2% - 8.0% (Highest)</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">PM1260002500070</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/godrej-the-retreat-hinjewadi" className="text-emerald-aqua hover:underline font-semibold">
+                        View Portal ➔
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-4 px-4 text-white font-medium">Godrej Park World (100+ Ac)</td>
+                    <td className="py-4 px-4">Hinjewadi Phase 1</td>
+                    <td className="py-4 px-4">Township Residences</td>
+                    <td className="py-4 px-4 text-white">Pre-Launch Booking</td>
+                    <td className="py-4 px-4">7.0% - 7.5%</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">Registered</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/godrej-park-world-hinjewadi" className="text-emerald-aqua hover:underline">
+                        Explore ➔
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-4 px-4 text-white font-medium">Godrej Rivergreens</td>
+                    <td className="py-4 px-4">Mahalunge (Pune West)</td>
+                    <td className="py-4 px-4">2 & 3 BHK Riverfront</td>
+                    <td className="py-4 px-4 text-white">₹65 Lakh* - ₹1.40 Cr*</td>
+                    <td className="py-4 px-4">6.0% - 6.5%</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">Registered</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/properties/godrej-rivergreens-mahalunge" className="text-emerald-aqua hover:underline">
+                        Explore ➔
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-4 px-4 text-white font-medium">Godrej Hillside (Phases 1-3)</td>
+                    <td className="py-4 px-4">Mahalunge / Baner Annex</td>
+                    <td className="py-4 px-4">1, 2 & 3 BHK Hills</td>
+                    <td className="py-4 px-4 text-white">₹62 Lakh* - ₹1.20 Cr*</td>
+                    <td className="py-4 px-4">6.2% - 6.6%</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">Registered</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/properties/godrej-hillside-mahalunge" className="text-emerald-aqua hover:underline">
+                        Explore ➔
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-4 px-4 text-white font-medium">Godrej Emerald Waters</td>
+                    <td className="py-4 px-4">Pimpri (PCMC Corridor)</td>
+                    <td className="py-4 px-4">2, 3 & 4 BHK High-Rise</td>
+                    <td className="py-4 px-4 text-white">₹1.25 Cr* - ₹2.80 Cr*</td>
+                    <td className="py-4 px-4">5.8% - 6.2%</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">Registered</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/properties/godrej-emerald-waters" className="text-emerald-aqua hover:underline">
+                        Explore ➔
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-4 px-4 text-white font-medium">Godrej Urban Retreat</td>
+                    <td className="py-4 px-4">Kharadi (Pune East)</td>
+                    <td className="py-4 px-4">2 & 3 BHK Luxury</td>
+                    <td className="py-4 px-4 text-white">₹92 Lakh* - ₹1.75 Cr*</td>
+                    <td className="py-4 px-4">6.5% - 7.0%</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">Registered</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/properties/godrej-urban-retreat" className="text-emerald-aqua hover:underline">
+                        Explore ➔
+                      </Link>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-4 px-4 text-white font-medium">Godrej Greens & Horizon</td>
+                    <td className="py-4 px-4">Undri / NIBM (South Pune)</td>
+                    <td className="py-4 px-4">2 & 3 BHK Nature Homes</td>
+                    <td className="py-4 px-4 text-white">₹48 Lakh* - ₹90 Lakh*</td>
+                    <td className="py-4 px-4">5.5% - 6.0%</td>
+                    <td className="py-4 px-4 font-mono text-gray-400">Registered</td>
+                    <td className="py-4 px-4 text-right">
+                      <Link href="/properties/godrej-greens-undri" className="text-emerald-aqua hover:underline">
+                        Explore ➔
+                      </Link>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           {/* Bottom Consultation CTA */}
           <div className="mt-20 bg-gradient-to-r from-emerald-aqua/20 via-white/5 to-emerald-aqua/20 border border-emerald-aqua/40 p-10 md:p-14 rounded-3xl text-center">
             <h2 className="font-serif text-3xl md:text-5xl text-white mb-4">
