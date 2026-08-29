@@ -640,6 +640,26 @@ export default function RootLayout({
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", "h2", "p"]
         }
+      },
+      // 13. VideoObject Schema (Google Video Carousel & SERP Rich Snippet)
+      {
+        "@type": "VideoObject",
+        "@id": `${siteConfig.url}/#video-tour`,
+        "name": "Godrej The Aqua Retreat Hinjewadi - Cinematic Virtual Tour & Masterplan",
+        "description": "Official virtual site tour of Godrej The Aqua Retreat at Godrej Park World Hinjewadi Phase 1, Pune. Explore the 50,000 sq ft luxury clubhouse, 50m Olympic lagoon pool, and furnished 2 & 3 BHK sample flats.",
+        "thumbnailUrl": "https://gplwebsitecdnblob.blob.core.windows.net/godrej-cdn/Images/aqua-banner-1920x900-01-1-1-cmrnnfkpo000kj2phc4uv4hry.webp",
+        "uploadDate": "2026-08-20T10:00:00+05:30",
+        "duration": "PT3M45S",
+        "contentUrl": `${siteConfig.url}/#tour`,
+        "embedUrl": `${siteConfig.url}/#tour`,
+        "publisher": {
+          "@type": "Organization",
+          "name": "Godrej Properties Pune",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteConfig.url}/favicon.ico`
+          }
+        }
       }
     ]
   };
