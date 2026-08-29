@@ -59,12 +59,12 @@ export default function Hero() {
               Phase 1 VIP Allocation Active
             </span>
             <h1 className="text-gray-800 tracking-[0.3em] uppercase text-xs font-semibold">
-              Godrej The Retreat Hinjewadi Park World • Phase 1 Pune
+              Godrej The Aqua Retreat Hinjewadi • Godrej Park World Phase 1 Pune
             </h1>
           </div>
 
           <KineticText 
-            text="Godrej The Retreat Hinjewadi Park World. Ultra-Luxury Resort Residences By Godrej Properties."
+            text="The Aqua Retreat at Godrej Park World Hinjewadi. Ultra-Luxury 2 & 3 BHK Resort Residences."
             el="h2"
             className="font-serif text-5xl md:text-6xl lg:text-[72px] text-luxury-light leading-[1.05] mb-6"
           />

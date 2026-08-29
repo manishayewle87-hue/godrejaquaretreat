@@ -8,8 +8,8 @@ import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "Godrej The Retreat Hinjewadi Phase 1 | The Aqua Retreat Godrej Park World Pune",
-  description: "Official Site: Godrej The Retreat (The Aqua Retreat) at Godrej Park World Hinjewadi Phase 1, Pune by Godrej Properties. Luxury 2 & 3 BHK resort apartments, 50,000 sq ft clubhouse, floor plans, price list & brochure. MahaRERA: PM1260002500070.",
+  title: "Godrej The Aqua Retreat Hinjewadi | The Aqua Retreat at Godrej Park World Pune",
+  description: "Official Site: Godrej The Aqua Retreat (The Retreat) at Godrej Park World Hinjewadi Phase 1, Pune by Godrej Properties. Luxury 2 & 3 BHK resort apartments, 50,000 sq ft clubhouse, floor plans, price list & brochure. MahaRERA: PM1260002500070.",
   keywords: [
     // --- Core Primary Target Keywords ---
     "Godrej The Retreat", "Godrej The Retreat Hinjewadi", "Godrej The Retreat Pune", 
