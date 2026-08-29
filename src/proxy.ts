@@ -71,6 +71,12 @@ export function proxy(request: NextRequest) {
   response.headers.set('X-XSS-Protection', '1; mode=block');
   response.headers.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
+  // Vercel Edge Geolocation Forwarding
+  const country = request.headers.get('x-vercel-ip-country') || 'IN';
+  const city = request.headers.get('x-vercel-ip-city') || 'Pune';
+  response.headers.set('x-user-country', country);
+  response.headers.set('x-user-city', city);
+
   return response;
 }
 
