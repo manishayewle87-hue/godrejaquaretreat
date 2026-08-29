@@ -510,6 +510,20 @@ export default function RootLayout({
           {
             "@type": "SiteNavigationElement",
             "position": 1,
+            "name": "Godrej The Aqua Retreat Hinjewadi",
+            "description": "Official flagship portal for The Aqua Retreat resort residences.",
+            "url": `${siteConfig.url}/godrej-the-aqua-retreat-hinjewadi`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Godrej Properties Pune Portfolio",
+            "description": "Master portfolio covering all 25+ developments and price lists in Pune.",
+            "url": `${siteConfig.url}/godrej-properties-pune`
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
             "name": "Godrej The Retreat Hinjewadi",
             "description": "Official project portal, configurations, and MahaRERA details.",
             "url": `${siteConfig.url}/godrej-the-retreat-hinjewadi`
