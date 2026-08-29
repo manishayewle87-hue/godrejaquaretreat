@@ -211,7 +211,7 @@ export default function RootLayout({
           "latitude": 18.5790625,
           "longitude": 73.7281875
         },
-        "hasMap": "https://maps.google.com/?q=18.5790625,73.7281875",
+        "hasMap": "https://www.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -238,7 +238,7 @@ export default function RootLayout({
         ],
         "sameAs": [
           "https://maharera.mahaonline.gov.in",
-          "https://maps.google.com/?q=18.5790625,73.7281875",
+          "https://www.google.com/maps?q=godrej+the+aqua+retreat+hinjewadi",
           "https://en.wikipedia.org/wiki/Godrej_Properties",
           "https://en.wikipedia.org/wiki/Hinjawadi",
           "https://www.wikidata.org/wiki/Q5576786",
