@@ -34,10 +34,10 @@ export default function Footer() {
           {/* Brand & Newsletter */}
           <div className="lg:col-span-5">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 tracking-wide text-white">
-              Godrej <i className="text-emerald-aqua font-light">The Retreat</i> Hinjewadi
+              Godrej <i className="text-emerald-aqua font-light">The Aqua Retreat</i> Hinjewadi
             </h3>
             <p className="text-gray-400 font-light max-w-sm mb-10 leading-relaxed text-sm">
-              Experience the pinnacle of resort-style living at Godrej The Retreat, Godrej Park World Hinjewadi Phase 1. Designed for clarity, calm, and continuous flow.
+              Experience the pinnacle of resort-style living at Godrej The Aqua Retreat, Godrej Park World Hinjewadi Phase 1, Pune. MahaRERA: PM1260002500070.
             </p>
             
             <div className="mb-8 relative">
@@ -61,22 +61,20 @@ export default function Footer() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onSubmit={handleSubscribe}
-                    className="flex items-center max-w-sm border-b border-white/20 pb-3 transition-colors focus-within:border-emerald-aqua group"
+                    className="relative flex items-center border-b border-white/20 pb-2 focus-within:border-emerald-aqua transition-colors"
                   >
                     <input 
                       type="email" 
                       required
-                      disabled={status === 'submitting'}
-                      placeholder="Enter your email address" 
-                      className="bg-transparent border-none outline-none w-full text-sm text-white placeholder:text-gray-400 font-light disabled:opacity-50"
+                      placeholder="Your email address" 
+                      className="bg-transparent text-sm w-full outline-none text-white placeholder:text-gray-600 pr-8"
                     />
                     <button 
-                      type="submit"
+                      type="submit" 
                       disabled={status === 'submitting'}
-                      aria-label="Subscribe" 
-                      className="text-gray-500 group-hover:text-emerald-aqua transition-colors disabled:opacity-50"
+                      className="text-gray-400 hover:text-emerald-aqua transition-colors disabled:opacity-50"
                     >
-                      <ArrowRight size={18} strokeWidth={1.5} />
+                      <ArrowRight size={18} />
                     </button>
                   </motion.form>
                 )}
@@ -86,14 +84,17 @@ export default function Footer() {
 
           {/* Quick Links */}
             <nav aria-label="Footer Navigation" className="lg:col-span-2 lg:col-start-7">
-              <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-6">Explore</h4>
+              <h4 className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-6">Flagship Portals</h4>
               <ul className="flex flex-col gap-4 text-sm text-gray-400 font-light">
-                <li><Link href="/#lifestyle" className="hover:text-emerald-aqua transition-colors">The Philosophy</Link></li>
+                <li><Link href="/godrej-the-aqua-retreat-hinjewadi" className="text-emerald-aqua font-medium hover:underline">🌊 The Aqua Retreat</Link></li>
+                <li><Link href="/godrej-properties-pune" className="text-emerald-aqua font-medium hover:underline">🏢 Godrej Properties Pune</Link></li>
+                <li><Link href="/godrej-park-world-hinjewadi" className="hover:text-emerald-aqua transition-colors">🌳 Godrej Park World</Link></li>
+                <li><Link href="/godrej-the-retreat-hinjewadi" className="hover:text-emerald-aqua transition-colors">⭐ Godrej The Retreat</Link></li>
+                <li><Link href="/directory" className="hover:text-emerald-aqua transition-colors">📑 Master Directory</Link></li>
+                <li><Link href="/eoi" className="hover:text-emerald-aqua transition-colors">📝 Priority EOI</Link></li>
                 <li><Link href="/#masterplan" className="hover:text-emerald-aqua transition-colors">Masterplan</Link></li>
-                <li><Link href="/#residences" className="hover:text-emerald-aqua transition-colors">Residences</Link></li>
-                <li><Link href="/#floor-views" className="hover:text-emerald-aqua transition-colors">Floor Views</Link></li>
-                <li><Link href="/#balcony-views" className="hover:text-emerald-aqua transition-colors">Balcony Views</Link></li>
-                <li><Link href="/#amenities" className="hover:text-emerald-aqua transition-colors">Amenities</Link></li>
+                <li><Link href="/#residences" className="hover:text-emerald-aqua transition-colors">Residences & Floor Plans</Link></li>
+                <li><Link href="/#amenities" className="hover:text-emerald-aqua transition-colors">50,000 Sq.Ft Clubhouse</Link></li>
                 <li><Link href="/#aqua-clubhouse" className="hover:text-emerald-aqua transition-colors">Aqua Clubhouse</Link></li>
                 <li><Link href="/#interior-styles" className="hover:text-emerald-aqua transition-colors">Interior Styles</Link></li>
                 <li><Link href="/#price-calculator" className="hover:text-emerald-aqua transition-colors">Price Calculator</Link></li>
